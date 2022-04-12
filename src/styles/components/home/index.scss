@@ -4,4 +4,7 @@
   width: 100%; height: auto;
 
   position: relative;
+
+  opacity: 0;
+  animation: 2s ease 2s both running load;
 }

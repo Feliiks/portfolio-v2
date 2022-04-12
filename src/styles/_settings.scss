@@ -5,3 +5,12 @@ html, body {
 
   background: #0B0023;
 }
+
+@keyframes load {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

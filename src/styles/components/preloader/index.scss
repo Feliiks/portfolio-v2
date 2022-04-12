@@ -1,0 +1,38 @@
+.preloader {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+
+  overflow: hidden;
+  background: #0B0023;
+  z-index: 998;
+  transform: translate(-100%, 0%);
+  transition: transform 0.5s ease-in-out;
+
+  p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .pbar {
+    border-radius: 30px;
+    width: 250px;
+    height: 3px;
+    background: #fff;
+
+    .inner {
+      width: 0%;
+      height: 100%;
+      background: #40E0D0;
+      transition: width 1s 0.5s ease-in-out
+    }
+
+  }
+}

@@ -1,11 +1,16 @@
 import React from 'react'
 import SectionWelcome from './SectionWelcome'
 
+import Preloader from "../preloader"
+
 const Index = () => {
   return (
-    <div className="home">
-      <SectionWelcome />
-    </div>
+    <>
+      <Preloader />
+      <div className="home">
+        <SectionWelcome />
+      </div>
+    </>
   )
 }
 
