@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ContactForm from './ContactForm'
 import emailjs from '@emailjs/browser'
 
-import ContactDeco from "../../assets/contact-deco.png"
+import ContactDeco from "../../assets/logo.png"
 
 const SectionContact = () => {
   const [sent, setSent] = useState(false)
@@ -27,14 +27,16 @@ const SectionContact = () => {
       <div className="row title">
         <h2> CONTACT ME </h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          You can contact me to ask questions, give or ask for advices.
+          <br />
+          To do so, please use the form below.
         </p>
       </div>
       <div className="row">
-        <div className="col-6">
+        <div className="col-12 col-lg-6">
           { sent ? <p style={{color: "green"}}> Merci! Votre message a bien été envoyé. </p> : <ContactForm sendFeedback={sendFeedback} />}
         </div>
-        <div className="contact-deco col-6">
+        <div className="contact-deco col-lg-6 d-none d-lg-flex">
           <img src={ContactDeco} alt="contact-deco" />
         </div>
       </div>

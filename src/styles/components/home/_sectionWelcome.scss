@@ -21,6 +21,10 @@
       line-height: 0;
       font-size: 70px;
       font-family: 'Ramaraja', sans-serif;
+
+      @media screen and (max-width: 768px) {
+        font-size: 50px;
+      }
     }
 
     span {

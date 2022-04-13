@@ -48,11 +48,14 @@ const ContactForm = ({ sendFeedback }) => {
       if (!isEmail) {
         formMsgRef.current.innerHTML = "Erreur ! Email invalide."
       }
+      if (name === "" || email === "" || subject === "" || message === "") {
+        formMsgRef.current.innerHTML = "Champs requis."
+      }
     }
   }
 
   return (
-    <form className="contact-form" id="contact-form">
+    <form className="contact-form ps-lg-4" id="contact-form">
       <div className="form-content">
         <div className="chart">
           <input
@@ -92,6 +95,7 @@ const ContactForm = ({ sendFeedback }) => {
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Message"
             value={message}
+            maxLength="500"
           />
           <div className="input-al" />
         </div>
@@ -99,7 +103,7 @@ const ContactForm = ({ sendFeedback }) => {
       <div className="form-footer">
         <button className="btn" onClick={handleSubmit}> Send </button>
         <div className="form-message" ref={formMsgRef} />
-        <span> 0 / 500 </span>
+        <span> {message.length} / 500 </span>
       </div>
     </form>
   )

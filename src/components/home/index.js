@@ -12,7 +12,7 @@ const Index = () => {
       <Preloader />
       <div className="home">
         <SectionWelcome />
-        <div className="section-bg container p-5">
+        <div className="section-bg container">
           <SectionAbout />
           <SectionContact />
         </div>

@@ -6,6 +6,10 @@
       max-height: 300px;
 
       border-radius: 100%;
+
+      @media screen and (max-width: 1200px) {
+        max-height: 250px;
+      }
     }
   }
 
@@ -24,6 +28,7 @@
 
     p {
       color: #fff;
+      text-align: justify;
     }
 
     button {
