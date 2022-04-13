@@ -6,7 +6,7 @@ const SectionWelcome = () => {
       <div className="content">
         <h1> LUDOVIC SOBRERO </h1>
         <span> Développeur fullstack en free-lance. </span>
-        <button className="btn btn-primary"> Contact me </button>
+        <button className="btn"> Contact me </button>
       </div>
     </div>
   )

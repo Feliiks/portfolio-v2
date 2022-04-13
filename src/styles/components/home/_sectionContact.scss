@@ -1,0 +1,30 @@
+@import "contactForm";
+
+.section-contact {
+  margin-top: 125px;
+  padding-left: 45px;
+  position: relative;
+
+  .title {
+    h2 {
+      color: #40E0D0;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .contact-deco {
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-height: 300px;
+
+      margin-left: 75px;
+    }
+  }
+}

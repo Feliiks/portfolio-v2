@@ -6,6 +6,15 @@ html, body {
   background: #0B0023;
 }
 
+.l-btn {
+  position: fixed;
+  right: 15px; bottom: 15px;
+
+  color: #fff;
+  cursor: pointer;
+  z-index: 998;
+}
+
 @keyframes load {
   from {
     opacity: 0;

@@ -1,0 +1,41 @@
+.section-about {
+  position: relative;
+
+  .image {
+    img {
+      max-height: 300px;
+
+      border-radius: 100%;
+    }
+  }
+
+  .content {
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+      color: #40E0D0;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    p {
+      color: #fff;
+    }
+
+    button {
+      width: 140px; height: 40px;
+
+      background: #40E0D0;
+      border: none;
+      border-radius: 0;
+      color: #0B0023;
+      font-weight: bold;
+      font-size: 15px;
+      box-shadow: none;
+    }
+  }
+}
