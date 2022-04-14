@@ -1,6 +1,10 @@
 .section-toolbox {
   position: relative;
 
+  h2 {
+    text-align: center;
+  }
+
   .toolbox {
     max-width: 85%;
 
@@ -32,6 +36,7 @@
 
         transition: all .3s ease-in-out;
         border-radius: 5px;
+        cursor: default;
 
         img {
           max-height: 32px;

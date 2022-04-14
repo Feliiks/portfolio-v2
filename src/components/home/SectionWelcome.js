@@ -5,7 +5,7 @@ const SectionWelcome = () => {
     <div className="section-welcome container">
       <div className="content">
         <h1> LUDOVIC SOBRERO </h1>
-        <span> Développeur fullstack en free-lance. </span>
+        <span> Freelance fullstack developer. </span>
         <button className="btn"> Contact me </button>
       </div>
     </div>

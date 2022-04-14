@@ -23,18 +23,16 @@ import redux from '../../assets/skills/redux.png'
 import sass from '../../assets/skills/sass.png'
 import mongoose from '../../assets/skills/mongoose.png'
 import webstorm from '../../assets/skills/webstorm.png'
-import coffee from '../../assets/skills/coffee.png'
+import axios from '../../assets/skills/axios.png'
 import stripe from '../../assets/skills/stripe.png'
 import mysql from '../../assets/skills/mysql.png'
 
 const SectionToolbox = () => {
   return (
     <div className="row section-toolbox">
-      <div className="col-12 text-center">
-        <h2> MY TOOLBOX </h2>
-      </div>
+      <h2> MY TOOLBOX </h2>
       <div className="toolbox">
-        <ul className="skills-list col-12 mt-5">
+        <ul className="skills-list col-12 mt-4">
           <li>
             <img src={html} alt="html"/>
             <span> Html </span>
@@ -124,8 +122,8 @@ const SectionToolbox = () => {
             <span> WebStorm </span>
           </li>
           <li>
-            <img src={coffee} alt="coffee"/>
-            <span> Coffee </span>
+            <img src={axios} alt="axios"/>
+            <span> Axios </span>
           </li>
           <li>
             <img src={stripe} alt="stripe"/>
@@ -137,10 +135,9 @@ const SectionToolbox = () => {
           </li>
         </ul>
       </div>
-      <p className="mt-5">
-        La fermentation est un processus métabolique qui convertit le sucre en
-        acides et en gaz. Il survient dans les levures et les bactéries, ainsi
-        que dans les cellules présentant un manque d'oxygène dans les muscles.
+      <p className="mt-4">
+        I am specialised in JavaScript based technologies (Angular, React, Node)
+        and can develop fast, powerful and scalable web applications.
       </p>
     </div>
   )

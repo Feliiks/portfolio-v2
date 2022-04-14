@@ -11,6 +11,7 @@ const Index = () => {
       <div className="about">
         <div className="section-bg container">
           <SectionToolbox />
+          <SectionTestimonials />
         </div>
       </div>
     </>
