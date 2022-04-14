@@ -4,6 +4,13 @@ html, body {
   margin: 0; padding: 0;
 
   background: #0B0023;
+  color: #fff;
+}
+
+h2 {
+  color: #40E0D0;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .l-btn {
@@ -13,6 +20,13 @@ html, body {
   color: #fff;
   cursor: pointer;
   z-index: 998;
+}
+
+.section-bg {
+  padding: 75px;
+
+  background-color: #1C0B42;
+  border-radius: 10px;
 }
 
 @keyframes load {

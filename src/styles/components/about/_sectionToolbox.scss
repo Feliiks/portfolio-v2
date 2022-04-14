@@ -1,0 +1,60 @@
+.section-toolbox {
+  position: relative;
+
+  .toolbox {
+    max-width: 85%;
+
+    margin: 0 auto; padding: 0;
+
+    .skills-list {
+      width: 100%;
+
+      padding: 0;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 45px 0 0 0;
+
+      list-style: none;
+      overflow: hidden;
+
+      li {
+        width: 100px;
+
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        position: relative;
+        padding: 10px;
+
+        transition: all .3s ease-in-out;
+        border-radius: 5px;
+
+        img {
+          max-height: 32px;
+        }
+
+        span {
+          margin-top: 5px;
+        }
+
+        &:hover {
+          background: #0B0023;
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  p {
+    max-width: 60%;
+
+    margin: 0 auto;
+
+    text-align: center;
+    color: #BFBFBF;
+  }
+}
