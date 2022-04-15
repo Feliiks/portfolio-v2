@@ -9,6 +9,10 @@
     .work-content {
       max-width: 525px;
 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
       h3 {
         width: 100%;
 
