@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ContactForm from './ContactForm'
 import emailjs from '@emailjs/browser'
 
-import ContactDeco from "../../assets/logo.png"
+import ContactDeco from "../../assets/fiverr_img.jpg"
 
 const SectionContact = () => {
   const [sent, setSent] = useState(false)

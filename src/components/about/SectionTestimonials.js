@@ -65,7 +65,7 @@ const SectionTestimonials = () => {
               Ludovic qui a achevé le travail plus vite que prévu.
             </p>
             <div className="desc">
-              <h4> Anissa </h4>
+              <h4> ANISSA </h4>
               <span>
                 Developer
               </span>

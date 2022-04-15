@@ -31,8 +31,8 @@ const SectionWorks = () => {
       <h2> MY WORKS </h2>
 
       <div className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
-        <div className="col-xl-6">
-          <div className="work-content mx-auto mb-4">
+        <div className="col-xl-6 d-flex align-items-center">
+          <div className="work-content mx-auto mb-4 mb-xl-0">
             <h3> ANDREA NATUROPATHIE </h3>
             <p>
               La fermentation est un processus métabolique qui convertit le sucre
@@ -92,8 +92,8 @@ const SectionWorks = () => {
 
 
       <div className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
-        <div className="col-xl-6">
-          <div className="work-content mx-auto mb-4">
+        <div className="col-xl-6 d-flex align-items-center">
+          <div className="work-content mx-auto mb-4 mb-xl-0">
             <h3> LOS SANTOS VIBES </h3>
             <p>
               La fermentation est un processus métabolique qui convertit le sucre
@@ -153,8 +153,8 @@ const SectionWorks = () => {
 
 
       <div className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
-        <div className="col-xl-6">
-          <div className="work-content mx-auto mb-4">
+        <div className="col-xl-6 d-flex align-items-center">
+          <div className="work-content mx-auto mb-4 mb-xl-0">
             <h3> CANNABIS GROWERS CLUB </h3>
             <p>
               La fermentation est un processus métabolique qui convertit le sucre
@@ -214,8 +214,8 @@ const SectionWorks = () => {
 
 
       <div className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
-        <div className="col-xl-6">
-          <div className="work-content mx-auto mb-4">
+        <div className="col-xl-6 d-flex align-items-center">
+          <div className="work-content mx-auto mb-4 mb-xl-0">
             <h3> HACKING TIMES SQUARE </h3>
             <p>
               La fermentation est un processus métabolique qui convertit le sucre
@@ -275,8 +275,8 @@ const SectionWorks = () => {
 
 
       <div className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
-        <div className="col-xl-6">
-          <div className="work-content mx-auto mb-4">
+        <div className="col-xl-6 d-flex align-items-center">
+          <div className="work-content mx-auto mb-4 mb-xl-0">
             <h3> CARTE JEUNE FFCC </h3>
             <p>
               La fermentation est un processus métabolique qui convertit le sucre
