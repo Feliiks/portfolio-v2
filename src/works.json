@@ -1,0 +1,46 @@
+{
+  "item1" : {
+    "name": "Los Santos Vibes",
+    "description": "Website of the GTA V roleplay server LS Vibes.",
+    "logo": "../images/lsvibes_logo.png",
+    "bgColor": "rgba(11, 11, 11, 1)",
+    "projectLeader": "Leito",
+    "organisation": "LS Vibes",
+    "developers": "Ludovic Sobrero",
+    "technologies": "React.js, Node.js - Express.js, Prisma ORM",
+    "image": "./images/lsvibes1.jpg"
+  },
+  "item2" : {
+    "name": "Andrea Naturopathie",
+    "description": "Website of naturopath Andrea Sobrero",
+    "logo": "../images/andrea_logo.png",
+    "bgColor": "rgb(255,255,255)",
+    "projectLeader": "Ludovic Sobrero",
+    "developers": "Ludovic Sobrero",
+    "organisation": "Andrea Naturopathie",
+    "technologies": "React.js, Node.js - Express.js, Prisma ORM",
+    "image": "./images/andrea1.jpg"
+  },
+  "item3" : {
+    "name": "Cannabis Growers Club",
+    "description": "Website of the Solana Cannabis Growers Club",
+    "logo": "../images/scgc_logo.jpg",
+    "bgColor": "#081531",
+    "projectLeader": "Ludovic Sobrero",
+    "developers": "Ludovic Sobrero",
+    "organisation": "Cannabis Growers Club",
+    "technologies": "React.js",
+    "image": "./images/scgc.jpg"
+  },
+  "item4" : {
+    "name": "Carte jeune FFCC",
+    "description": "Website (youth card) of the French Federation of Camargue Race",
+    "logo": "../images/cartejeuneffcc_logo.png",
+    "bgColor": "rgb(255,255,255)",
+    "projectLeader": "ROMAND Gil",
+    "developers": "Ludovic Sobrero",
+    "organisation": "French federation of Camargaise race",
+    "technologies": "Angular, Node.js - Express.js, Prisma ORM",
+    "image": "./images/cartejeuneffcc.jpg"
+  }
+}

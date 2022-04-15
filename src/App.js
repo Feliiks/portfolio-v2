@@ -6,6 +6,7 @@ import Header from "./components/header"
 
 import Home from "./components/home"
 import About from "./components/about"
+import Works from "./components/works"
 
 import Footer from "./components/footer"
 
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/works" element={<Works />} />
       </Routes>
       <Footer />
     </BrowserRouter>
