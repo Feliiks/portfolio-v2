@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 import Logo from "../../assets/logo_allongé.png"
 
@@ -21,12 +22,14 @@ const Index = () => {
             <Link className="nav-link" to="/works"> Works </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/works#pricing"> Pricing </Link>
+            <Link className="nav-link" to="/pricing"> Pricing </Link>
           </li>
         </ul>
-        <button className="contact-btn btn btn-primary">
-          Contact me
-        </button>
+        <HashLink smooth to="/#section-contact">
+          <button className="contact-btn btn btn-primary">
+            Contact me
+          </button>
+        </HashLink>
       </div>
     </div>
   )

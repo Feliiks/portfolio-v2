@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import Preloader from "../preloader"
 
@@ -7,6 +7,10 @@ import SectionAbout from './SectionAbout'
 import SectionContact from './SectionContact'
 
 const Index = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <Preloader />

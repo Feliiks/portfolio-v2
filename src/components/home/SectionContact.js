@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser'
 import ContactDeco from "../../assets/fiverr_img.jpg"
 
 const SectionContact = () => {
-  const [sent, setSent] = useState(false)
+  const [sent, setSent] = useState("")
 
   const sendFeedback = async (variables) => {
     try {
@@ -23,7 +23,7 @@ const SectionContact = () => {
   };
 
   return (
-    <div className="row section-contact">
+    <div className="row section-contact" id="section-contact">
       <div className="row title">
         <h2> CONTACT ME </h2>
         <p>
@@ -34,7 +34,7 @@ const SectionContact = () => {
       </div>
       <div className="row">
         <div className="col-12 col-lg-6">
-          { sent ? <p style={{color: "green"}}> Merci! Votre message a bien été envoyé. </p> : <ContactForm sendFeedback={sendFeedback} />}
+          { sent ? <p style={{color: "green"}}> Thank you! Your message has been sent. </p> : <ContactForm sendFeedback={sendFeedback} />}
         </div>
         <div className="contact-deco col-lg-6 d-none d-lg-flex">
           <img src={ContactDeco} alt="contact-deco" />

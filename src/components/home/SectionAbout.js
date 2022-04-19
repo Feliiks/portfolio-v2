@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Ludovic
   from '../../assets/245013369_580654286513012_3086812399234244729_n.jpg'
@@ -24,7 +25,9 @@ const SectionAbout = () => {
           <br/><br/>
           Leave me a message to ask any question.
         </p>
-        <button className="btn"> See more</button>
+        <Link to="/about">
+          <button className="btn"> See more </button>
+        </Link>
       </div>
     </div>
   )

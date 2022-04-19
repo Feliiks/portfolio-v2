@@ -5,6 +5,9 @@ const ContactForm = ({ sendFeedback }) => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [mailStatus, setMailStatus] = useState({
+    processing: false
+  });
 
   const formMsgRef = useRef()
 
@@ -30,6 +33,9 @@ const ContactForm = ({ sendFeedback }) => {
 
   const handleSubmit = async e => {
     e.preventDefault()
+    setMailStatus({
+      processing: true
+    })
 
     try {
       if (!isName || !isEmail) throw new Error()
@@ -41,7 +47,14 @@ const ContactForm = ({ sendFeedback }) => {
         subject,
         message
       })
+
+      setMailStatus({
+        processing: false
+      })
     } catch (err) {
+      setMailStatus({
+        processing: false
+      })
       if (!isName) {
         formMsgRef.current.innerHTML = "Erreur ! Nom invalide."
       }
@@ -101,7 +114,10 @@ const ContactForm = ({ sendFeedback }) => {
         </div>
       </div>
       <div className="form-footer">
-        <button className="btn" onClick={handleSubmit}> Send </button>
+        { mailStatus.processing ?
+          <button className="btn" onClick={handleSubmit} disabled> Wait... </button>
+          : <button className="btn" onClick={handleSubmit}> Send </button>
+        }
         <div className="form-message" ref={formMsgRef} />
         <span> {message.length} / 500 </span>
       </div>

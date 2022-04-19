@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import SectionWorks from './SectionWorks'
+import SectionPricing from './SectionPricing'
 import Preloader from '../preloader'
 
 const Index = () => {
@@ -11,9 +11,9 @@ const Index = () => {
   return (
     <>
       <Preloader />
-      <div className="works">
+      <div className="pricing">
         <div className="section-bg container">
-          <SectionWorks />
+          <SectionPricing />
         </div>
       </div>
     </>

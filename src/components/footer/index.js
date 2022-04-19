@@ -17,7 +17,7 @@ const Index = () => {
             <ul>
               <li> <HashLink className="footer-link" to="/about"> About </HashLink> </li>
               <li> <HashLink className="footer-link" to="/works"> Works </HashLink> </li>
-              <li> <HashLink className="footer-link" to="/works#pricing"> Pricing </HashLink> </li>
+              <li> <HashLink className="footer-link" to="/pricing"> Pricing </HashLink> </li>
             </ul>
           </div>
           <div className="lst-medias col-md-2">

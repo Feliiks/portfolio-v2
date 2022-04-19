@@ -35,10 +35,9 @@ const SectionWorks = () => {
           <div className="work-content mx-auto mb-4 mb-xl-0">
             <h3> ANDREA NATUROPATHIE </h3>
             <p>
-              La fermentation est un processus métabolique qui convertit le sucre
-              en acides et en gaz. Il survient dans les levures et les bactéries,
-              ainsi que dans les cellules présentant un manque d'oxygène dans les
-              muscles.
+              Afin d'accroitre son activité de naturopathe sur Marseille, Andrea a fait appel à
+              moi afin de développer sa présence sur internet et lui permettre de vendre
+              ses programmes via une boutique en ligne.
             </p>
             <ul className="skills-list col-12 mt-2 mb-4">
               <li>
@@ -96,10 +95,10 @@ const SectionWorks = () => {
           <div className="work-content mx-auto mb-4 mb-xl-0">
             <h3> LOS SANTOS VIBES </h3>
             <p>
-              La fermentation est un processus métabolique qui convertit le sucre
-              en acides et en gaz. Il survient dans les levures et les bactéries,
-              ainsi que dans les cellules présentant un manque d'oxygène dans les
-              muscles.
+              Dans le cadre du développement du serveur de jeu Los Santos Vibes,
+              j'ai développé une application web permettant aux joueurs de consulter
+              leurs statistiques en jeu et aux administrateurs de réaliser diverses
+              tâches.
             </p>
             <ul className="skills-list col-12 mt-2 mb-4">
               <li>
@@ -157,10 +156,9 @@ const SectionWorks = () => {
           <div className="work-content mx-auto mb-4 mb-xl-0">
             <h3> CANNABIS GROWERS CLUB </h3>
             <p>
-              La fermentation est un processus métabolique qui convertit le sucre
-              en acides et en gaz. Il survient dans les levures et les bactéries,
-              ainsi que dans les cellules présentant un manque d'oxygène dans les
-              muscles.
+              Afin de faire connaître leur activité, le SCGC a fait appel à moi afin
+              de développeur leur site vitrine, leur permettant ainsi de présenter
+              convenablement leur entreprise.
             </p>
             <ul className="skills-list col-12 mt-2 mb-4">
               <li>
@@ -218,10 +216,9 @@ const SectionWorks = () => {
           <div className="work-content mx-auto mb-4 mb-xl-0">
             <h3> HACKING TIMES SQUARE </h3>
             <p>
-              La fermentation est un processus métabolique qui convertit le sucre
-              en acides et en gaz. Il survient dans les levures et les bactéries,
-              ainsi que dans les cellules présentant un manque d'oxygène dans les
-              muscles.
+              Je suis intervenu en tant que développeur web pour l'équipe de Brain
+              in a Vat afin de réaliser un site web complètement animé et immersif.
+              Ce projet a été réalisé accompagné d'un web designer.
             </p>
             <ul className="skills-list col-12 mt-2 mb-4">
               <li>
@@ -277,12 +274,11 @@ const SectionWorks = () => {
       <div className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
         <div className="col-xl-6 d-flex align-items-center">
           <div className="work-content mx-auto mb-4 mb-xl-0">
-            <h3> CARTE JEUNE FFCC </h3>
+            <h3> FF COURSE CAMARGAISE </h3>
             <p>
-              La fermentation est un processus métabolique qui convertit le sucre
-              en acides et en gaz. Il survient dans les levures et les bactéries,
-              ainsi que dans les cellules présentant un manque d'oxygène dans les
-              muscles.
+              Dans le cadre de mon stage de première année de BTS, j'ai pu travailler
+              sur la nouvelle fonctionnalité du site web de la Fédération française de
+              Course Camargaise centrée sur la carte jeune.
             </p>
             <ul className="skills-list col-12 mt-2 mb-4">
               <li>
