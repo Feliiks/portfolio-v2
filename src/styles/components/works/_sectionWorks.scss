@@ -13,6 +13,10 @@
       flex-direction: column;
       justify-content: space-between;
 
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
       h3 {
         width: 100%;
 
@@ -77,9 +81,13 @@
         display: flex;
         justify-content: space-between;
 
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
         button {
-          height: 30px;
-          padding: 4px 24px;
+          padding: 6px 24px;
 
           background: #40E0D0;
           border: none;
@@ -87,6 +95,10 @@
           font-weight: bold;
           color: #0B0023;
           transition: all 0.3s ease-in-out;
+
+          @media screen and (max-width: 768px) {
+            margin: 5px;
+          }
 
           &:hover {
             background: #fff;
@@ -105,6 +117,8 @@
     }
 
     .work-carousel {
+      max-width: 525px;
+
       .carousel {
         height: 300px; width: 525px;
 
@@ -112,6 +126,10 @@
 
         overflow: hidden;
         background: rgba(0, 0, 0, 0.3);
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
 
         .carousel-inner {
           height: 100%; width: 100%;
