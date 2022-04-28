@@ -12,21 +12,21 @@ const SectionAbout = () => {
         <img src={Ludovic} alt="ludovic"/>
       </div>
       <div className="content col-12 col-lg-8">
-        <h2> WHO I AM ?</h2>
+        <h2> QUI SUIS-JE ? </h2>
         <p>
-          I started web development in early 2019 alongside my studies and I
-          have participated in many projects from-scratch. They allowed me to
-          acquire many skills in order to be versatile and respond to all types
-          of needs.
+          J'ai commencé le développement web en 2019 en parallèle de mes études
+          et j'ai participé à plusieurs projets from-scratch. Ceux-ci m'ont permis
+          d'acquérir beaucoup de compétences afin d'être polyvalent et de répondre
+          à tout type de besoin.
           <br/><br/>
-          I work with clients all over the globe and I am responsive,
-          professional and communicate with my clients to their best
-          satisfaction.
+          Je travail avec des clients français ou non et je m'adapte rapidement,
+          je suis professionnel et communique avec mes clients afin de les satisfaire
+          au mieux.
           <br/><br/>
-          Leave me a message to ask any question.
+          N'hésitez pas à me contacter pour poser vos questions.
         </p>
         <Link to="/about">
-          <button className="btn"> See more </button>
+          <button className="btn"> Voir plus </button>
         </Link>
       </div>
     </div>

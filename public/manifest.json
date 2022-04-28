@@ -1,6 +1,7 @@
 {
   "short_name": "LStudio - Ludovic Sobrero",
-  "name": "Web site of Ludovic Sobrero, web developer.",
+  "name": "Site web de Ludovic Sobrero, développeur fullstack indépendant.",
+  "lang": "fr-FR",
   "icons": [
     {
       "src": "logo.png",

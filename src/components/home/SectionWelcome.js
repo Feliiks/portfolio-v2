@@ -6,9 +6,9 @@ const SectionWelcome = () => {
     <div className="section-welcome container">
       <div className="content">
         <h1> LUDOVIC SOBRERO </h1>
-        <span> Freelance fullstack developer. </span>
+        <span> Développeur fullstack indépendant. </span>
         <HashLink smooth to="/#section-contact">
-          <button className="btn"> Contact me </button>
+          <button className="btn"> Me contacter </button>
         </HashLink>
       </div>
     </div>

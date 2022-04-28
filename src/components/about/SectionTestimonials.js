@@ -9,7 +9,7 @@ import { AiFillStar } from 'react-icons/ai'
 const SectionTestimonials = () => {
   return (
     <div className="row section-testimonials">
-      <h2> TESTIMONIALS </h2>
+      <h2> ILS PARLENT DE MOI </h2>
       <div className="row testimonials mt-4">
         <div className="col-xl-4 col-lg-6 mx-auto mb-5 mb-xl-0">
           <div className="testimonials-item">
@@ -68,7 +68,7 @@ const SectionTestimonials = () => {
             <div className="desc">
               <h4> ANISSA </h4>
               <span>
-                Developer
+                Développeuse
               </span>
             </div>
           </div>

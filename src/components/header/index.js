@@ -44,18 +44,18 @@ const Index = () => {
           </div>
           <ul className="navbar-nav d-flex flex-md-row flex-column">
             <li className="nav-item">
-              <Link className="nav-link" to="/about"> About </Link>
+              <Link className="nav-link" to="/about"> A propos </Link>
             </li>
             <li className="nav-item me-md-5 ms-md-5 mt-3 mb-3 mt-md-0 mb-md-0">
-              <Link className="nav-link" to="/works"> Works </Link>
+              <Link className="nav-link" to="/works"> Travaux </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/pricing"> Pricing </Link>
+              <Link className="nav-link" to="/pricing"> Tarifs </Link>
             </li>
           </ul>
           <HashLink smooth to="/#section-contact">
             <button className="contact-btn btn btn-primary">
-              Contact me
+              Me contacter
             </button>
           </HashLink>
         </div>

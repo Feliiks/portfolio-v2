@@ -25,16 +25,16 @@ const SectionContact = () => {
   return (
     <div className="row section-contact" id="section-contact">
       <div className="row title">
-        <h2> CONTACT ME </h2>
+        <h2> ME CONTACTER </h2>
         <p>
-          You can contact me to ask questions, give or ask for advices.
+          Vous pouvez me contacter pour poser vos questions ou demander des conseils.
           <br />
-          To do so, please use the form below.
+          Pour se faire, utilisez le formulaire ci-dessous.
         </p>
       </div>
       <div className="row">
         <div className="col-12 col-lg-6">
-          { sent ? <p style={{color: "green"}}> Thank you! Your message has been sent. </p> : <ContactForm sendFeedback={sendFeedback} />}
+          { sent ? <p style={{color: "green"}}> Merci! Votre message a bien été envoyé. </p> : <ContactForm sendFeedback={sendFeedback} />}
         </div>
         <div className="contact-deco col-lg-6 d-none d-lg-flex">
           <img src={ContactDeco} alt="contact-deco" />

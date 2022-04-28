@@ -15,9 +15,9 @@ const Index = () => {
           <div className="lst-menu d-none col-md-6 d-md-block">
             <h4> MENU </h4>
             <ul>
-              <li> <HashLink className="footer-link" to="/about"> About </HashLink> </li>
-              <li> <HashLink className="footer-link" to="/works"> Works </HashLink> </li>
-              <li> <HashLink className="footer-link" to="/pricing"> Pricing </HashLink> </li>
+              <li> <HashLink className="footer-link" to="/about"> A propos </HashLink> </li>
+              <li> <HashLink className="footer-link" to="/works"> Travaux </HashLink> </li>
+              <li> <HashLink className="footer-link" to="/pricing"> Tarifs </HashLink> </li>
             </ul>
           </div>
           <div className="lst-medias col-md-2">
@@ -29,7 +29,7 @@ const Index = () => {
           </div>
         </div>
         <div className="row footer-copyright">
-          <p> © 2022 LStudio. All rights reserved. </p>
+          <p> © 2022 LStudio. Tous droits réservés. </p>
         </div>
       </div>
     </footer>

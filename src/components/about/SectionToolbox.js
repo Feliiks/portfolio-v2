@@ -30,7 +30,7 @@ import mysql from '../../assets/skills/mysql.png'
 const SectionToolbox = () => {
   return (
     <div className="row section-toolbox">
-      <h2> MY TOOLBOX </h2>
+      <h2> BOITE A OUTILS </h2>
       <div className="toolbox">
         <ul className="skills-list col-12 mt-4">
           <li>
@@ -136,8 +136,8 @@ const SectionToolbox = () => {
         </ul>
       </div>
       <p className="mt-4">
-        I am specialised in JavaScript based technologies (Angular, React, Node)
-        and can develop fast, powerful and scalable web applications.
+        Je suis spécialisé dans les technologies basées sur Javascript (Angular, React, Node)
+        et peu développer des applications web rapides, puissantes et scalables.
       </p>
     </div>
   )

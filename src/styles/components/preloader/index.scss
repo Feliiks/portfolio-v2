@@ -26,9 +26,12 @@
   }
 
   .pbar {
-    border-radius: 30px;
-    width: 250px;
+    width: 200px;
     height: 3px;
+
+    margin-top: 20px;
+
+    border-radius: 30px;
     background: #fff;
 
     .inner {

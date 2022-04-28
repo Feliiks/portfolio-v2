@@ -75,7 +75,7 @@ const ContactForm = ({ sendFeedback }) => {
             type="text"
             id="name"
             onChange={(e) => setName(e.target.value)}
-            placeholder="Name"
+            placeholder="Nom"
             value={name}
           />
           <div className="input-al" />
@@ -95,7 +95,7 @@ const ContactForm = ({ sendFeedback }) => {
             type="text"
             id="subject"
             onChange={(e) => setSubject(e.target.value)}
-            placeholder="Subject"
+            placeholder="Sujet"
             value={subject}
             autoComplete="off"
           />
@@ -115,8 +115,8 @@ const ContactForm = ({ sendFeedback }) => {
       </div>
       <div className="form-footer">
         { mailStatus.processing ?
-          <button className="btn" onClick={handleSubmit} disabled> Wait... </button>
-          : <button className="btn" onClick={handleSubmit}> Send </button>
+          <button className="btn" onClick={handleSubmit} disabled> Patientez... </button>
+          : <button className="btn" onClick={handleSubmit}> Envoyer </button>
         }
         <div className="form-message" ref={formMsgRef} />
         <span> {message.length} / 500 </span>

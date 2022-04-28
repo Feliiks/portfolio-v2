@@ -23,7 +23,6 @@ const Index = () => {
   return (
     <div className="preloader" id="preloader">
       <img src={Logo} alt="img" />
-      <p> Content is on the way... </p>
       <div className="pbar">
         <div className="inner" id="inner"/>
       </div>

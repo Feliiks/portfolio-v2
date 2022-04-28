@@ -28,7 +28,7 @@ import { BiLinkExternal } from 'react-icons/bi'
 const SectionWorks = () => {
   return (
     <div className="row section-works">
-      <h2> MY WORKS </h2>
+      <h2> TRAVAUX </h2>
 
       <div className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
         <div className="col-xl-6 d-flex align-items-center">
@@ -68,7 +68,7 @@ const SectionWorks = () => {
             <div className="buttons">
               <a href="https://github.com/Feliiks/andrea-naturo-website" target="_blank" rel="noreferrer">
                 <button id="github">
-                  View GitHub repository <BiLinkExternal />
+                  GitHub repository <BiLinkExternal />
                 </button>
               </a>
               <button id="mission-report"> Mission report </button>
@@ -129,7 +129,7 @@ const SectionWorks = () => {
             <div className="buttons">
               <a href="https://github.com/Feliiks/lsvibes-client" target="_blank" rel="noreferrer">
                 <button id="github">
-                  View GitHub repository <BiLinkExternal />
+                  GitHub repository <BiLinkExternal />
                 </button>
               </a>
               <button id="mission-report"> Mission report </button>
@@ -189,7 +189,7 @@ const SectionWorks = () => {
             <div className="buttons">
               <a href="https://github.com/Feliiks/cannabis-growers" target="_blank" rel="noreferrer">
                 <button id="github">
-                  View GitHub repository <BiLinkExternal />
+                  GitHub repository <BiLinkExternal />
                 </button>
               </a>
               <button id="mission-report"> Mission report </button>
@@ -249,7 +249,7 @@ const SectionWorks = () => {
             <div className="buttons">
               <a href="https://github.com/Feliiks/hacking-times-square" target="_blank" rel="noreferrer">
                 <button id="github">
-                  View GitHub repository <BiLinkExternal />
+                  GitHub repository <BiLinkExternal />
                 </button>
               </a>
               <button id="mission-report"> Mission report </button>
@@ -309,7 +309,7 @@ const SectionWorks = () => {
             <div className="buttons">
               <a href="https://github.com/Feliiks/carte-jeune-ffcc" target="_blank" rel="noreferrer">
                 <button id="github">
-                  View GitHub repository <BiLinkExternal />
+                  GitHub repository <BiLinkExternal />
                 </button>
               </a>
               <button id="mission-report"> Mission report </button>
