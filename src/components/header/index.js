@@ -27,7 +27,9 @@ const Index = () => {
 
   useEffect(() => {
     navbarRef.current.onclick = () => {
-      setNavStatut(false)
+      if (document.body.offsetWidth <= 768) {
+        setNavStatut(false)
+      }
     }
   })
 
