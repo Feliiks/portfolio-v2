@@ -79,14 +79,16 @@ const SectionWorks = () => {
         </div>
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
-            <Carousel className="carousel" activeIndex={0}>
-              <Carousel.Item className="carousel-item">
-                <img
-                  src={stefanos1}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-            </Carousel>
+            <a href="https://stefanospronos.com/" target="_blank" rel="noreferrer">
+              <Carousel className="carousel" activeIndex={0}>
+                <Carousel.Item className="carousel-item">
+                  <img
+                    src={stefanos1}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+              </Carousel>
+            </a>
           </div>
         </div>
       </div>
@@ -139,14 +141,16 @@ const SectionWorks = () => {
         </div>
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
-            <Carousel className="carousel" activeIndex={0}>
-              <Carousel.Item className="carousel-item">
-                <img
-                  src={andrea1}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-            </Carousel>
+            <a href="https://andrea-naturopathie.com/" target="_blank" rel="noreferrer">
+              <Carousel className="carousel" activeIndex={0}>
+                <Carousel.Item className="carousel-item">
+                  <img
+                    src={andrea1}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+              </Carousel>
+            </a>
           </div>
         </div>
       </div>
@@ -260,14 +264,16 @@ const SectionWorks = () => {
         </div>
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
-            <Carousel className="carousel" activeIndex={0}>
-              <Carousel.Item className="carousel-item">
-                <img
-                  src={scgc1}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-            </Carousel>
+            <a href="https://cannabisgrowersclub.io/" target="_blank" rel="noreferrer">
+              <Carousel className="carousel" activeIndex={0}>
+                <Carousel.Item className="carousel-item">
+                  <img
+                    src={scgc1}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+              </Carousel>
+            </a>
           </div>
         </div>
       </div>
