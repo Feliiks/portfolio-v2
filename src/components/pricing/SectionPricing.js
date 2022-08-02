@@ -48,7 +48,7 @@ const SectionPricing = () => {
           <div className="pricing-card">
             <h3>Premium</h3>
             <div className="price">
-              <span> $2049 </span>
+              <span> $1375 </span>
             </div>
             <div className="card-desc">
               <span> <AiFillCheckCircle /> Offre "Standard" </span>

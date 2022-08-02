@@ -16,7 +16,9 @@ import sass from '../../assets/skills/sass.png'
 import webstorm from '../../assets/skills/webstorm.png'
 import stripe from '../../assets/skills/stripe.png'
 import mysql from '../../assets/skills/mysql.png'
+import mongodb from "../../assets/skills/mongodb.png"
 
+import stefanos1 from "../../assets/works/stefanos1.jpg"
 import andrea1 from "../../assets/works/andrea1.jpg"
 import lsvibes1 from "../../assets/works/lsvibes1.jpg"
 import scgc1 from "../../assets/works/scgc.jpg"
@@ -29,6 +31,66 @@ const SectionWorks = () => {
   return (
     <div className="row section-works">
       <h2> TRAVAUX </h2>
+
+      <div className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
+        <div className="col-xl-6 d-flex align-items-center">
+          <div className="work-content mx-auto mb-4 mb-xl-0">
+            <h3> STEFANOS PRONOSTICS </h3>
+            <p>
+              Suivis par plus de 15 000 abonnés sur Twitter, Stefanos a voulu se lancer
+              dans la publication de pronostics par abonnement. Afin de répondre à ce besoin,
+              j'ai développé pour eux une application web entièrement fonctionnelle.
+            </p>
+            <ul className="skills-list col-12 mt-2 mb-4">
+              <li>
+                <img src={reactjs} alt="reactjs" />
+                <span> React.js </span>
+              </li>
+              <li>
+                <img src={bootstrap} alt="bootstrap"/>
+                <span> Bootstrap </span>
+              </li>
+              <li>
+                <img src={redux} alt="redux"/>
+                <span> Redux </span>
+              </li>
+              <li>
+                <img src={nodejs} alt="nodejs"/>
+                <span> Node.js </span>
+              </li>
+              <li>
+                <img src={mongodb} alt="firebase"/>
+                <span> MongoDB </span>
+              </li>
+              <li>
+                <img src={stripe} alt="stripe"/>
+                <span> Stripe </span>
+              </li>
+            </ul>
+            <div className="buttons">
+              <a href="https://github.com/Feliiks/stefanos" target="_blank" rel="noreferrer">
+                <button id="github">
+                  GitHub repository <BiLinkExternal />
+                </button>
+              </a>
+              <button id="mission-report"> Mission report </button>
+            </div>
+          </div>
+        </div>
+        <div className="col-xl-6 p-0 d-flex align-items-center">
+          <div className="work-carousel mx-auto">
+            <Carousel className="carousel" activeIndex={0}>
+              <Carousel.Item className="carousel-item">
+                <img
+                  src={stefanos1}
+                  alt="First slide"
+                />
+              </Carousel.Item>
+            </Carousel>
+          </div>
+        </div>
+      </div>
+
 
       <div className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
         <div className="col-xl-6 d-flex align-items-center">
