@@ -25,6 +25,8 @@ import scgc1 from "../../assets/works/scgc.jpg"
 import hts1 from "../../assets/works/hts1.jpg"
 import ffcc1 from "../../assets/works/cartejeuneffcc.jpg"
 
+import rdmstefanos from "../../assets/works/mission-reports/rdm-stefanos.pdf"
+
 import { BiLinkExternal } from 'react-icons/bi'
 
 const SectionWorks = () => {
@@ -73,7 +75,9 @@ const SectionWorks = () => {
                   GitHub repository <BiLinkExternal />
                 </button>
               </a>
-              <button id="mission-report"> Mission report </button>
+              <a href={rdmstefanos} target="_blank" rel="noreferrer" style={{width: "40%"}}>
+                <button id="mission-report"> Mission report </button>
+              </a>
             </div>
           </div>
         </div>
@@ -135,7 +139,9 @@ const SectionWorks = () => {
                   GitHub repository <BiLinkExternal />
                 </button>
               </a>
-              <button id="mission-report"> Mission report </button>
+              <a href={rdmstefanos} target="_blank" rel="noreferrer" style={{width: "40%"}}>
+                <button id="mission-report"> Mission report </button>
+              </a>
             </div>
           </div>
         </div>
@@ -198,7 +204,9 @@ const SectionWorks = () => {
                   GitHub repository <BiLinkExternal />
                 </button>
               </a>
-              <button id="mission-report"> Mission report </button>
+              <a href={rdmstefanos} target="_blank" rel="noreferrer" style={{width: "40%"}}>
+                <button id="mission-report"> Mission report </button>
+              </a>
             </div>
           </div>
         </div>
@@ -258,7 +266,9 @@ const SectionWorks = () => {
                   GitHub repository <BiLinkExternal />
                 </button>
               </a>
-              <button id="mission-report"> Mission report </button>
+              <a href={rdmstefanos} target="_blank" rel="noreferrer" style={{width: "40%"}}>
+                <button id="mission-report"> Mission report </button>
+              </a>
             </div>
           </div>
         </div>
@@ -320,7 +330,9 @@ const SectionWorks = () => {
                   GitHub repository <BiLinkExternal />
                 </button>
               </a>
-              <button id="mission-report"> Mission report </button>
+              <a href={rdmstefanos} target="_blank" rel="noreferrer" style={{width: "40%"}}>
+                <button id="mission-report"> Mission report </button>
+              </a>
             </div>
           </div>
         </div>
@@ -380,7 +392,9 @@ const SectionWorks = () => {
                   GitHub repository <BiLinkExternal />
                 </button>
               </a>
-              <button id="mission-report"> Mission report </button>
+              <a href={rdmstefanos} target="_blank" rel="noreferrer" style={{width: "40%"}}>
+                <button id="mission-report"> Mission report </button>
+              </a>
             </div>
           </div>
         </div>
