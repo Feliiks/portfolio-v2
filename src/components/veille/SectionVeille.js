@@ -3,10 +3,10 @@ import React from 'react'
 import { AiFillCheckCircle } from 'react-icons/ai'
 import { BiLinkExternal } from 'react-icons/bi'
 
-const SectionPricing = () => {
+const SectionVeille = () => {
   return (
     <div className="row section-pricing">
-      <h2> TARIFS </h2>
+      <h2> VEILLE </h2>
       <div className="row pricing-container mx-auto mt-5">
         <div className="col-xl-4 d-flex mb-5 align-items-center justify-content-center">
           <div className="pricing-card">
@@ -72,4 +72,4 @@ const SectionPricing = () => {
   )
 }
 
-export default SectionPricing
+export default SectionVeille

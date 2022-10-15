@@ -14,16 +14,15 @@ const SectionAbout = () => {
       <div className="content col-12 col-lg-8">
         <h2> QUI SUIS-JE ? </h2>
         <p>
-          J'ai commencé le développement web en 2019 en parallèle de mes études
-          et j'ai participé à plusieurs projets from-scratch. Ceux-ci m'ont permis
-          d'acquérir beaucoup de compétences afin d'être polyvalent et de répondre
-          à tout type de besoin.
+          Je m'appelle Ludovic, j'ai 21 ans, et je suis actuellement en deuxième année
+          de BTS SIO option SLAM, en alternance dans l'entreprise Key Performance Consulting.
           <br/><br/>
-          Je travail avec des clients français ou non et je m'adapte rapidement,
-          je suis professionnel et communique avec mes clients afin de les satisfaire
-          au mieux.
+          Passioné d'informatique, le développement est devenu une véritable passion pour moi. Cela
+          m'a poussé à prendre la décision d'en faire mon métier et justifie mon choix pour cette formation.
           <br/><br/>
-          N'hésitez pas à me contacter pour poser vos questions.
+          Durant ma première année, que j'ai effectué en formation initiale, j'ai effectué quelques missions
+          en tant que développeur indépendant, ce qui m'a permis d'engranger beaucoup de connaissances et de
+          me rendre un peu plus autonome.
         </p>
         <Link to="/about">
           <button className="btn"> Voir plus </button>

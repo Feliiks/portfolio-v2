@@ -7,7 +7,7 @@ import Header from "./components/header"
 import Home from "./components/home"
 import About from "./components/about"
 import Works from "./components/works"
-import Pricing from "./components/pricing"
+import Veille from "./components/veille"
 
 import Footer from "./components/footer"
 
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />
-        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/veille" element={<Veille />} />
       </Routes>
       <Footer />
     </BrowserRouter>

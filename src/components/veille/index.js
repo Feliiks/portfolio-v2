@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 
-import SectionPricing from './SectionPricing'
 import Preloader from '../preloader'
+import SectionVeille from './SectionVeille'
 
-const Index = () => {
+const Veille = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -13,11 +13,11 @@ const Index = () => {
       <Preloader />
       <div className="pricing">
         <div className="section-bg container">
-          <SectionPricing />
+          <SectionVeille />
         </div>
       </div>
     </>
   )
 }
 
-export default Index
+export default Veille
