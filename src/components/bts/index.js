@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 
 import Preloader from '../preloader'
+import SectionBts from './SectionBts'
 import SectionVeille from './SectionVeille'
 
 const Veille = () => {
@@ -13,6 +14,7 @@ const Veille = () => {
       <Preloader />
       <div className="pricing">
         <div className="section-bg container">
+          <SectionBts />
           <SectionVeille />
         </div>
       </div>

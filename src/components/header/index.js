@@ -50,7 +50,7 @@ const Index = () => {
               <Link className="nav-link" to="/works"> Travaux </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/veille"> Veille </Link>
+              <Link className="nav-link" to="/bts"> BTS </Link>
             </li>
           </ul>
           <HashLink smooth to="/#section-contact">
