@@ -33,7 +33,7 @@ function App() {
 
         <Route path="/works/detail/procedes-speciaux" element={<Ps />} />
         <Route path="/works/detail/crawford-industries" element={<Crawind />} />
-        <Route path="/works/detail/stefanos-pronostics" element={<Stefanos />} />
+        <Route path="/works/detail/stefanos" element={<Stefanos />} />
         <Route path="/works/detail/hts" element={<Hts />} />
         <Route path="/works/detail/cgc" element={<Cgc />} />
         <Route path="/works/detail/andrea-naturo" element={<Andrea />} />

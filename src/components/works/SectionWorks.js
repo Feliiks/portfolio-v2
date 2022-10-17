@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import { Carousel } from "react-bootstrap"
-
 import jsx from '../../assets/skills/jsx.png'
 import reactjs from '../../assets/skills/reactjs.png'
 import javascript from '../../assets/skills/js.png'
@@ -86,14 +84,10 @@ const SectionWorks = () => {
         </div>
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
-            <Carousel className="carousel" activeIndex={0}>
-              <Carousel.Item className="carousel-item">
-                <img
-                  src={stefanos1}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-            </Carousel>
+            <img
+              src={stefanos1}
+              alt="First slide"
+            />
           </div>
         </div>
       </div>
@@ -149,14 +143,10 @@ const SectionWorks = () => {
         </div>
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
-            <Carousel className="carousel" activeIndex={0}>
-              <Carousel.Item className="carousel-item">
-                <img
-                  src={crawind_orders}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-            </Carousel>
+            <img
+              src={crawind_orders}
+              alt="First slide"
+            />
           </div>
         </div>
       </div>
@@ -211,14 +201,10 @@ const SectionWorks = () => {
         </div>
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
-            <Carousel className="carousel" activeIndex={0}>
-              <Carousel.Item className="carousel-item">
-                <img
-                  src={stefanos1}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-            </Carousel>
+            <img
+              src={stefanos1}
+              alt="First slide"
+            />
           </div>
         </div>
       </div>
@@ -273,14 +259,10 @@ const SectionWorks = () => {
         </div>
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
-            <Carousel className="carousel" activeIndex={0}>
-              <Carousel.Item className="carousel-item">
-                <img
-                  src={hts1}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-            </Carousel>
+            <img
+              src={hts1}
+              alt="First slide"
+            />
           </div>
         </div>
       </div>
@@ -289,7 +271,7 @@ const SectionWorks = () => {
       <div className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
         <div className="col-xl-6 d-flex align-items-center">
           <div className="work-content mx-auto mb-4 mb-xl-0">
-            <h3> CANNABIS GROWERS CLUB </h3>
+            <h3> SOLANA </h3>
             <p>
               Afin de faire connaître leur activité, le SCGC a fait appel à moi afin
               de développeur leur site vitrine, leur permettant ainsi de présenter
@@ -335,14 +317,10 @@ const SectionWorks = () => {
         </div>
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
-            <Carousel className="carousel" activeIndex={0}>
-              <Carousel.Item className="carousel-item">
-                <img
-                  src={scgc1}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-            </Carousel>
+            <img
+              src={scgc1}
+              alt="First slide"
+            />
           </div>
         </div>
       </div>
@@ -397,14 +375,10 @@ const SectionWorks = () => {
         </div>
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
-            <Carousel className="carousel" activeIndex={0}>
-              <Carousel.Item className="carousel-item">
-                <img
-                  src={andrea1}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-            </Carousel>
+            <img
+              src={andrea1}
+              alt="First slide"
+            />
           </div>
         </div>
       </div>
@@ -413,7 +387,7 @@ const SectionWorks = () => {
       <div className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
         <div className="col-xl-6 d-flex align-items-center">
           <div className="work-content mx-auto mb-4 mb-xl-0">
-            <h3> FF COURSE CAMARGAISE </h3>
+            <h3> FF COURSE CAMARGUAISE </h3>
             <p>
               Dans le cadre de mon stage de première année de BTS, j'ai pu travailler
               sur la nouvelle fonctionnalité du site web de la Fédération française de
@@ -459,14 +433,10 @@ const SectionWorks = () => {
         </div>
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
-            <Carousel className="carousel" activeIndex={0}>
-              <Carousel.Item className="carousel-item">
-                <img
-                  src={ffcc1}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-            </Carousel>
+            <img
+              src={ffcc1}
+              alt="First slide"
+            />
           </div>
         </div>
       </div>
@@ -522,14 +492,10 @@ const SectionWorks = () => {
         </div>
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
-            <Carousel className="carousel" activeIndex={0}>
-              <Carousel.Item className="carousel-item">
-                <img
-                  src={lsvibes1}
-                  alt="First slide"
-                />
-              </Carousel.Item>
-            </Carousel>
+            <img
+              src={lsvibes1}
+              alt="First slide"
+            />
           </div>
         </div>
       </div>

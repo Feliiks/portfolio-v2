@@ -117,43 +117,18 @@
     }
 
     .work-carousel {
-      max-width: 525px;
+      height: 300px; width: 525px;
 
-      .carousel {
-        height: 300px; width: 525px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-        position: relative;
+      background: #0B0023;
 
-        overflow: hidden;
-        background: rgba(0, 0, 0, 0.3);
+      img {
+        max-width: 95%;
 
-        @media screen and (max-width: 768px) {
-          width: 100%;
-        }
-
-        .carousel-inner {
-          height: 100%; width: 100%;
-
-          .carousel-item {
-            height: 100%; width: 100%;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            box-sizing: border-box;
-
-            img {
-              max-width: 95%;
-
-              box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            }
-          }
-        }
-
-        .carousel-control-prev, .carousel-control-next, .carousel-indicators {
-          display: none;
-        }
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
     }
   }

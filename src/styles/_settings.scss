@@ -13,6 +13,14 @@ img {
   pointer-events: none;
 }
 
+a {
+  color: #fff;
+
+  &:hover {
+    color: #c4c4c4;
+  }
+}
+
 h2 {
   color: #40E0D0;
   font-size: 40px;
