@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 
 import Preloader from '../preloader'
-import SectionBts from './SectionBts'
-import SectionVeille from './SectionVeille'
 
 const Veille = () => {
   useEffect(() => {
@@ -14,8 +12,10 @@ const Veille = () => {
       <Preloader />
       <div className="pricing">
         <div className="section-bg container">
-          <SectionBts />
-          <SectionVeille />
+          <div className="row section-pricing">
+            <h2 className="mb-3"> VEILLE TECHNOLOGIQUE </h2>
+            ...
+          </div>
         </div>
       </div>
     </>

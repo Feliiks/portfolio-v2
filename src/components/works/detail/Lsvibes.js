@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
-import lsvibes1 from '../../../assets/works/lsvibes1.jpg'
+import lsvibes_home from '../../../assets/works/lsvibes/lsvibes_home.jpg'
+import lsvibes_profile from '../../../assets/works/lsvibes/lsvibes_profile.jpg'
+import lsvibes_profile2 from '../../../assets/works/lsvibes/lsvibes_profile2.jpg'
 import { BiLinkExternal } from 'react-icons/bi'
 
 const Lsvibes = () => {
@@ -21,7 +23,7 @@ const Lsvibes = () => {
                 <div className="work-carousel mx-auto"
                      style={{ background: 'none' }}>
                   <img
-                    src={lsvibes1}
+                    src={lsvibes_home}
                     alt="First slide"
                   />
                 </div>
@@ -30,7 +32,7 @@ const Lsvibes = () => {
                 <div className="work-carousel mx-auto"
                      style={{ background: 'none' }}>
                   <img
-                    src={lsvibes1}
+                    src={lsvibes_profile}
                     alt="First slide"
                   />
                 </div>
@@ -39,7 +41,7 @@ const Lsvibes = () => {
                 <div className="work-carousel mx-auto"
                      style={{ background: 'none' }}>
                   <img
-                    src={lsvibes1}
+                    src={lsvibes_profile2}
                     alt="First slide"
                   />
                 </div>
@@ -48,7 +50,7 @@ const Lsvibes = () => {
                 <div className="work-carousel mx-auto"
                      style={{ background: 'none' }}>
                   <img
-                    src={lsvibes1}
+                    src={lsvibes_profile2}
                     alt="First slide"
                   />
                 </div>
@@ -123,7 +125,7 @@ const Lsvibes = () => {
               <h3> Ressources associées </h3>
               <a href="#"><BiLinkExternal/> Fiche de présentation de projet.</a>
               <br/>
-              <a href="https://github.com/Feliiks/lsvibes-client"
+              <a href="https://github.com/ludovic-sbr/lsvibes"
                  target="_blank"><BiLinkExternal/> Code source.</a>
               <br/>
               <a href="#"><BiLinkExternal/> Cahier des charges.</a>

@@ -7,7 +7,8 @@ import Header from "./components/header"
 import Home from "./components/home"
 import About from "./components/about"
 import Works from "./components/works"
-import Bts from "./components/bts"
+import Tableau from "./components/tableau"
+import Veille from './components/veille'
 
 import Footer from "./components/footer"
 
@@ -29,7 +30,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/works" element={<Works />} />
-        <Route path="/bts" element={<Bts />} />
+        <Route path="/tableau" element={<Tableau />} />
+        <Route path="/veille" element={<Veille />} />
 
         <Route path="/works/detail/procedes-speciaux" element={<Ps />} />
         <Route path="/works/detail/crawford-industries" element={<Crawind />} />

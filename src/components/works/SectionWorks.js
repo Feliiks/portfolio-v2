@@ -22,10 +22,10 @@ import gitlab from "../../assets/skills/gitlab.png"
 
 import stefanos1 from "../../assets/works/stefanos/stefanos1.jpg"
 import andrea1 from "../../assets/works/andrea/andrea1.jpg"
-import lsvibes1 from "../../assets/works/lsvibes1.jpg"
+import lsvibes_home from "../../assets/works/lsvibes/lsvibes_home.jpg"
 import scgc1 from "../../assets/works/solana/solana1.jpg"
 import hts1 from "../../assets/works/hts/hts1.jpg"
-import ffcc1 from "../../assets/works/cartejeuneffcc.jpg"
+import ffcc_home from "../../assets/works/ffcc/ffcc_home.jpg"
 import crawind_orders from "../../assets/works/crawind/orders.jpg"
 
 import { BiLinkExternal } from 'react-icons/bi'
@@ -432,7 +432,7 @@ const SectionWorks = () => {
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
             <img
-              src={ffcc1}
+              src={ffcc_home}
               alt="First slide"
             />
           </div>
@@ -477,7 +477,7 @@ const SectionWorks = () => {
               </li>
             </ul>
             <div className="buttons">
-              <a href="https://github.com/Feliiks/lsvibes-client" target="_blank" rel="noreferrer">
+              <a href="https://github.com/ludovic-sbr/lsvibes" target="_blank" rel="noreferrer">
                 <button id="github">
                   GitHub repository <BiLinkExternal />
                 </button>
@@ -491,7 +491,7 @@ const SectionWorks = () => {
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
             <img
-              src={lsvibes1}
+              src={lsvibes_home}
               alt="First slide"
             />
           </div>

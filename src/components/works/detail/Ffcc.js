@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
-import ffcc1 from "../../../assets/works/cartejeuneffcc.jpg"
+import ffcc_home from "../../../assets/works/ffcc/ffcc_home.jpg"
+import ffcc_profile from "../../../assets/works/ffcc/ffcc_profile.jpg"
+import ffcc_login from "../../../assets/works/ffcc/ffcc_login.jpg"
 import { BiLinkExternal } from 'react-icons/bi'
 
 const Ffcc = () => {
@@ -20,7 +22,7 @@ const Ffcc = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={ffcc1}
+                    src={ffcc_home}
                     alt="First slide"
                   />
                 </div>
@@ -28,7 +30,7 @@ const Ffcc = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={ffcc1}
+                    src={ffcc_login}
                     alt="First slide"
                   />
                 </div>
@@ -36,15 +38,7 @@ const Ffcc = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={ffcc1}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={ffcc1}
+                    src={ffcc_profile}
                     alt="First slide"
                   />
                 </div>
