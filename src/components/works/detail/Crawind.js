@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
-import crawind_orders from "../../../assets/works/crawind/orders.jpg"
+import orders from "../../../assets/works/crawind/orders.jpg"
+import view_order from "../../../assets/works/crawind/view_order.jpg"
 import { BiLinkExternal } from 'react-icons/bi'
 
 const Crawind = () => {
@@ -20,7 +21,7 @@ const Crawind = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={crawind_orders}
+                    src={orders}
                     alt="First slide"
                   />
                 </div>
@@ -28,7 +29,7 @@ const Crawind = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={crawind_orders}
+                    src={view_order}
                     alt="First slide"
                   />
                 </div>
@@ -36,7 +37,7 @@ const Crawind = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={crawind_orders}
+                    src={orders}
                     alt="First slide"
                   />
                 </div>
@@ -44,7 +45,7 @@ const Crawind = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={crawind_orders}
+                    src={view_order}
                     alt="First slide"
                   />
                 </div>
@@ -70,9 +71,13 @@ const Crawind = () => {
                 <br />
                 → Base de données MySQL.
                 <br />
-                → WebStorm et ItelliJ comme IDE's.
+                → Gitlab, Gitlab CI & Docker.
                 <br />
-                → Gestion de versions avec Gitlab.
+                → Préprocesseur CSS Sass.
+                <br />
+                → Redux pour la centralisation de l'état.
+                <br />
+                → Tests unitaires avec JEst.
               </p>
             </div>
 
@@ -89,7 +94,7 @@ const Crawind = () => {
                 <br/>
                 → Consulter la liste des produits.
                 <br />
-                → Se connecter et se déconnecter.
+                → Se connecter, s'inscrire et se déconnecter.
               </p>
             </div>
 

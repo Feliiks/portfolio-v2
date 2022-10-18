@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
-import hts1 from "../../../assets/works/hts1.jpg"
+import hts1 from "../../../assets/works/hts/hts1.jpg"
+import hts_1 from "../../../assets/works/hts/hts_1.jpg"
+import hts_2 from "../../../assets/works/hts/hts_2.jpg"
+import hts_3 from "../../../assets/works/hts/hts_3.jpg"
 import { BiLinkExternal } from 'react-icons/bi'
 
 const Hts = () => {
@@ -28,7 +31,7 @@ const Hts = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={hts1}
+                    src={hts_1}
                     alt="First slide"
                   />
                 </div>
@@ -36,7 +39,7 @@ const Hts = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={hts1}
+                    src={hts_2}
                     alt="First slide"
                   />
                 </div>
@@ -44,7 +47,7 @@ const Hts = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={hts1}
+                    src={hts_3}
                     alt="First slide"
                   />
                 </div>
@@ -54,40 +57,21 @@ const Hts = () => {
             <div className="row mt-5">
               <h3> Introduction </h3>
               <p>
-                Crawford Industries est une entreprise fictive de fabrication et de
-                vente de matériel de défense aux Etats-Unis. Ce projet consiste à développer un SaaS
-                afin d'en faciliter la gestion des commandes, des produits ou encore
-                de la comptabilité.
+                Dans le cadre du développement de leur nouvelle activité, l'équipe
+                d'Hacking Time Square, hackers éthiques, ont décidé de créer une
+                landing page avec vidéo et son intégrés, qui met en scène un ordinateur
+                qui vient d'être introduit.
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Environnement technique </h3>
               <p>
-                → ...
+                → Interfaces sous React.js.
                 <br />
-                → ...
+                → Maquettes réalisées avec Sketch.
                 <br />
-                → ...
-                <br/>
-                → ...
-                <br />
-                → ...
-              </p>
-            </div>
-
-            <div className="row mt-5">
-              <h3> Fonctionnalités </h3>
-              <p>
-                → ...
-                <br />
-                → ...
-                <br />
-                → ...
-                <br/>
-                → ...
-                <br />
-                → ...
+                → Préprocesseur CSS Sass.
               </p>
             </div>
 
@@ -108,7 +92,7 @@ const Hts = () => {
 
             <div className="row mt-5">
               <h3> Ressources associées </h3>
-              <a href="https://gitlab.com/crawind-web" target="_blank"><BiLinkExternal /> Code source.</a>
+              <a href="https://github.com/Feliiks/hacking-times-square" target="_blank" rel="noreferrer"><BiLinkExternal /> Code source.</a>
               <br />
               <a href="#"><BiLinkExternal /> Cahier des charges.</a>
             </div>

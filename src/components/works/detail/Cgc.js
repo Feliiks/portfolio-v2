@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
-import scgc1 from "../../../assets/works/scgc.jpg"
+import solana from '../../../assets/works/solana/solana1.jpg'
+import solana_about from '../../../assets/works/solana/solana_about.jpg'
+import solana_team from '../../../assets/works/solana/solana_team.jpg'
 import { BiLinkExternal } from 'react-icons/bi'
 
 const Cgc = () => {
@@ -10,7 +12,7 @@ const Cgc = () => {
 
   return (
     <>
-      <Preloader />
+      <Preloader/>
       <div className="works">
         <div className="section-bg container">
           <div className="row section-works">
@@ -18,33 +20,28 @@ const Cgc = () => {
 
             <div className="row work-container mx-auto">
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
+                <div className="work-carousel mx-auto"
+                     style={{ background: 'none' }}>
                   <img
-                    src={scgc1}
+                    src={solana}
                     alt="First slide"
                   />
                 </div>
               </div>
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
+                <div className="work-carousel mx-auto"
+                     style={{ background: 'none' }}>
                   <img
-                    src={scgc1}
+                    src={solana_about}
                     alt="First slide"
                   />
                 </div>
               </div>
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
+                <div className="work-carousel mx-auto"
+                     style={{ background: 'none' }}>
                   <img
-                    src={scgc1}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={scgc1}
+                    src={solana_team}
                     alt="First slide"
                   />
                 </div>
@@ -54,40 +51,22 @@ const Cgc = () => {
             <div className="row mt-5">
               <h3> Introduction </h3>
               <p>
-                Crawford Industries est une entreprise fictive de fabrication et de
-                vente de matériel de défense aux Etats-Unis. Ce projet consiste à développer un SaaS
-                afin d'en faciliter la gestion des commandes, des produits ou encore
-                de la comptabilité.
+                Afin de faire connaître leur activité, le SCGC a fait appel à
+                moi afin de développeur leur site vitrine, leur permettant ainsi
+                de présenter convenablement leur entreprise.
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Environnement technique </h3>
               <p>
-                → ...
-                <br />
-                → ...
-                <br />
-                → ...
+                → Interfaces sous React.js.
                 <br/>
-                → ...
-                <br />
-                → ...
-              </p>
-            </div>
-
-            <div className="row mt-5">
-              <h3> Fonctionnalités </h3>
-              <p>
-                → ...
-                <br />
-                → ...
-                <br />
-                → ...
+                → Maquettes réalisées avec Canva Pro.
                 <br/>
-                → ...
-                <br />
-                → ...
+                → Préprocesseur CSS Sass.
+                <br/>
+                → Framework CSS Bootstrap.
               </p>
             </div>
 
@@ -95,22 +74,23 @@ const Cgc = () => {
               <h3> Compétences associées </h3>
               <p>
                 → ...
-                <br />
-                → ...
-                <br />
+                <br/>
                 → ...
                 <br/>
                 → ...
-                <br />
+                <br/>
+                → ...
+                <br/>
                 → ...
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Ressources associées </h3>
-              <a href="https://gitlab.com/crawind-web" target="_blank"><BiLinkExternal /> Code source.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Cahier des charges.</a>
+              <a href="https://github.com/Feliiks/cannabis-growers"
+                 target="_blank" rel="noreferrer"><BiLinkExternal/> Code source.</a>
+              <br/>
+              <a href="#"><BiLinkExternal/> Cahier des charges.</a>
             </div>
           </div>
         </div>

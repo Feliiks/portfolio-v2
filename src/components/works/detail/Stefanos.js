@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
-import stefanos1 from '../../../assets/works/stefanos1.jpg'
+import stefanos1 from '../../../assets/works/stefanos/stefanos1.jpg'
+import stefanos_login from '../../../assets/works/stefanos/stefanos_login.jpg'
+import stefanos_admin from '../../../assets/works/stefanos/stefanos_admin.jpg'
+import stefanos_pronostics from '../../../assets/works/stefanos/stefanos_pronostics.jpg'
 import { BiLinkExternal } from 'react-icons/bi'
 
 const Stefanos = () => {
@@ -28,7 +31,7 @@ const Stefanos = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={stefanos1}
+                    src={stefanos_login}
                     alt="First slide"
                   />
                 </div>
@@ -36,7 +39,7 @@ const Stefanos = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={stefanos1}
+                    src={stefanos_admin}
                     alt="First slide"
                   />
                 </div>
@@ -44,7 +47,7 @@ const Stefanos = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={stefanos1}
+                    src={stefanos_pronostics}
                     alt="First slide"
                   />
                 </div>
@@ -54,40 +57,51 @@ const Stefanos = () => {
             <div className="row mt-5">
               <h3> Introduction </h3>
               <p>
-                Crawford Industries est une entreprise fictive de fabrication et de
-                vente de matériel de défense aux Etats-Unis. Ce projet consiste à développer un SaaS
-                afin d'en faciliter la gestion des commandes, des produits ou encore
-                de la comptabilité.
+                Suivis par plus de 15 000 abonnés sur Twitter, Stefanos a voulu se lancer
+                dans la publication de pronostics par abonnement. Afin de répondre à ce besoin,
+                j'ai développé pour eux une application web entièrement fonctionnelle.
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Environnement technique </h3>
               <p>
-                → ...
+                → Interfaces sous React.js.
                 <br />
-                → ...
+                → API Rest sous Node.js.
                 <br />
-                → ...
+                → Library de composants Material UI.
                 <br/>
-                → ...
+                → Tests unitaires avec JEst.
                 <br />
-                → ...
+                → Gitlab, Gitlab CI & Docker.
+                <br />
+                → Base de données MongoDB, ODM Mongoose.
+                <br />
+                → Notion en tant que CMS (pronostics).
+                <br />
+                → Analyse du code avec ESLint.
+                <br />
+                → Préprocesseur CSS Sass.
+                <br />
+                → Redux pour la centralisation de l'état.
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Fonctionnalités </h3>
               <p>
-                → ...
+                → Se connecter et s'inscrire (manuel ou Google).
                 <br />
-                → ...
+                → Acheter un mois d'abonnement V.I.P ou Grand Chelem.
                 <br />
-                → ...
+                → Voir les pronostics publiés.
                 <br/>
-                → ...
+                → Consulter ses informations de compte et les modifier.
                 <br />
-                → ...
+                → Admin : créer et supprimer un événement.
+                <br />
+                → Admin : Gérer les utilisateurs et les abonnements.
               </p>
             </div>
 
@@ -110,7 +124,7 @@ const Stefanos = () => {
               <h3> Ressources associées </h3>
               <a href="#"><BiLinkExternal /> Fiche de présentation de projet.</a>
               <br />
-              <a href="https://gitlab.com/crawind-web" target="_blank"><BiLinkExternal /> Code source.</a>
+              <a href="https://github.com/Feliiks/stefanos" target="_blank"><BiLinkExternal /> Code source.</a>
               <br />
               <a href="#"><BiLinkExternal /> Cahier des charges.</a>
               <br />

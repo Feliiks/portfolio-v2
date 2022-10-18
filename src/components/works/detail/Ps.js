@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
-import stefanos1 from '../../../assets/works/stefanos1.jpg'
+import stefanos1 from '../../../assets/works/stefanos/stefanos1.jpg'
 import { BiLinkExternal } from 'react-icons/bi'
 
 const Ps = () => {
@@ -65,15 +65,19 @@ const Ps = () => {
             <div className="row mt-5">
               <h3> Environnement technique </h3>
               <p>
-                → ...
+                → Base de données PostgreSQL.
                 <br />
-                → ...
+                → API Rest Spring Boot (Clean architecture).
                 <br />
-                → ...
+                → Interfaces sous React.js avec surcouche Typescript.
                 <br/>
-                → ...
+                → Gestion de versions avec GitLab.
                 <br />
-                → ...
+                → CI/CD avec Gitlab et Docker.
+                <br />
+                → Styles avec Styled Components.
+                <br />
+                → Redux pour la centralisation de l'état.
               </p>
             </div>
 

@@ -54,45 +54,44 @@ const Ffcc = () => {
             <div className="row mt-5">
               <h3> Introduction </h3>
               <p>
-                Crawford Industries est une entreprise fictive de fabrication et de
-                vente de matériel de défense aux Etats-Unis. Ce projet consiste à développer un SaaS
-                afin d'en faciliter la gestion des commandes, des produits ou encore
-                de la comptabilité.
+                Dans le cadre de mon stage de première année de BTS, j'ai pu travailler
+                sur la nouvelle fonctionnalité du site web de la Fédération française de
+                Course Camargaise. Cette web app permet la demande et la gestion de sa carte jeune.
+                Cette carte jeune est ensuite scannée à l'entrée des arênes afin de pouvoir
+                bénéficier d'un tarif préférentiel.
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Environnement technique </h3>
               <p>
-                → Interfaces réalisées sous React.js.
+                → Interfaces réalisées sous Angular.
                 <br />
-                → API Rest développée sous Spring Boot.
+                → API Rest développée Node.js.
                 <br />
-                → Base de données MySQL.
-                <br />
-                → WebStorm et ItelliJ comme IDE's.
+                → Base de données MySQL & Prisma ORM.
                 <br />
                 → Gestion de versions avec Gitlab.
-              </p>
-            </div>
-
-            <div className="row mt-5">
-              <h3> Environnement technique </h3>
-              <p>
-                → ...
                 <br />
-                → ...
-                <br />
-                → ...
-                <br/>
-                → ...
-                <br />
-                → ...
+                → Gestion de projet avec Slack.
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Fonctionnalités </h3>
+              <p>
+                → Se connecter et s'inscrire.
+                <br />
+                → Demander une nouvelle carte jeune.
+                <br />
+                → Consulter sa carte jeune.
+                <br/>
+                → Télécharger sa carte jeune.
+              </p>
+            </div>
+
+            <div className="row mt-5">
+              <h3> Compétences associées </h3>
               <p>
                 → ...
                 <br />
@@ -110,7 +109,7 @@ const Ffcc = () => {
               <h3> Ressources associées </h3>
               <a href="#"><BiLinkExternal /> Fiche de présentation de projet.</a>
               <br />
-              <a href="https://gitlab.com/crawind-web" target="_blank"><BiLinkExternal /> Code source.</a>
+              <a href="https://github.com/Feliiks/carte-jeune-ffcc" target="_blank"><BiLinkExternal /> Code source.</a>
               <br />
               <a href="#"><BiLinkExternal /> Cahier des charges.</a>
               <br />

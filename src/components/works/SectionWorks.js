@@ -20,11 +20,11 @@ import typescript from "../../assets/skills/typescript.png"
 import sql from "../../assets/skills/sql.png"
 import gitlab from "../../assets/skills/gitlab.png"
 
-import stefanos1 from "../../assets/works/stefanos1.jpg"
-import andrea1 from "../../assets/works/andrea1.jpg"
+import stefanos1 from "../../assets/works/stefanos/stefanos1.jpg"
+import andrea1 from "../../assets/works/andrea/andrea1.jpg"
 import lsvibes1 from "../../assets/works/lsvibes1.jpg"
-import scgc1 from "../../assets/works/scgc.jpg"
-import hts1 from "../../assets/works/hts1.jpg"
+import scgc1 from "../../assets/works/solana/solana1.jpg"
+import hts1 from "../../assets/works/hts/hts1.jpg"
 import ffcc1 from "../../assets/works/cartejeuneffcc.jpg"
 import crawind_orders from "../../assets/works/crawind/orders.jpg"
 
@@ -71,11 +71,9 @@ const SectionWorks = () => {
               </li>
             </ul>
             <div className="buttons">
-              <a href="https://github.com/Feliiks/stefanos" target="_blank" rel="noreferrer">
                 <button id="github" disabled>
                   Code non consultable
                 </button>
-              </a>
               <Link to="/works/detail/procedes-speciaux" style={{ width: '40%' }}>
                 <button id="mission-detail"> Plus de détails </button>
               </Link>
