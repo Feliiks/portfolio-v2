@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
-import stefanos1 from '../../../assets/works/stefanos/stefanos1.jpg'
+import ps_login from '../../../assets/works/ps/ps_login.jpg'
 import { BiLinkExternal } from 'react-icons/bi'
 
 const Ps = () => {
@@ -20,7 +20,7 @@ const Ps = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={stefanos1}
+                    src={ps_login}
                     alt="First slide"
                   />
                 </div>
@@ -28,7 +28,7 @@ const Ps = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={stefanos1}
+                    src={ps_login}
                     alt="First slide"
                   />
                 </div>
@@ -36,7 +36,7 @@ const Ps = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={stefanos1}
+                    src={ps_login}
                     alt="First slide"
                   />
                 </div>
@@ -44,7 +44,7 @@ const Ps = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={stefanos1}
+                    src={ps_login}
                     alt="First slide"
                   />
                 </div>

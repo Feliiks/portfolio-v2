@@ -15,9 +15,10 @@ const Index = () => {
           <div className="lst-menu d-none col-md-6 d-md-block">
             <h4> MENU </h4>
             <ul>
-              <li> <HashLink className="footer-link" to="/about"> A propos </HashLink> </li>
-              <li> <HashLink className="footer-link" to="/works"> Travaux </HashLink> </li>
-              <li> <HashLink className="footer-link" to="/bts"> BTS </HashLink> </li>
+              <li> <HashLink className="footer-link" to="/a-propos"> A propos </HashLink> </li>
+              <li> <HashLink className="footer-link" to="/travaux"> Travaux </HashLink> </li>
+              <li> <HashLink className="footer-link" to="/tableau"> Tableau </HashLink> </li>
+              <li> <HashLink className="footer-link" to="/veille"> Veille </HashLink> </li>
             </ul>
           </div>
           <div className="lst-medias col-md-2">

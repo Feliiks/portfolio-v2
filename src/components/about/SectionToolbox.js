@@ -12,7 +12,7 @@ import sql from '../../assets/skills/sql.png'
 import angular from '../../assets/skills/angular.png'
 import git from '../../assets/skills/github.png'
 import nodejs from '../../assets/skills/nodejs.png'
-import datagrip from '../../assets/skills/datagrip.png'
+import jakarta from '../../assets/skills/jakarta.png'
 import nosql from '../../assets/skills/nosql.png'
 import bootstrap from '../../assets/skills/bootstrap.png'
 import typescript from '../../assets/skills/typescript.png'
@@ -22,7 +22,7 @@ import prisma from '../../assets/skills/prisma.svg'
 import redux from '../../assets/skills/redux.png'
 import sass from '../../assets/skills/sass.png'
 import mongoose from '../../assets/skills/mongoose.png'
-import webstorm from '../../assets/skills/webstorm.png'
+import springboot from '../../assets/skills/springboot.png'
 import axios from '../../assets/skills/axios.png'
 import stripe from '../../assets/skills/stripe.png'
 import mysql from '../../assets/skills/mysql.png'
@@ -80,8 +80,8 @@ const SectionToolbox = () => {
             <span> Node.js </span>
           </li>
           <li>
-            <img src={datagrip} alt="datagrip"/>
-            <span> DataGrip </span>
+            <img src={jakarta} alt="jakarta"/>
+            <span> Java </span>
           </li>
           <li>
             <img src={nosql} alt="nosql"/>
@@ -118,8 +118,8 @@ const SectionToolbox = () => {
             <span> Mongoose </span>
           </li>
           <li>
-            <img src={webstorm} alt="webstorm"/>
-            <span> WebStorm </span>
+            <img src={springboot} alt="springboot"/>
+            <span> SpringBoot </span>
           </li>
           <li>
             <img src={axios} alt="axios"/>
@@ -136,8 +136,8 @@ const SectionToolbox = () => {
         </ul>
       </div>
       <p className="mt-4">
-        Je suis spécialisé dans les technologies basées sur Javascript (Angular, React, Node)
-        et peu développer des applications web rapides, puissantes et scalables.
+        En parallèle de mes études, je me forme à de nouveaux languages et technologies
+        afin de rester à jours et de devenir toujours plus autonome.
       </p>
     </div>
   )

@@ -2,7 +2,9 @@ import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
 import lsvibes_home from '../../../assets/works/lsvibes/lsvibes_home.jpg'
 import lsvibes_profile from '../../../assets/works/lsvibes/lsvibes_profile.jpg'
-import lsvibes_profile2 from '../../../assets/works/lsvibes/lsvibes_profile2.jpg'
+import lsvibes_trello from '../../../assets/works/lsvibes/lsvibes_trello.jpg'
+import lsvibes_register from '../../../assets/works/lsvibes/lsvibes_register.jpg'
+
 import { BiLinkExternal } from 'react-icons/bi'
 
 const Lsvibes = () => {
@@ -32,6 +34,15 @@ const Lsvibes = () => {
                 <div className="work-carousel mx-auto"
                      style={{ background: 'none' }}>
                   <img
+                    src={lsvibes_trello}
+                    alt="First slide"
+                  />
+                </div>
+              </div>
+              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
+                <div className="work-carousel mx-auto"
+                     style={{ background: 'none' }}>
+                  <img
                     src={lsvibes_profile}
                     alt="First slide"
                   />
@@ -41,16 +52,7 @@ const Lsvibes = () => {
                 <div className="work-carousel mx-auto"
                      style={{ background: 'none' }}>
                   <img
-                    src={lsvibes_profile2}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={lsvibes_profile2}
+                    src={lsvibes_register}
                     alt="First slide"
                   />
                 </div>

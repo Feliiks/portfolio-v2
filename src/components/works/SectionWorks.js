@@ -20,6 +20,7 @@ import typescript from "../../assets/skills/typescript.png"
 import sql from "../../assets/skills/sql.png"
 import gitlab from "../../assets/skills/gitlab.png"
 
+import ps_login from "../../assets/works/ps/ps_login.jpg"
 import stefanos1 from "../../assets/works/stefanos/stefanos1.jpg"
 import andrea1 from "../../assets/works/andrea/andrea1.jpg"
 import lsvibes_home from "../../assets/works/lsvibes/lsvibes_home.jpg"
@@ -83,7 +84,7 @@ const SectionWorks = () => {
         <div className="col-xl-6 p-0 d-flex align-items-center">
           <div className="work-carousel mx-auto">
             <img
-              src={stefanos1}
+              src={ps_login}
               alt="First slide"
             />
           </div>

@@ -44,10 +44,10 @@ const Index = () => {
           </div>
           <ul className="navbar-nav d-flex flex-md-row flex-column">
             <li className="nav-item">
-              <Link className="nav-link" to="/about"> A propos </Link>
+              <Link className="nav-link" to="/a-propos"> A propos </Link>
             </li>
             <li className="nav-item me-md-5 ms-md-5 mt-3 mb-3 mt-md-0 mb-md-0">
-              <Link className="nav-link" to="/works"> Travaux </Link>
+              <Link className="nav-link" to="/travaux"> Travaux </Link>
             </li>
             <li className="nav-item me-md-5 ms-md-0 mt-3 mb-3 mt-md-0 mb-md-0">
               <Link className="nav-link" to="/tableau"> Tableau </Link>

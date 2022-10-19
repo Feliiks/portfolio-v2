@@ -1,8 +1,139 @@
-@import url('http://fonts.cdnfonts.com/css/ramaraja');
-@import url('https://rsms.me/inter/inter.css');
+@font-face {
+  font-family: 'Ramaraja';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ramaraja'), url(https://fonts.cdnfonts.com/s/15899/Ramaraja-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-Regular.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: italic;
+  font-weight: 400;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-Italic.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 100;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-Thin-BETA.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: italic;
+  font-weight: 100;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-ThinItalic-BETA.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 200;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-ExtraLight-BETA.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: italic;
+  font-weight: 200;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-ExtraLightItalic-BETA.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-Light-BETA.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: italic;
+  font-weight: 300;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-LightItalic-BETA.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 500;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-Medium.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: italic;
+  font-weight: 500;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-MediumItalic.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-SemiBold.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: italic;
+  font-weight: 600;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-SemiBoldItalic.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-Bold.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: italic;
+  font-weight: 700;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-BoldItalic.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 800;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-ExtraBold.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: italic;
+  font-weight: 800;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-ExtraBoldItalic.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 900;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-Black.woff) format('woff')
+}
+
+@font-face {
+  font-family: inter;
+  font-style: italic;
+  font-weight: 900;
+  src: local('Inter'), url(https://fonts.cdnfonts.com/s/19795/Inter-BlackItalic.woff) format('woff')
+}
 
 html, body {
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
 
   background: #0B0023;
   color: #fff;
@@ -29,7 +160,8 @@ h2 {
 
 .l-btn {
   position: fixed;
-  right: 15px; bottom: 15px;
+  right: 15px;
+  bottom: 15px;
 
   color: #fff;
   cursor: pointer;

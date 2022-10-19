@@ -28,8 +28,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/works" element={<Works />} />
+        <Route path="/a-propos" element={<About />} />
+        <Route path="/travaux" element={<Works />} />
         <Route path="/tableau" element={<Tableau />} />
         <Route path="/veille" element={<Veille />} />
 

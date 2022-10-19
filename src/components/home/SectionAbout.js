@@ -24,7 +24,7 @@ const SectionAbout = () => {
           en tant que développeur indépendant, ce qui m'a permis d'engranger beaucoup de connaissances et de
           me rendre un peu plus autonome.
         </p>
-        <Link to="/about">
+        <Link to="/a-propos">
           <button className="btn"> Voir plus </button>
         </Link>
       </div>
