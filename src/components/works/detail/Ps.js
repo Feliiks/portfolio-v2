@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
 import ps_login from '../../../assets/works/ps/ps_login.jpg'
+import ps_bdd from '../../../assets/works/ps/ps_bdd.jpg'
 import { BiLinkExternal } from 'react-icons/bi'
 
 const Ps = () => {
@@ -28,7 +29,7 @@ const Ps = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={ps_login}
+                    src={ps_bdd}
                     alt="First slide"
                   />
                 </div>
