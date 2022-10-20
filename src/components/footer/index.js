@@ -17,7 +17,7 @@ const Index = () => {
             <ul>
               <li> <HashLink className="footer-link" to="/a-propos"> A propos </HashLink> </li>
               <li> <HashLink className="footer-link" to="/travaux"> Travaux </HashLink> </li>
-              <li> <HashLink className="footer-link" to="/tableau"> Tableau </HashLink> </li>
+              <li> <HashLink className="footer-link" to="/documents"> Documents </HashLink> </li>
               <li> <HashLink className="footer-link" to="/veille"> Veille </HashLink> </li>
             </ul>
           </div>

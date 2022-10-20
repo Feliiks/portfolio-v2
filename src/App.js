@@ -7,7 +7,7 @@ import Header from "./components/header"
 import Home from "./components/home"
 import About from "./components/about"
 import Works from "./components/works"
-import Tableau from "./components/tableau"
+import Documents from "./components/documents"
 import Veille from './components/veille'
 
 import Footer from "./components/footer"
@@ -30,7 +30,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/a-propos" element={<About />} />
         <Route path="/travaux" element={<Works />} />
-        <Route path="/tableau" element={<Tableau />} />
+        <Route path="/documents" element={<Documents />} />
         <Route path="/veille" element={<Veille />} />
 
         <Route path="/works/detail/procedes-speciaux" element={<Ps />} />
