@@ -83,44 +83,15 @@ const Ps = () => {
             </div>
 
             <div className="row mt-5">
-              <h3> Fonctionnalités </h3>
+              <h3> Compétences acquises </h3>
               <p>
-                → ...
-                <br />
-                → ...
-                <br />
-                → ...
-                <br/>
-                → ...
-                <br />
-                → ...
-              </p>
-            </div>
-
-            <div className="row mt-5">
-              <h3> Compétences associées </h3>
-              <p>
-                → Gérer le patrimoine informatique.
-                <br />
-                → Répondre aux incidents et aux demandes d'assistance et d'évolution.
-                <br />
-                → Travailler en mode projet.
-                <br/>
-                → Mettre à disposition des utilisateurs un service informatique.
-                <br />
-                → Organiser son développement professionnel.
+                ...
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Ressources associées </h3>
-              <a href="#"><BiLinkExternal /> Fiche de présentation de projet.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Code source.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Cahier des charges.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Schéma de base de données.</a>
+              <a href="/"><BiLinkExternal /> Attestation d'apprentissage. </a>
             </div>
           </div>
         </div>

@@ -82,48 +82,15 @@ const Crawind = () => {
             </div>
 
             <div className="row mt-5">
-              <h3> Fonctionnalités </h3>
+              <h3> Compétences acquises </h3>
               <p>
-                → Voir le détail, créer, modifier et supprimer une commande.
-                <br />
-                → Voir le détail, créer, modifier et supprimer un produit des stocks.
-                <br />
-                → Créer, modifier et supprimer un client.
-                <br />
-                → Voir les statistiques sur la comptabilité.
-                <br/>
-                → Consulter la liste des produits.
-                <br />
-                → Se connecter, s'inscrire et se déconnecter.
-              </p>
-            </div>
-
-            <div className="row mt-5">
-              <h3> Compétences associées </h3>
-              <p>
-                → ...
-                <br />
-                → ...
-                <br />
-                → ...
-                <br/>
-                → ...
-                <br />
-                → ...
+                ...
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Ressources associées </h3>
-              <a href="#"><BiLinkExternal /> Fiche de présentation de projet.</a>
-              <br />
-              <a href="https://gitlab.com/crawind-web" target="_blank"><BiLinkExternal /> Code source.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Cahier des charges.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Schéma de base de données.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Rapports de test.</a>
+              <a href="https://gitlab.com/crawind-web" target="_blank" rel="noreferrer"><BiLinkExternal /> Code source.</a>
             </div>
           </div>
         </div>

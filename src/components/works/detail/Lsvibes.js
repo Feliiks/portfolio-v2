@@ -92,49 +92,16 @@ const Lsvibes = () => {
             </div>
 
             <div className="row mt-5">
-              <h3> Fonctionnalités </h3>
+              <h3> Compétences acquises </h3>
               <p>
-                → Se connecter et s'inscrire.
-                <br/>
-                → Consulter ses informations de compte et les modifier.
-                <br/>
-                → Réaliser diverses demandes via formulaires.
-                <br/>
-                → Consulter le nombre de joueurs en ligne sur le serveur de jeu.
-                <br/>
-                → Demander un accès au serveur de jeu via formulaire.
-                <br/>
-                → Admin: Gérer les diverses demandes (CRUD).
-              </p>
-            </div>
-
-            <div className="row mt-5">
-              <h3> Compétences associées </h3>
-              <p>
-                → ...
-                <br/>
-                → ...
-                <br/>
-                → ...
-                <br/>
-                → ...
-                <br/>
-                → ...
+                ...
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Ressources associées </h3>
-              <a href="#"><BiLinkExternal/> Fiche de présentation de projet.</a>
-              <br/>
               <a href="https://github.com/ludovic-sbr/lsvibes"
-                 target="_blank"><BiLinkExternal/> Code source.</a>
-              <br/>
-              <a href="#"><BiLinkExternal/> Cahier des charges.</a>
-              <br/>
-              <a href="#"><BiLinkExternal/> Schéma de base de données.</a>
-              <br/>
-              <a href="#"><BiLinkExternal/> Rapports de test.</a>
+                 target="_blank" rel="noreferrer"><BiLinkExternal/> Code source.</a>
             </div>
           </div>
         </div>

@@ -76,7 +76,7 @@ const Hts = () => {
             </div>
 
             <div className="row mt-5">
-              <h3> Compétences associées </h3>
+              <h3> Compétences acquises </h3>
               <p>
                 → ...
                 <br />
@@ -93,8 +93,6 @@ const Hts = () => {
             <div className="row mt-5">
               <h3> Ressources associées </h3>
               <a href="https://github.com/Feliiks/hacking-times-square" target="_blank" rel="noreferrer"><BiLinkExternal /> Code source.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Cahier des charges.</a>
             </div>
           </div>
         </div>

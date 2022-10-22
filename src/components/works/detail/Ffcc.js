@@ -3,6 +3,7 @@ import Preloader from '../../preloader'
 import ffcc_home from "../../../assets/works/ffcc/ffcc_home.jpg"
 import ffcc_profile from "../../../assets/works/ffcc/ffcc_profile.jpg"
 import ffcc_login from "../../../assets/works/ffcc/ffcc_login.jpg"
+import attestation_stage from "../../../assets/works/ffcc/attestation_stage_ffcc.pdf"
 import { BiLinkExternal } from 'react-icons/bi'
 
 const Ffcc = () => {
@@ -72,44 +73,17 @@ const Ffcc = () => {
             </div>
 
             <div className="row mt-5">
-              <h3> Fonctionnalités </h3>
+              <h3> Compétences acquises </h3>
               <p>
-                → Se connecter et s'inscrire.
-                <br />
-                → Demander une nouvelle carte jeune.
-                <br />
-                → Consulter sa carte jeune.
-                <br/>
-                → Télécharger sa carte jeune.
-              </p>
-            </div>
-
-            <div className="row mt-5">
-              <h3> Compétences associées </h3>
-              <p>
-                → ...
-                <br />
-                → ...
-                <br />
-                → ...
-                <br/>
-                → ...
-                <br />
-                → ...
+                ...
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Ressources associées </h3>
-              <a href="#"><BiLinkExternal /> Fiche de présentation de projet.</a>
+              <a href="https://github.com/Feliiks/carte-jeune-ffcc" target="_blank" rel="noreferrer"><BiLinkExternal /> Code source. </a>
               <br />
-              <a href="https://github.com/Feliiks/carte-jeune-ffcc" target="_blank"><BiLinkExternal /> Code source.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Cahier des charges.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Schéma de base de données.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Rapports de test.</a>
+              <a href={attestation_stage} target="_blank" rel="noreferrer"><BiLinkExternal /> Attestation de stage. </a>
             </div>
           </div>
         </div>

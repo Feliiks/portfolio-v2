@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
 import stefanos1 from '../../../assets/works/stefanos/stefanos1.jpg'
-import stefanos_login from '../../../assets/works/stefanos/stefanos_login.jpg'
+import stefanos_bdd from '../../../assets/works/stefanos/stefanos_bdd.jpg'
 import stefanos_admin from '../../../assets/works/stefanos/stefanos_admin.jpg'
 import stefanos_pronostics from '../../../assets/works/stefanos/stefanos_pronostics.jpg'
 import { BiLinkExternal } from 'react-icons/bi'
@@ -31,7 +31,7 @@ const Stefanos = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={stefanos_login}
+                    src={stefanos_bdd}
                     alt="First slide"
                   />
                 </div>
@@ -89,48 +89,15 @@ const Stefanos = () => {
             </div>
 
             <div className="row mt-5">
-              <h3> Fonctionnalités </h3>
+              <h3> Compétences acquises </h3>
               <p>
-                → Se connecter et s'inscrire (manuel ou Google).
-                <br />
-                → Acheter un mois d'abonnement V.I.P ou Grand Chelem.
-                <br />
-                → Voir les pronostics publiés.
-                <br/>
-                → Consulter ses informations de compte et les modifier.
-                <br />
-                → Admin : créer et supprimer un événement.
-                <br />
-                → Admin : Gérer les utilisateurs et les abonnements.
-              </p>
-            </div>
-
-            <div className="row mt-5">
-              <h3> Compétences associées </h3>
-              <p>
-                → ...
-                <br />
-                → ...
-                <br />
-                → ...
-                <br/>
-                → ...
-                <br />
-                → ...
+                ...
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Ressources associées </h3>
-              <a href="#"><BiLinkExternal /> Fiche de présentation de projet.</a>
-              <br />
-              <a href="https://github.com/Feliiks/stefanos" target="_blank"><BiLinkExternal /> Code source.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Cahier des charges.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Schéma de base de données.</a>
-              <br />
-              <a href="#"><BiLinkExternal /> Rapports de test.</a>
+              <a href="https://github.com/Feliiks/stefanos" target="_blank" rel="noreferrer"><BiLinkExternal /> Code source.</a>
             </div>
           </div>
         </div>
