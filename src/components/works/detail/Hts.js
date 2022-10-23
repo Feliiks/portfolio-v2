@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
 import hts1 from "../../../assets/works/hts/hts1.jpg"
 import hts_1 from "../../../assets/works/hts/hts_1.jpg"
-import hts_2 from "../../../assets/works/hts/hts_2.jpg"
+import hts_fiverr from "../../../assets/works/hts/hts_fiverr.jpg"
 import hts_3 from "../../../assets/works/hts/hts_3.jpg"
 import { BiLinkExternal } from 'react-icons/bi'
 
@@ -39,7 +39,7 @@ const Hts = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={hts_2}
+                    src={hts_fiverr}
                     alt="First slide"
                   />
                 </div>
@@ -69,7 +69,7 @@ const Hts = () => {
               <p>
                 → Interfaces sous React.js.
                 <br />
-                → Maquettes réalisées avec Sketch.
+                → Maquettes réalisées par le client avec Sketch.
                 <br />
                 → Préprocesseur CSS Sass.
               </p>
@@ -78,15 +78,17 @@ const Hts = () => {
             <div className="row mt-5">
               <h3> Compétences acquises </h3>
               <p>
-                → ...
-                <br />
-                → ...
-                <br />
-                → ...
-                <br/>
-                → ...
-                <br />
-                → ...
+                Projet basé uniquement sur les interfaces et les maquettes étant déjà
+                réalisées par l'entreprise, ce projet m'a permis d'apprendre à développer
+                en me conformant à une charte graphique et des maquettes déjà définies.
+                <br /><br />
+                Quelques réunions en cours de projet ont mené à des changements et à des
+                adaptations, ce qui m'a poussé à développer ma capacité à m'adapter à la demande
+                du client.
+                <br /><br />
+                J'ai également fait face à des problèmes de lecture de médias selon les navigateurs
+                et à des problèmes de compatibilité, qui ont finalement été réglés avec des heures
+                de recherche.
               </p>
             </div>
 

@@ -4,6 +4,8 @@ import stefanos1 from '../../../assets/works/stefanos/stefanos1.jpg'
 import stefanos_bdd from '../../../assets/works/stefanos/stefanos_bdd.jpg'
 import stefanos_admin from '../../../assets/works/stefanos/stefanos_admin.jpg'
 import stefanos_pronostics from '../../../assets/works/stefanos/stefanos_pronostics.jpg'
+import stefanos_fiverr from '../../../assets/works/stefanos/stefanos_fiverr.jpg'
+import stefanos_figma from '../../../assets/works/stefanos/stefanos_figma.jpg'
 import { BiLinkExternal } from 'react-icons/bi'
 
 const Stefanos = () => {
@@ -52,6 +54,22 @@ const Stefanos = () => {
                   />
                 </div>
               </div>
+              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
+                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
+                  <img
+                    src={stefanos_fiverr}
+                    alt="First slide"
+                  />
+                </div>
+              </div>
+              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
+                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
+                  <img
+                    src={stefanos_figma}
+                    alt="First slide"
+                  />
+                </div>
+              </div>
             </div>
 
             <div className="row mt-5">
@@ -60,6 +78,9 @@ const Stefanos = () => {
                 Suivis par plus de 15 000 abonnés sur Twitter, Stefanos a voulu se lancer
                 dans la publication de pronostics par abonnement. Afin de répondre à ce besoin,
                 j'ai développé pour eux une application web entièrement fonctionnelle.
+                <br /><br />
+                Grâce à celle-ci, Stefanos Pronostics a réalisé plus de 1000 euros de vente
+                la première journée ainsi qu'enregistré plus de 100 inscriptions.
               </p>
             </div>
 
@@ -91,7 +112,19 @@ const Stefanos = () => {
             <div className="row mt-5">
               <h3> Compétences acquises </h3>
               <p>
-                ...
+                Travailler pour Stefanos Pronostics m'a permis pour la première fois
+                de développer un projet attendu par une communauté et donc avec des
+                contraintes de temps. Le projet a été developpé en trois semaines
+                comme convenu et des réunions hebdomadaires ont été réalisées.
+                <br /><br />
+                Voulant publier du contenu eux-même sur l'application, j'ai du réfléchir
+                pour la première fois à l'intégration d'un CMS dans une application React
+                et donc apprendre à intégrer une base de données Notion dans une application
+                React.
+                <br /><br />
+                Projet necessitant de croiser les données, un délais de réflexion m'a mené
+                à choisir une base de données NoSQL et donc MongoDB accompagné de Mongoose
+                en tant qu'ODM.
               </p>
             </div>
 

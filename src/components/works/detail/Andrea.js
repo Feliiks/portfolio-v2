@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
 import andrea1 from "../../../assets/works/andrea/andrea1.jpg"
 import andrea_cart from "../../../assets/works/andrea/andrea_cart.jpg"
-import andrea_consult from "../../../assets/works/andrea/andrea_consult.jpg"
 import andrea_program from "../../../assets/works/andrea/andrea_program.jpg"
+import andrea_fiverr from "../../../assets/works/andrea/andrea_fiverr.jpg"
 import { BiLinkExternal } from 'react-icons/bi'
 
 const Andrea = () => {
@@ -47,7 +47,7 @@ const Andrea = () => {
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <div className="work-carousel mx-auto" style={{ background: 'none' }}>
                   <img
-                    src={andrea_consult}
+                    src={andrea_fiverr}
                     alt="First slide"
                   />
                 </div>
@@ -59,7 +59,9 @@ const Andrea = () => {
               <p>
                 Afin d'accroitre son activité de naturopathe sur Marseille, Andrea a fait appel à
                 moi afin de développer sa présence sur internet et lui permettre de vendre
-                ses programmes via une boutique en ligne.
+                ses programmes via une boutique en ligne. J'ai donc développé pour elle une
+                application web où elle peut vendre ses programmes, publier ses e-books ou encore
+                prendre des rendez-vous.
               </p>
             </div>
 
@@ -85,7 +87,15 @@ const Andrea = () => {
             <div className="row mt-5">
               <h3> Compétences acquises </h3>
               <p>
-                ...
+                Premier projet développé en tant que freelance, cette mission m'a permis
+                de faire face pour la première aux différents problèmes que l'on peut rencontrer
+                lors de la livraison (mise en place du compte client, mise en production, ect...)
+                <br /><br />
+                J'ai également, pour la première fois, mis en place un système de paiement et une
+                base de données en temps réel (firebase).
+                <br /><br />
+                Enfin, ce projet m'a permis de progresser avec React.js et Node.js et de mettre en pratique
+                ce que j'ai pu apprendre en formation.
               </p>
             </div>
 

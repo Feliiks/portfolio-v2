@@ -84,7 +84,14 @@ const Crawind = () => {
             <div className="row mt-5">
               <h3> Compétences acquises </h3>
               <p>
-                ...
+                A l'occasion du développement de ce projet, j'ai pu mettre en pratique
+                les premières compétences acquises au cours de mon apprentissage
+                (atomic design, passage de React sous Typescript..).
+                <br /><br />
+                Prenant conscience du niveau attendu en entreprise, j'ai décidé pour
+                ce projet d'aller encore plus loin au niveau de la propreté du code mais
+                aussi de tester mon application ou encore d'adopter une nouvelle architecture
+                pour le projet.
               </p>
             </div>
 

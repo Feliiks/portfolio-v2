@@ -3,6 +3,7 @@ import Preloader from '../../preloader'
 import ffcc_home from "../../../assets/works/ffcc/ffcc_home.jpg"
 import ffcc_profile from "../../../assets/works/ffcc/ffcc_profile.jpg"
 import ffcc_login from "../../../assets/works/ffcc/ffcc_login.jpg"
+import ffcc_figma from "../../../assets/works/ffcc/ffcc_figma.jpg"
 import attestation_stage from "../../../assets/works/ffcc/attestation_stage_ffcc.pdf"
 import { BiLinkExternal } from 'react-icons/bi'
 
@@ -44,6 +45,14 @@ const Ffcc = () => {
                   />
                 </div>
               </div>
+              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
+                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
+                  <img
+                    src={ffcc_figma}
+                    alt="First slide"
+                  />
+                </div>
+              </div>
             </div>
 
             <div className="row mt-5">
@@ -75,7 +84,16 @@ const Ffcc = () => {
             <div className="row mt-5">
               <h3> Compétences acquises </h3>
               <p>
-                ...
+                Ce projet m'a permis de développer mes compétences de travail en mode projet.
+                3 développeurs sur cette application, nous avons dû mettre en place des outils
+                afin de coordonner notre travail.
+                <br /><br />
+                En charge du développement de la partie "carte jeune" de manière totalement
+                autonome (accompagné en cas de besoin), j'ai appris à présenter mon travail
+                devant une équipe mais aussi à effectuer des recherches par moi-même en cas
+                de difficultés.
+                <br /><br />
+                Ce projet m'a également permis d'utiliser pour la première fois Angular.
               </p>
             </div>
 

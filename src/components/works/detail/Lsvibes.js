@@ -3,7 +3,7 @@ import Preloader from '../../preloader'
 import lsvibes_home from '../../../assets/works/lsvibes/lsvibes_home.jpg'
 import lsvibes_profile from '../../../assets/works/lsvibes/lsvibes_profile.jpg'
 import lsvibes_trello from '../../../assets/works/lsvibes/lsvibes_trello.jpg'
-import lsvibes_register from '../../../assets/works/lsvibes/lsvibes_register.jpg'
+import lsvibes_figma from '../../../assets/works/lsvibes/lsvibes_figma.jpg'
 
 import { BiLinkExternal } from 'react-icons/bi'
 
@@ -43,7 +43,7 @@ const Lsvibes = () => {
                 <div className="work-carousel mx-auto"
                      style={{ background: 'none' }}>
                   <img
-                    src={lsvibes_profile}
+                    src={lsvibes_figma}
                     alt="First slide"
                   />
                 </div>
@@ -52,7 +52,7 @@ const Lsvibes = () => {
                 <div className="work-carousel mx-auto"
                      style={{ background: 'none' }}>
                   <img
-                    src={lsvibes_register}
+                    src={lsvibes_profile}
                     alt="First slide"
                   />
                 </div>
@@ -94,7 +94,17 @@ const Lsvibes = () => {
             <div className="row mt-5">
               <h3> Compétences acquises </h3>
               <p>
-                ...
+                LS Vibes m'a permis pour la toute première fois de travailler en mode projet.
+                Seul sur la partie web, j'ai du coordonner mon travail avec les développeurs
+                du jeu, notamment sur la partie gestion des données. Cela m'a permis également
+                d'agrandir mes connaissances sur les technologies et languages utilisés.
+                <br /><br />
+                Le développement des fonctionnalités web étant rythmées par celles du jeu,
+                la mise en place de Trello et la gestion de versions du code sur GitLab nous
+                ont permis d'avancer plus rapidement.
+                <br /><br />
+                Plusieurs réunions en cours de projet et la liaison du web avec le jeu m'ont
+                permis de développer mes compétences de travail en mode projet.
               </p>
             </div>
 
