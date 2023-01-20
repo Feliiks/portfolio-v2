@@ -20,6 +20,7 @@ import Cgc from './components/works/detail/Cgc'
 import Andrea from './components/works/detail/Andrea'
 import Ffcc from './components/works/detail/Ffcc'
 import Lsvibes from './components/works/detail/Lsvibes'
+import Lavandes from './components/works/detail/Lavandes'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/documents" element={<Documents />} />
         <Route path="/veille" element={<Veille />} />
 
+        <Route path="/works/detail/lavandes-webapp" element={<Lavandes />} />
         <Route path="/works/detail/procedes-speciaux" element={<Ps />} />
         <Route path="/works/detail/crawford-industries" element={<Crawind />} />
         <Route path="/works/detail/stefanos" element={<Stefanos />} />
