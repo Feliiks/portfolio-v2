@@ -17,14 +17,6 @@ const Documents = () => {
             <h2 className="mb-3"> TABLEAU DE SYNTHESE </h2>
             <embed src={tableau_de_synthese} width="800" height="600" type="application/pdf"/>
           </div>
-          <div className="row section-pricing mt-5">
-            <h2 className="mb-3"> RAPPORT DE STAGE </h2>
-            <embed src={tableau_de_synthese} width="800" height="600" type="application/pdf"/>
-          </div>
-          <div className="row section-pricing mt-5">
-            <h2 className="mb-3"> RAPPORT D'APPRENTISSAGE </h2>
-            <embed src={tableau_de_synthese} width="800" height="600" type="application/pdf"/>
-          </div>
         </div>
       </div>
     </>
