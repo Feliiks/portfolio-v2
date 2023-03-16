@@ -7,7 +7,7 @@ import mongodb from '../../assets/skills/mongodb.png'
 import reactjs from '../../assets/skills/reactjs.png'
 import javascript from '../../assets/skills/js.png'
 import firebase from '../../assets/skills/firebase.png'
-import sql from '../../assets/skills/sql.png'
+import flutter from '../../assets/skills/flutter.png'
 
 import angular from '../../assets/skills/angular.png'
 import git from '../../assets/skills/github.png'
@@ -24,7 +24,7 @@ import sass from '../../assets/skills/sass.png'
 import mongoose from '../../assets/skills/mongoose.png'
 import springboot from '../../assets/skills/springboot.png'
 import axios from '../../assets/skills/axios.png'
-import stripe from '../../assets/skills/stripe.png'
+import dart from '../../assets/skills/dart.png'
 import mysql from '../../assets/skills/mysql.png'
 
 const SectionToolbox = () => {
@@ -62,8 +62,8 @@ const SectionToolbox = () => {
             <span> Firebase </span>
           </li>
           <li>
-            <img src={sql} alt="sql"/>
-            <span> SQL </span>
+            <img src={flutter} alt="flutter"/>
+            <span> Flutter </span>
           </li>
         </ul>
         <ul className="skills-list col-12">
@@ -126,8 +126,8 @@ const SectionToolbox = () => {
             <span> Axios </span>
           </li>
           <li>
-            <img src={stripe} alt="stripe"/>
-            <span> Stripe </span>
+            <img src={dart} alt="dart"/>
+            <span> Dart </span>
           </li>
           <li>
             <img src={mysql} alt="mysql"/>

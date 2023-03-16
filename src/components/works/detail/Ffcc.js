@@ -23,7 +23,7 @@ const Ffcc = () => {
 
             <div className="row work-container mx-auto">
               <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
-                <Carousel>
+                <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true} interval={2500}>
                   <div>
                     <img src={ffcc_home} />
                   </div>
