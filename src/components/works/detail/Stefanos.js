@@ -7,6 +7,7 @@ import stefanos_pronostics from '../../../assets/works/stefanos/stefanos_pronost
 import stefanos_fiverr from '../../../assets/works/stefanos/stefanos_fiverr.jpg'
 import stefanos_figma from '../../../assets/works/stefanos/stefanos_figma.jpg'
 import { BiLinkExternal } from 'react-icons/bi'
+import { Carousel } from 'react-responsive-carousel'
 
 const Stefanos = () => {
   useEffect(() => {
@@ -22,53 +23,27 @@ const Stefanos = () => {
             <h2> PROJET : STEFANOS PRONOSTICS </h2>
 
             <div className="row work-container mx-auto">
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={stefanos1}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={stefanos_bdd}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={stefanos_admin}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={stefanos_pronostics}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={stefanos_fiverr}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={stefanos_figma}
-                    alt="First slide"
-                  />
-                </div>
+              <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
+                <Carousel>
+                  <div>
+                    <img src={stefanos1} />
+                  </div>
+                  <div>
+                    <img src={stefanos_bdd} />
+                  </div>
+                  <div>
+                    <img src={stefanos_admin} />
+                  </div>
+                  <div>
+                    <img src={stefanos_pronostics} />
+                  </div>
+                  <div>
+                    <img src={stefanos_fiverr} />
+                  </div>
+                  <div>
+                    <img src={stefanos_figma} />
+                  </div>
+                </Carousel>
               </div>
             </div>
 

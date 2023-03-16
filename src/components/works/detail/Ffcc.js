@@ -6,6 +6,7 @@ import ffcc_login from "../../../assets/works/ffcc/ffcc_login.jpg"
 import ffcc_figma from "../../../assets/works/ffcc/ffcc_figma.jpg"
 import attestation_stage from "../../../assets/works/ffcc/attestation_stage_ffcc.pdf"
 import { BiLinkExternal } from 'react-icons/bi'
+import { Carousel } from 'react-responsive-carousel'
 
 const Ffcc = () => {
   useEffect(() => {
@@ -21,37 +22,21 @@ const Ffcc = () => {
             <h2> PROJET : FF COURSE CAMARGUAISE </h2>
 
             <div className="row work-container mx-auto">
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={ffcc_home}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={ffcc_login}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={ffcc_profile}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={ffcc_figma}
-                    alt="First slide"
-                  />
-                </div>
+              <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
+                <Carousel>
+                  <div>
+                    <img src={ffcc_home} />
+                  </div>
+                  <div>
+                    <img src={ffcc_profile} />
+                  </div>
+                  <div>
+                    <img src={ffcc_login} />
+                  </div>
+                  <div>
+                    <img src={ffcc_figma} />
+                  </div>
+                </Carousel>
               </div>
             </div>
 

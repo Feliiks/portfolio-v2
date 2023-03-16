@@ -6,6 +6,7 @@ import lsvibes_trello from '../../../assets/works/lsvibes/lsvibes_trello.jpg'
 import lsvibes_figma from '../../../assets/works/lsvibes/lsvibes_figma.jpg'
 
 import { BiLinkExternal } from 'react-icons/bi'
+import { Carousel } from 'react-responsive-carousel'
 
 const Lsvibes = () => {
   useEffect(() => {
@@ -21,41 +22,21 @@ const Lsvibes = () => {
             <h2> PROJET : LS VIBES </h2>
 
             <div className="row work-container mx-auto">
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={lsvibes_home}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={lsvibes_trello}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={lsvibes_figma}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={lsvibes_profile}
-                    alt="First slide"
-                  />
-                </div>
+              <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
+                <Carousel>
+                  <div>
+                    <img src={lsvibes_home} />
+                  </div>
+                  <div>
+                    <img src={lsvibes_profile} />
+                  </div>
+                  <div>
+                    <img src={lsvibes_trello} />
+                  </div>
+                  <div>
+                    <img src={lsvibes_figma} />
+                  </div>
+                </Carousel>
               </div>
             </div>
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import flutter from '../../assets/skills/flutter.png'
+import dart from '../../assets/skills/dart.png'
 import jsx from '../../assets/skills/jsx.png'
 import reactjs from '../../assets/skills/reactjs.png'
 import javascript from '../../assets/skills/js.png'
@@ -28,7 +30,8 @@ import scgc1 from '../../assets/works/solana/solana1.jpg'
 import hts1 from '../../assets/works/hts/hts1.jpg'
 import ffcc_home from '../../assets/works/ffcc/ffcc_home.jpg'
 import crawind_orders from '../../assets/works/crawind/orders.jpg'
-import lavandes_home from '../../assets/works/lavandes/lavandes1.jpg'
+import lavandes_home from '../../assets/works/lavandes-web/lavandes1.jpg'
+import mobilapp_portfolio from '../../assets/works/lavandes-mobile/mobilapp_portfolio.png'
 
 import { BiLinkExternal } from 'react-icons/bi'
 
@@ -36,6 +39,67 @@ const SectionWorks = () => {
   return (
     <div className="row section-works">
       <h2> TRAVAUX </h2>
+
+      <div
+        className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
+        <div className="col-xl-6 d-flex align-items-center">
+          <div className="work-content mx-auto mb-4 mb-xl-0">
+            <h3> LAVANDES MOBILE APP </h3>
+            <p>
+              Avec de permettre aux salariés de gérer de manière digitale le Camping,
+              le Camping des Lavandes***** a décidé de déplacer la gestion des locations,
+              réservations et vacanciers sur une nouvelle application mobile.
+            </p>
+            <ul className="skills-list col-12 mt-2 mb-4">
+              <li>
+                <img src={flutter} alt="reactjs"/>
+                <span> Flutter </span>
+              </li>
+              <li>
+                <img src={dart} alt="bootstrap"/>
+                <span> Dart </span>
+              </li>
+              <li>
+                <img src={firebase} alt="redux"/>
+                <span> Firebase </span>
+              </li>
+              <li>
+                <img src={mongodb} alt="nodejs"/>
+                <span> SpringBoot </span>
+              </li>
+              <li>
+                <img src={mysql} alt="firebase"/>
+                <span> MySQL </span>
+              </li>
+              <li>
+                <img src={gitlab} alt="stripe"/>
+                <span> GitLab </span>
+              </li>
+            </ul>
+            <div className="buttons">
+              <a href="https://github.com/ludovic-sbr/lavandes-mobil-app" target="_blank"
+                 rel="noreferrer">
+                <button id="github">
+                  GitHub repository <BiLinkExternal/>
+                </button>
+              </a>
+              <Link to="/works/detail/lavandes-mobilapp"
+                    style={{ width: '40%' }}>
+                <button id="mission-detail"> Plus de détails</button>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="col-xl-6 p-0 d-flex align-items-center">
+          <div className="work-carousel mx-auto">
+            <img
+              src={mobilapp_portfolio}
+              alt="First slide"
+            />
+          </div>
+        </div>
+      </div>
+
 
       <div
         className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
@@ -75,10 +139,10 @@ const SectionWorks = () => {
               </li>
             </ul>
             <div className="buttons">
-              <a href="https://gitlab.com/lavandes/frontend" target="_blank"
+              <a href="https://github.com/ludovic-sbr/lavandes-web-app" target="_blank"
                  rel="noreferrer">
                 <button id="github">
-                  GitLab repository <BiLinkExternal/>
+                  GitHub repository <BiLinkExternal/>
                 </button>
               </a>
               <Link to="/works/detail/lavandes-webapp"
@@ -152,71 +216,6 @@ const SectionWorks = () => {
           <div className="work-carousel mx-auto">
             <img
               src={ps_login}
-              alt="First slide"
-            />
-          </div>
-        </div>
-      </div>
-
-
-      <div
-        className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
-        <div className="col-xl-6 d-flex align-items-center">
-          <div className="work-content mx-auto mb-4 mb-xl-0">
-            <h3> CRAWFORD INDUSTRIES </h3>
-            <p>
-              Crawford Industries est une entreprise fictive de fabrication et
-              de
-              vente de matériel de défense. Ce projet consiste à développer un
-              SaaS
-              afin d'en faciliter la gestion des commandes, des produits ou
-              encore
-              de la comptabilité.
-            </p>
-            <ul className="skills-list col-12 mt-2 mb-4">
-              <li>
-                <img src={reactjs} alt="reactjs"/>
-                <span> React.js </span>
-              </li>
-              <li>
-                <img src={typescript} alt="bootstrap"/>
-                <span> TypeScript </span>
-              </li>
-              <li>
-                <img src={redux} alt="redux"/>
-                <span> Redux </span>
-              </li>
-              <li>
-                <img src={mongodb} alt="nodejs"/>
-                <span> SpringBoot </span>
-              </li>
-              <li>
-                <img src={sql} alt="firebase"/>
-                <span> PostgreSQL </span>
-              </li>
-              <li>
-                <img src={gitlab} alt="stripe"/>
-                <span> GitLab </span>
-              </li>
-            </ul>
-            <div className="buttons">
-              <a href="https://github.com/Feliiks/stefanos" target="_blank"
-                 rel="noreferrer">
-                <button id="github">
-                  GitHub repository <BiLinkExternal/>
-                </button>
-              </a>
-              <Link to="/works/detail/crawford-industries"
-                    style={{ width: '40%' }}>
-                <button id="mission-detail"> Plus de détails</button>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="col-xl-6 p-0 d-flex align-items-center">
-          <div className="work-carousel mx-auto">
-            <img
-              src={crawind_orders}
               alt="First slide"
             />
           </div>

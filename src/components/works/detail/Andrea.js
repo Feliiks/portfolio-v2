@@ -5,6 +5,7 @@ import andrea_cart from "../../../assets/works/andrea/andrea_cart.jpg"
 import andrea_program from "../../../assets/works/andrea/andrea_program.jpg"
 import andrea_fiverr from "../../../assets/works/andrea/andrea_fiverr.jpg"
 import { BiLinkExternal } from 'react-icons/bi'
+import { Carousel } from 'react-responsive-carousel'
 
 const Andrea = () => {
   useEffect(() => {
@@ -20,37 +21,21 @@ const Andrea = () => {
             <h2> PROJET : ANDREA NATUROPATHIE </h2>
 
             <div className="row work-container mx-auto">
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={andrea1}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={andrea_program}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={andrea_cart}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={andrea_fiverr}
-                    alt="First slide"
-                  />
-                </div>
+              <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
+                <Carousel>
+                  <div>
+                    <img src={andrea1} />
+                  </div>
+                  <div>
+                    <img src={andrea_cart} />
+                  </div>
+                  <div>
+                    <img src={andrea_program} />
+                  </div>
+                  <div>
+                    <img src={andrea_fiverr} />
+                  </div>
+                </Carousel>
               </div>
             </div>
 

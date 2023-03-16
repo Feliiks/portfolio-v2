@@ -13,14 +13,14 @@ import Veille from './components/veille'
 import Footer from "./components/footer"
 
 import Ps from './components/works/detail/Ps'
-import Crawind from './components/works/detail/Crawind'
 import Stefanos from './components/works/detail/Stefanos'
 import Hts from './components/works/detail/Hts'
 import Cgc from './components/works/detail/Cgc'
 import Andrea from './components/works/detail/Andrea'
 import Ffcc from './components/works/detail/Ffcc'
 import Lsvibes from './components/works/detail/Lsvibes'
-import Lavandes from './components/works/detail/Lavandes'
+import LavandesWeb from './components/works/detail/LavandesWeb'
+import LavandesMobile from './components/works/detail/LavandesMobile'
 
 function App() {
   return (
@@ -34,9 +34,9 @@ function App() {
         <Route path="/documents" element={<Documents />} />
         <Route path="/veille" element={<Veille />} />
 
-        <Route path="/works/detail/lavandes-webapp" element={<Lavandes />} />
+        <Route path="/works/detail/lavandes-mobilapp" element={<LavandesMobile />} />
+        <Route path="/works/detail/lavandes-webapp" element={<LavandesWeb />} />
         <Route path="/works/detail/procedes-speciaux" element={<Ps />} />
-        <Route path="/works/detail/crawford-industries" element={<Crawind />} />
         <Route path="/works/detail/stefanos" element={<Stefanos />} />
         <Route path="/works/detail/hts" element={<Hts />} />
         <Route path="/works/detail/cgc" element={<Cgc />} />

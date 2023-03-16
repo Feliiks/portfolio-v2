@@ -5,6 +5,7 @@ import hts_1 from "../../../assets/works/hts/hts_1.jpg"
 import hts_fiverr from "../../../assets/works/hts/hts_fiverr.jpg"
 import hts_3 from "../../../assets/works/hts/hts_3.jpg"
 import { BiLinkExternal } from 'react-icons/bi'
+import { Carousel } from 'react-responsive-carousel'
 
 const Hts = () => {
   useEffect(() => {
@@ -20,37 +21,21 @@ const Hts = () => {
             <h2> PROJET : HACKING TIMES SQUARE </h2>
 
             <div className="row work-container mx-auto">
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={hts1}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={hts_1}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={hts_fiverr}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={hts_3}
-                    alt="First slide"
-                  />
-                </div>
+              <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
+                <Carousel>
+                  <div>
+                    <img src={hts1} />
+                  </div>
+                  <div>
+                    <img src={hts_1} />
+                  </div>
+                  <div>
+                    <img src={hts_fiverr} />
+                  </div>
+                  <div>
+                    <img src={hts_3} />
+                  </div>
+                </Carousel>
               </div>
             </div>
 

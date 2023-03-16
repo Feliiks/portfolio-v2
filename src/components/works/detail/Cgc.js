@@ -5,6 +5,7 @@ import solana_about from '../../../assets/works/solana/solana_about.jpg'
 import solana_team from '../../../assets/works/solana/solana_team.jpg'
 import solana_fiverr from '../../../assets/works/solana/solana_fiverr.jpg'
 import { BiLinkExternal } from 'react-icons/bi'
+import { Carousel } from 'react-responsive-carousel'
 
 const Cgc = () => {
   useEffect(() => {
@@ -20,64 +21,22 @@ const Cgc = () => {
             <h2> PROJET : SOLANA </h2>
 
             <div className="row work-container mx-auto">
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={solana}
-                    alt="First slide"
-                  />
-                </div>
+              <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
+                <Carousel>
+                  <div>
+                    <img src={solana} />
+                  </div>
+                  <div>
+                    <img src={solana_about} />
+                  </div>
+                  <div>
+                    <img src={solana_team} />
+                  </div>
+                  <div>
+                    <img src={solana_fiverr} />
+                  </div>
+                </Carousel>
               </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={solana_about}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={solana_fiverr}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={solana_team}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="row mt-5">
-              <h3> Introduction </h3>
-              <p>
-                Afin de faire connaître leur activité en plein développement,
-                le SCGC a fait appel à moi afin de développeur leur site vitrine,
-                leur permettant ainsi de présenter convenablement leur entreprise.
-              </p>
-            </div>
-
-            <div className="row mt-5">
-              <h3> Environnement technique </h3>
-              <p>
-                → Interfaces sous React.js.
-                <br/>
-                → Maquettes réalisées avec Canva Pro.
-                <br/>
-                → Préprocesseur CSS Sass.
-                <br/>
-                → Framework CSS Bootstrap.
-              </p>
             </div>
 
             <div className="row mt-5">

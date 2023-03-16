@@ -1,17 +1,18 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
-import lavandes_home from '../../../assets/works/lavandes/lavandes1.jpg'
-import lavandes_login from '../../../assets/works/lavandes/lavandes2.jpg'
-import lavandes_locations from '../../../assets/works/lavandes/lavandes3.jpg'
-import lavandes_reservations from '../../../assets/works/lavandes/lavandes4.jpg'
-import lavandes_cdc from '../../../assets/works/lavandes/cdc.docx'
-import lavandes_class from '../../../assets/works/lavandes/lavandes5.jpg'
-import lavandes_usecase from '../../../assets/works/lavandes/lavandes6.jpg'
-import lavandes_sitemap from '../../../assets/works/lavandes/sitemap.png'
-import lavandes_test from '../../../assets/works/lavandes/test.txt'
+import lavandes_home from '../../../assets/works/lavandes-web/lavandes1.jpg'
+import lavandes_login from '../../../assets/works/lavandes-web/lavandes2.jpg'
+import lavandes_locations from '../../../assets/works/lavandes-web/lavandes3.jpg'
+import lavandes_reservations from '../../../assets/works/lavandes-web/lavandes4.jpg'
+import lavandes_cdc from '../../../assets/works/lavandes-web/cdc.docx'
+import lavandes_class from '../../../assets/works/lavandes-web/lavandes5.jpg'
+import lavandes_usecase from '../../../assets/works/lavandes-web/lavandes6.jpg'
+import lavandes_sitemap from '../../../assets/works/lavandes-web/sitemap.png'
+import lavandes_test from '../../../assets/works/lavandes-web/test.txt'
 import { BiLinkExternal } from 'react-icons/bi'
+import { Carousel } from 'react-responsive-carousel'
 
-const Lavandes = () => {
+const LavandesWeb = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -25,59 +26,27 @@ const Lavandes = () => {
             <h2> PROJET : LAVANDES WEB APP </h2>
 
             <div className="row work-container mx-auto">
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={lavandes_home}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={lavandes_login}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={lavandes_locations}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={lavandes_reservations}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={lavandes_class}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto"
-                     style={{ background: 'none' }}>
-                  <img
-                    src={lavandes_usecase}
-                    alt="First slide"
-                  />
-                </div>
+              <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
+                <Carousel>
+                  <div>
+                    <img src={lavandes_home} />
+                  </div>
+                  <div>
+                    <img src={lavandes_login} />
+                  </div>
+                  <div>
+                    <img src={lavandes_locations} />
+                  </div>
+                  <div>
+                    <img src={lavandes_reservations} />
+                  </div>
+                  <div>
+                    <img src={lavandes_usecase} />
+                  </div>
+                  <div>
+                    <img src={lavandes_class} />
+                  </div>
+                </Carousel>
               </div>
             </div>
 
@@ -163,7 +132,9 @@ const Lavandes = () => {
             <div className="row mt-5">
               <h3> Ressources associées </h3>
               <a href={lavandes_cdc} target="_blank" rel="noreferrer"><BiLinkExternal/> Cahier des charges. </a>
-              <a href="https://camping-lavandes.com/" target="_blank" rel="noreferrer"><BiLinkExternal/> Lien de l'application. </a>
+              <a href="https://github.com/ludovic-sbr/lavandes-web-app" target="_blank" rel="noreferrer"><BiLinkExternal/> Lien vers le code source du front. </a>
+              <a href="https://github.com/ludovic-sbr/lavandes-api" target="_blank" rel="noreferrer"><BiLinkExternal/> Lien vers le code source de l'API. </a>
+              <a href="https://camping-lavandes.com/LavandesWeb.js" target="_blank" rel="noreferrer"><BiLinkExternal/> Lien de l'application. </a>
               <a href="https://api.camping-lavandes.com/api/swagger-ui/index.html#/" target="_blank" rel="noreferrer"><BiLinkExternal/> Lien de l'API. </a>
               <a href={lavandes_class} target="_blank" rel="noreferrer"><BiLinkExternal/> Diagramme de classe. </a>
               <a href={lavandes_usecase} target="_blank" rel="noreferrer"><BiLinkExternal/> Diagramme de cas d'utilisation </a>
@@ -177,4 +148,4 @@ const Lavandes = () => {
   )
 }
 
-export default Lavandes
+export default LavandesWeb

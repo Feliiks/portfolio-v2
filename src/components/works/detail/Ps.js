@@ -5,6 +5,7 @@ import ps_bdd from '../../../assets/works/ps/ps_bdd.jpg'
 import ps_figma from '../../../assets/works/ps/ps_figma.jpg'
 import ps_jira from '../../../assets/works/ps/ps_jira.jpg'
 import { BiLinkExternal } from 'react-icons/bi'
+import { Carousel } from 'react-responsive-carousel'
 
 const Ps = () => {
   useEffect(() => {
@@ -20,37 +21,21 @@ const Ps = () => {
             <h2> PROJET : PROCEDES SPECIAUX </h2>
 
             <div className="row work-container mx-auto">
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={ps_login}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={ps_bdd}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={ps_figma}
-                    alt="First slide"
-                  />
-                </div>
-              </div>
-              <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
-                <div className="work-carousel mx-auto" style={{ background: 'none' }}>
-                  <img
-                    src={ps_jira}
-                    alt="First slide"
-                  />
-                </div>
+              <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
+                <Carousel>
+                  <div>
+                    <img src={ps_login} />
+                  </div>
+                  <div>
+                    <img src={ps_bdd} />
+                  </div>
+                  <div>
+                    <img src={ps_figma} />
+                  </div>
+                  <div>
+                    <img src={ps_jira} />
+                  </div>
+                </Carousel>
               </div>
             </div>
 
