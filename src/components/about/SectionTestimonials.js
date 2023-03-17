@@ -1,8 +1,8 @@
 import React from 'react'
 
-import andrea from "../../assets/testimonials/andrea_img.jpg"
-import johnson from "../../assets/testimonials/johnson_img.jpg"
-import anissa from "../../assets/testimonials/anissa_img.jpg"
+import andrea from '../../assets/testimonials/andrea_img.jpg'
+import johnson from '../../assets/testimonials/johnson_img.jpg'
+import anissa from '../../assets/testimonials/anissa_img.jpg'
 
 import { AiFillStar } from 'react-icons/ai'
 

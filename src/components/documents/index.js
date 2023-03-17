@@ -10,12 +10,13 @@ const Documents = () => {
 
   return (
     <>
-      <Preloader />
+      <Preloader/>
       <div className="pricing">
         <div className="section-bg container">
           <div className="row section-pricing">
             <h2 className="mb-3"> TABLEAU DE SYNTHESE </h2>
-            <embed src={tableau_de_synthese} width="800" height="600" type="application/pdf"/>
+            <embed src={tableau_de_synthese} width="800" height="600"
+                   type="application/pdf"/>
           </div>
         </div>
       </div>

@@ -1,68 +1,69 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 const ContactForm = ({ sendFeedback }) => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
   const [mailStatus, setMailStatus] = useState({
-    processing: false
-  });
+    processing: false,
+  })
 
   const formMsgRef = useRef()
 
   useEffect(() => {
-    let charts = document.querySelectorAll('.chart');
+    let charts = document.querySelectorAll('.chart')
 
     Array.from(charts).forEach((chart, index) => {
       chart.firstChild.addEventListener('focus', () => {
-        Array.from(charts).forEach((chart, index) => chart.lastChild.style.width = "0");
-        chart.lastChild.style.width = "100%";
-      });
-    });
-  });
+        Array.from(charts)
+          .forEach((chart, index) => chart.lastChild.style.width = '0')
+        chart.lastChild.style.width = '100%'
+      })
+    })
+  })
 
   const isName = new RegExp(/^[a-z ,.'-]+$/i).test(name)
   const isEmail = new RegExp(/^[^\s@]+@[^\s@]+\.[^\s@]+$/).test(email)
 
   useEffect(() => {
     if (isName && isEmail) {
-      formMsgRef.current.innerHTML = ""
+      formMsgRef.current.innerHTML = ''
     }
   }, [isName, isEmail])
 
   const handleSubmit = async e => {
     e.preventDefault()
     setMailStatus({
-      processing: true
+      processing: true,
     })
 
     try {
       if (!isName || !isEmail) throw new Error()
 
       await sendFeedback({
-        toEmail: "sobrero.ludovic@gmail.com",
+        toEmail: 'sobrero.ludovic@gmail.com',
         fromName: name,
         fromEmail: email,
         subject,
-        message
+        message,
       })
 
       setMailStatus({
-        processing: false
+        processing: false,
       })
     } catch (err) {
       setMailStatus({
-        processing: false
+        processing: false,
       })
       if (!isName) {
-        formMsgRef.current.innerHTML = "Erreur ! Nom invalide."
+        formMsgRef.current.innerHTML = 'Erreur ! Nom invalide.'
       }
       if (!isEmail) {
-        formMsgRef.current.innerHTML = "Erreur ! Email invalide."
+        formMsgRef.current.innerHTML = 'Erreur ! Email invalide.'
       }
-      if (name === "" || email === "" || subject === "" || message === "") {
-        formMsgRef.current.innerHTML = "Champs requis."
+      if (name === '' || email === '' || subject === '' || message === '') {
+        formMsgRef.current.innerHTML = 'Champs requis.'
       }
     }
   }
@@ -78,7 +79,7 @@ const ContactForm = ({ sendFeedback }) => {
             placeholder="Nom"
             value={name}
           />
-          <div className="input-al" />
+          <div className="input-al"/>
         </div>
         <div className="chart">
           <input
@@ -88,7 +89,7 @@ const ContactForm = ({ sendFeedback }) => {
             placeholder="Email"
             value={email}
           />
-          <div className="input-al" />
+          <div className="input-al"/>
         </div>
         <div className="chart">
           <input
@@ -99,7 +100,7 @@ const ContactForm = ({ sendFeedback }) => {
             value={subject}
             autoComplete="off"
           />
-          <div className="input-al" />
+          <div className="input-al"/>
         </div>
         <div className="chart">
           <textarea
@@ -110,15 +111,16 @@ const ContactForm = ({ sendFeedback }) => {
             value={message}
             maxLength="500"
           />
-          <div className="input-al" />
+          <div className="input-al"/>
         </div>
       </div>
       <div className="form-footer">
-        { mailStatus.processing ?
-          <button className="btn" onClick={handleSubmit} disabled> Patientez... </button>
+        {mailStatus.processing ?
+          <button className="btn" onClick={handleSubmit}
+                  disabled> Patientez... </button>
           : <button className="btn" onClick={handleSubmit}> Envoyer </button>
         }
-        <div className="form-message" ref={formMsgRef} />
+        <div className="form-message" ref={formMsgRef}/>
         <span> {message.length} / 500 </span>
       </div>
     </form>

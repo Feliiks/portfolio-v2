@@ -1,0 +1,733 @@
+[0KRunning with gitlab-runner 15.9.0~beta.115.g598a7c91 (598a7c91)[0;m
+[0K  on blue-4.shared.runners-manager.gitlab.com/default J2nyww-s, system ID: s_5425356d8adf[0;m
+[0K  feature flags: FF_USE_IMPROVED_URL_MASKING:true[0;m
+section_start:1678975384:resolve_secrets
+[0K[0K[36;1mResolving secrets[0;m[0;m
+section_end:1678975384:resolve_secrets
+[0Ksection_start:1678975384:prepare_executor
+[0K[0K[36;1mPreparing the "docker+machine" executor[0;m[0;m
+[0KUsing Docker executor with image gliderlabs/herokuish:latest ...[0;m
+[0KStarting service postgres:9.6.16 ...[0;m
+[0KPulling docker image postgres:9.6.16 ...[0;m
+[0KUsing docker image sha256:cb2889ab0680ba518e0dc1bb5a09cbe23f1e5908d9e484daea3d34f5e092ec17 for postgres:9.6.16 with digest postgres@sha256:d6a6badb2b5b22de5e135490a217522cecc2ae90fe35b33290615827569310a1 ...[0;m
+[0KWaiting for services to be up and running (timeout 30 seconds)...[0;m
+[0KPulling docker image gliderlabs/herokuish:latest ...[0;m
+[0KUsing docker image sha256:686c154e24a2373406bdf9c8f44904b5dbe5cd36060c61d3da137086389d18d3 for gliderlabs/herokuish:latest with digest gliderlabs/herokuish@sha256:5d5914135908a234c20eec80daaa6a386bfa74293310bc0c79148fe7a7e4a926 ...[0;m
+section_end:1678975438:prepare_executor
+[0Ksection_start:1678975438:prepare_script
+[0K[0K[36;1mPreparing environment[0;m[0;m
+Running on runner-j2nyww-s-project-39059942-concurrent-0 via runner-j2nyww-s-shared-1678975333-315406c2...
+section_end:1678975441:prepare_script
+[0Ksection_start:1678975441:get_sources
+[0K[0K[36;1mGetting source from Git repository[0;m[0;m
+[32;1m$ eval "$CI_PRE_CLONE_SCRIPT"[0;m
+[32;1mFetching changes with git depth set to 20...[0;m
+Initialized empty Git repository in /builds/kpconsulting/sia/ps/backend/.git/
+[32;1mCreated fresh repository.[0;m
+[32;1mChecking out eb717e12 as detached HEAD (ref is develop)...[0;m
+
+[32;1mSkipping Git submodules setup[0;m
+section_end:1678975444:get_sources
+[0Ksection_start:1678975444:step_script
+[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+[0KUsing docker image sha256:686c154e24a2373406bdf9c8f44904b5dbe5cd36060c61d3da137086389d18d3 for gliderlabs/herokuish:latest with digest gliderlabs/herokuish@sha256:5d5914135908a234c20eec80daaa6a386bfa74293310bc0c79148fe7a7e4a926 ...[0;m
+[32;1m$ if [ -z ${KUBERNETES_PORT+x} ]; then # collapsed multi-line command[0;m
+[32;1m$ export DATABASE_URL="postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DB_HOST}:5432/${POSTGRES_DB}"[0;m
+[32;1m$ cp -R . /tmp/app[0;m
+[32;1m$ /bin/herokuish buildpack test[0;m
+[1G-----> Gradle app detected
+-----> Installing OpenJDK 11... done
+-----> Building Gradle app...
+-----> executing ./gradlew testClasses
+       Downloading https://services.gradle.org/distributions/gradle-7.4.1-bin.zip
+       ...........10%...........20%...........30%...........40%...........50%...........60%...........70%...........80%...........90%...........100%
+       To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/7.4.1/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+       Daemon will be stopped at the end of the build 
+       
+       > Task :siae-ps-backend-application:openApiGenerate
+       Empty operationId found for path: GET /heartbeat. Renamed to auto-generated operationId: heartbeatGET
+       Empty operationId found for path: POST /login. Renamed to auto-generated operationId: loginPOST
+       Empty operationId found for path: POST /user/complete. Renamed to auto-generated operationId: userCompletePOST
+       Empty operationId found for path: GET /user/me. Renamed to auto-generated operationId: userMeGET
+       Empty operationId found for path: GET /user. Renamed to auto-generated operationId: userGET
+       Empty operationId found for path: GET /user/{id}. Renamed to auto-generated operationId: userIdGET
+       Empty operationId found for path: DELETE /user/{id}. Renamed to auto-generated operationId: userIdDELETE
+       Empty operationId found for path: PATCH /user/{id}. Renamed to auto-generated operationId: userIdPATCH
+       Empty operationId found for path: GET /role. Renamed to auto-generated operationId: roleGET
+       Empty operationId found for path: GET /department. Renamed to auto-generated operationId: departmentGET
+       Empty operationId found for path: GET /team. Renamed to auto-generated operationId: teamGET
+       Empty operationId found for path: GET /time_unit. Renamed to auto-generated operationId: time_unitGET
+       Empty operationId found for path: GET /item_status. Renamed to auto-generated operationId: item_statusGET
+       Empty operationId found for path: GET /item_type. Renamed to auto-generated operationId: item_typeGET
+       Empty operationId found for path: GET /simple_datas. Renamed to auto-generated operationId: simple_datasGET
+       Empty operationId found for path: GET /domain. Renamed to auto-generated operationId: domainGET
+       Empty operationId found for path: POST /domain. Renamed to auto-generated operationId: domainPOST
+       Empty operationId found for path: GET /domain/{id}. Renamed to auto-generated operationId: domainIdGET
+       Empty operationId found for path: DELETE /domain/{id}. Renamed to auto-generated operationId: domainIdDELETE
+       Empty operationId found for path: PATCH /domain/{id}. Renamed to auto-generated operationId: domainIdPATCH
+       Empty operationId found for path: GET /special_process. Renamed to auto-generated operationId: special_processGET
+       Empty operationId found for path: POST /special_process. Renamed to auto-generated operationId: special_processPOST
+       Empty operationId found for path: GET /special_process/{id}. Renamed to auto-generated operationId: special_processIdGET
+       Empty operationId found for path: DELETE /special_process/{id}. Renamed to auto-generated operationId: special_processIdDELETE
+       Empty operationId found for path: PATCH /special_process/{id}. Renamed to auto-generated operationId: special_processIdPATCH
+       Empty operationId found for path: GET /item. Renamed to auto-generated operationId: itemGET
+       Empty operationId found for path: POST /item. Renamed to auto-generated operationId: itemPOST
+       Empty operationId found for path: GET /item/{id}. Renamed to auto-generated operationId: itemIdGET
+       Empty operationId found for path: PUT /item/{id}. Renamed to auto-generated operationId: itemIdPUT
+       Empty operationId found for path: DELETE /item/{id}. Renamed to auto-generated operationId: itemIdDELETE
+       Empty operationId found for path: PATCH /item/{id}. Renamed to auto-generated operationId: itemIdPATCH
+       Empty operationId found for path: GET /item/{id}/item_details. Renamed to auto-generated operationId: itemIdItemDetailsGET
+       Empty operationId found for path: POST /item_details/{id}/exemption. Renamed to auto-generated operationId: item_detailsIdExemptionPOST
+       Empty operationId found for path: PATCH /item_details/exemption/{id}. Renamed to auto-generated operationId: item_detailsExemptionIdPATCH
+       Empty operationId found for path: GET /item_details/exemption. Renamed to auto-generated operationId: item_detailsExemptionGET
+       Empty operationId found for path: GET /file/{id}. Renamed to auto-generated operationId: fileIdGET
+       Empty operationId found for path: GET /follow_up. Renamed to auto-generated operationId: follow_upGET
+       Empty operationId found for path: POST /follow_up. Renamed to auto-generated operationId: follow_upPOST
+       Empty operationId found for path: GET /follow_up/{id}. Renamed to auto-generated operationId: follow_upIdGET
+       Empty operationId found for path: PUT /follow_up/{id}. Renamed to auto-generated operationId: follow_upIdPUT
+       Empty operationId found for path: PATCH /follow_up/{id}. Renamed to auto-generated operationId: follow_upIdPATCH
+       Empty operationId found for path: POST /follow_up/{id}/authorization. Renamed to auto-generated operationId: follow_upIdAuthorizationPOST
+       Empty operationId found for path: PATCH /follow_up_authorization/{id}. Renamed to auto-generated operationId: follow_up_authorizationIdPATCH
+       Empty operationId found for path: POST /follow_up/{id}/details. Renamed to auto-generated operationId: follow_upIdDetailsPOST
+       Empty operationId found for path: GET /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdGET
+       Empty operationId found for path: PUT /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdPUT
+       Empty operationId found for path: DELETE /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdDELETE
+       Empty operationId found for path: PATCH /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdPATCH
+       Empty operationId found for path: GET /follow_up_details. Renamed to auto-generated operationId: follow_up_detailsGET
+       Empty operationId found for path: GET /follow_up_details/{id}/item_details. Renamed to auto-generated operationId: follow_up_detailsIdItemDetailsGET
+       Empty operationId found for path: POST /follow_up_details/{id}/item_details. Renamed to auto-generated operationId: follow_up_detailsIdItemDetailsPOST
+       Empty operationId found for path: PATCH /item_details. Renamed to auto-generated operationId: item_detailsPATCH
+       Empty operationId found for path: DELETE /item_details/{id}. Renamed to auto-generated operationId: item_detailsIdDELETE
+       allOf with multiple schemas defined. Using only the first one: PageViewModel
+       allOf with multiple schemas defined. Using only the first one: PageViewModel
+       allOf with multiple schemas defined. Using only the first one: ItemDetailsViewModel
+       allOf with multiple schemas defined. Using only the first one: PageViewModel
+       allOf with multiple schemas defined. Using only the first one: PageViewModel
+       allOf with multiple schemas defined. Using only the first one: PageViewModel
+       allOf with multiple schemas defined. Using only the first one: PageViewModel
+       Empty operationId found for path: get /heartbeat. Renamed to auto-generated operationId: heartbeatGet
+       Empty operationId found for path: post /login. Renamed to auto-generated operationId: loginPost
+       Empty operationId found for path: post /user/complete. Renamed to auto-generated operationId: userCompletePost
+       Empty operationId found for path: get /user/me. Renamed to auto-generated operationId: userMeGet
+       Empty operationId found for path: get /user. Renamed to auto-generated operationId: userGet
+       Empty operationId found for path: get /user/{id}. Renamed to auto-generated operationId: userIdGet
+       Empty operationId found for path: delete /user/{id}. Renamed to auto-generated operationId: userIdDelete
+       Empty operationId found for path: patch /user/{id}. Renamed to auto-generated operationId: userIdPatch
+       Empty operationId found for path: get /role. Renamed to auto-generated operationId: roleGet
+       Empty operationId found for path: get /department. Renamed to auto-generated operationId: departmentGet
+       Empty operationId found for path: get /team. Renamed to auto-generated operationId: teamGet
+       Empty operationId found for path: get /time_unit. Renamed to auto-generated operationId: time_unitGet
+       Empty operationId found for path: get /item_status. Renamed to auto-generated operationId: item_statusGet
+       Empty operationId found for path: get /item_type. Renamed to auto-generated operationId: item_typeGet
+       Empty operationId found for path: get /simple_datas. Renamed to auto-generated operationId: simple_datasGet
+       Empty operationId found for path: get /domain. Renamed to auto-generated operationId: domainGet
+       Empty operationId found for path: post /domain. Renamed to auto-generated operationId: domainPost
+       Empty operationId found for path: get /domain/{id}. Renamed to auto-generated operationId: domainIdGet
+       Empty operationId found for path: delete /domain/{id}. Renamed to auto-generated operationId: domainIdDelete
+       Empty operationId found for path: patch /domain/{id}. Renamed to auto-generated operationId: domainIdPatch
+       Empty operationId found for path: get /special_process. Renamed to auto-generated operationId: special_processGet
+       Empty operationId found for path: post /special_process. Renamed to auto-generated operationId: special_processPost
+       Empty operationId found for path: get /special_process/{id}. Renamed to auto-generated operationId: special_processIdGet
+       Empty operationId found for path: delete /special_process/{id}. Renamed to auto-generated operationId: special_processIdDelete
+       Empty operationId found for path: patch /special_process/{id}. Renamed to auto-generated operationId: special_processIdPatch
+       Empty operationId found for path: get /item. Renamed to auto-generated operationId: itemGet
+       Empty operationId found for path: post /item. Renamed to auto-generated operationId: itemPost
+       Could not compute datatypeWithEnum from org.springframework.core.io.Resource, null
+       Empty operationId found for path: get /item/{id}. Renamed to auto-generated operationId: itemIdGet
+       Empty operationId found for path: put /item/{id}. Renamed to auto-generated operationId: itemIdPut
+       Could not compute datatypeWithEnum from org.springframework.core.io.Resource, null
+       Empty operationId found for path: delete /item/{id}. Renamed to auto-generated operationId: itemIdDelete
+       Empty operationId found for path: patch /item/{id}. Renamed to auto-generated operationId: itemIdPatch
+       Empty operationId found for path: get /item/{id}/item_details. Renamed to auto-generated operationId: itemIdItemDetailsGet
+       Empty operationId found for path: post /item_details/{id}/exemption. Renamed to auto-generated operationId: item_detailsIdExemptionPost
+       Empty operationId found for path: patch /item_details/exemption/{id}. Renamed to auto-generated operationId: item_detailsExemptionIdPatch
+       Empty operationId found for path: get /item_details/exemption. Renamed to auto-generated operationId: item_detailsExemptionGet
+       Empty operationId found for path: get /file/{id}. Renamed to auto-generated operationId: fileIdGet
+       Empty operationId found for path: get /follow_up. Renamed to auto-generated operationId: follow_upGet
+       Empty operationId found for path: post /follow_up. Renamed to auto-generated operationId: follow_upPost
+       Could not compute datatypeWithEnum from org.springframework.core.io.Resource, null
+       Empty operationId found for path: get /follow_up/{id}. Renamed to auto-generated operationId: follow_upIdGet
+       Empty operationId found for path: put /follow_up/{id}. Renamed to auto-generated operationId: follow_upIdPut
+       Could not compute datatypeWithEnum from org.springframework.core.io.Resource, null
+       Empty operationId found for path: patch /follow_up/{id}. Renamed to auto-generated operationId: follow_upIdPatch
+       Empty operationId found for path: post /follow_up/{id}/authorization. Renamed to auto-generated operationId: follow_upIdAuthorizationPost
+       Empty operationId found for path: patch /follow_up_authorization/{id}. Renamed to auto-generated operationId: follow_up_authorizationIdPatch
+       Empty operationId found for path: post /follow_up/{id}/details. Renamed to auto-generated operationId: follow_upIdDetailsPost
+       Empty operationId found for path: get /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdGet
+       Empty operationId found for path: put /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdPut
+       Empty operationId found for path: delete /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdDelete
+       Empty operationId found for path: patch /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdPatch
+       Empty operationId found for path: get /follow_up_details. Renamed to auto-generated operationId: follow_up_detailsGet
+       Empty operationId found for path: get /follow_up_details/{id}/item_details. Renamed to auto-generated operationId: follow_up_detailsIdItemDetailsGet
+       Empty operationId found for path: post /follow_up_details/{id}/item_details. Renamed to auto-generated operationId: follow_up_detailsIdItemDetailsPost
+       Empty operationId found for path: patch /item_details. Renamed to auto-generated operationId: item_detailsPatch
+       Empty operationId found for path: delete /item_details/{id}. Renamed to auto-generated operationId: item_detailsIdDelete
+       ################################################################################
+       # Thanks for using OpenAPI Generator.                                          #
+       # Please consider donation to help us maintain this project ?                 #
+       # https://opencollective.com/openapi_generator/donate                          #
+       ################################################################################
+       Successfully generated code to /tmp/build/siae-ps-backend-application
+       
+       > Task :siae-ps-backend-core:compileJava
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/file/getfile/GetFileInteractor.java:15: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_FILE_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du fichier '%s' dans l'application";
+                                                                                                        ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/file/getfile/GetFileInteractor.java:15: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_FILE_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du fichier '%s' dans l'application";
+                                                                                                         ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/file/getfile/GetFileInteractor.java:15: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_FILE_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du fichier '%s' dans l'application";
+                                                                                                             ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/file/getfile/GetFileInteractor.java:15: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_FILE_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du fichier '%s' dans l'application";
+                                                                                                              ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/getuser/GetUserInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de l'utilisateur '%d' dans l'application";
+                                                                                                        ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/getuser/GetUserInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de l'utilisateur '%d' dans l'application";
+                                                                                                         ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/getuser/GetUserInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de l'utilisateur '%d' dans l'application";
+                                                                                                             ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/getuser/GetUserInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de l'utilisateur '%d' dans l'application";
+                                                                                                              ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/addorganizationuser/AddOrganizationUserInteractor.java:22: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de l'utilisateur '%s' dans l'application";
+                                                                                                        ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/addorganizationuser/AddOrganizationUserInteractor.java:22: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de l'utilisateur '%s' dans l'application";
+                                                                                                         ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/addorganizationuser/AddOrganizationUserInteractor.java:22: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de l'utilisateur '%s' dans l'application";
+                                                                                                             ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/addorganizationuser/AddOrganizationUserInteractor.java:22: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de l'utilisateur '%s' dans l'application";
+                                                                                                              ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/addorganizationuser/AddOrganizationUserInteractor.java:23: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String EDIT_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de l'??dition de l'utilisateur '%s' dans l'application";
+                                                                                                       ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/addorganizationuser/AddOrganizationUserInteractor.java:23: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String EDIT_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de l'??dition de l'utilisateur '%s' dans l'application";
+                                                                                                        ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/addorganizationuser/AddOrganizationUserInteractor.java:24: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_PERSON_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de la personne '%s' dans l'annuaire";
+                                                                                                          ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/addorganizationuser/AddOrganizationUserInteractor.java:24: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_PERSON_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de la personne '%s' dans l'annuaire";
+                                                                                                           ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/addorganizationuser/AddOrganizationUserInteractor.java:24: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_PERSON_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de la personne '%s' dans l'annuaire";
+                                                                                                               ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/addorganizationuser/AddOrganizationUserInteractor.java:24: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_PERSON_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de la personne '%s' dans l'annuaire";
+                                                                                                                ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/addorganizationuser/AddOrganizationUserInteractor.java:25: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String CREATE_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la cr??ation de l'utilisateur '%s' dans l'application";
+                                                                                                            ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/addorganizationuser/AddOrganizationUserInteractor.java:25: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String CREATE_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la cr??ation de l'utilisateur '%s' dans l'application";
+                                                                                                             ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/edituser/EditUserInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String EDIT_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de l'??dition de l'utilisateur '%d' dans l'application";
+                                                                                                       ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/edituser/EditUserInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String EDIT_USER_EXCEPTION_MESSAGE = "Une erreur est survenue lors de l'??dition de l'utilisateur '%d' dans l'application";
+                                                                                                        ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/getusers/GetUsersInteractor.java:19: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_USERS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les utilisateurs de l'application";
+                                                                                                         ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/getusers/GetUsersInteractor.java:19: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_USERS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les utilisateurs de l'application";
+                                                                                                          ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/getusers/GetUsersInteractor.java:19: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_USERS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les utilisateurs de l'application";
+                                                                                                              ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/getusers/GetUsersInteractor.java:19: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_USERS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les utilisateurs de l'application";
+                                                                                                               ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/completeprofile/CompleteProfileInteractor.java:19: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String USER_PROFILE_ALREADY_EXISTS_EXCEPTION_MESSAGE = "L'utilisateur poss??de d??j?? un profil complet";
+                                                                                                         ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/completeprofile/CompleteProfileInteractor.java:19: error: unmappable character (0xA8) for encoding US-ASCII
+           public final static String USER_PROFILE_ALREADY_EXISTS_EXCEPTION_MESSAGE = "L'utilisateur poss??de d??j?? un profil complet";
+                                                                                                          ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/completeprofile/CompleteProfileInteractor.java:19: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String USER_PROFILE_ALREADY_EXISTS_EXCEPTION_MESSAGE = "L'utilisateur poss??de d??j?? un profil complet";
+                                                                                                               ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/completeprofile/CompleteProfileInteractor.java:19: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String USER_PROFILE_ALREADY_EXISTS_EXCEPTION_MESSAGE = "L'utilisateur poss??de d??j?? un profil complet";
+                                                                                                                ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/completeprofile/CompleteProfileInteractor.java:19: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String USER_PROFILE_ALREADY_EXISTS_EXCEPTION_MESSAGE = "L'utilisateur poss??de d??j?? un profil complet";
+                                                                                                                  ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/user/completeprofile/CompleteProfileInteractor.java:19: error: unmappable character (0xA0) for encoding US-ASCII
+           public final static String USER_PROFILE_ALREADY_EXISTS_EXCEPTION_MESSAGE = "L'utilisateur poss??de d??j?? un profil complet";
+                                                                                                                   ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocesses/GetSpecialProcessesInteractor.java:18: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESSES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les proc??d??s sp??ciaux de l'application";
+                                                                                                                     ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocesses/GetSpecialProcessesInteractor.java:18: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESSES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les proc??d??s sp??ciaux de l'application";
+                                                                                                                      ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocesses/GetSpecialProcessesInteractor.java:18: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESSES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les proc??d??s sp??ciaux de l'application";
+                                                                                                                          ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocesses/GetSpecialProcessesInteractor.java:18: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESSES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les proc??d??s sp??ciaux de l'application";
+                                                                                                                           ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocesses/GetSpecialProcessesInteractor.java:18: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESSES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les proc??d??s sp??ciaux de l'application";
+                                                                                                                                                   ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocesses/GetSpecialProcessesInteractor.java:18: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESSES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les proc??d??s sp??ciaux de l'application";
+                                                                                                                                                    ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocesses/GetSpecialProcessesInteractor.java:18: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESSES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les proc??d??s sp??ciaux de l'application";
+                                                                                                                                                      ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocesses/GetSpecialProcessesInteractor.java:18: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESSES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les proc??d??s sp??ciaux de l'application";
+                                                                                                                                                       ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocesses/GetSpecialProcessesInteractor.java:18: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESSES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les proc??d??s sp??ciaux de l'application";
+                                                                                                                                                            ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocesses/GetSpecialProcessesInteractor.java:18: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESSES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les proc??d??s sp??ciaux de l'application";
+                                                                                                                                                             ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/deletespecialprocess/DeleteSpecialProcessInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String DELETE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la suppression du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                        ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/deletespecialprocess/DeleteSpecialProcessInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String DELETE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la suppression du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                         ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/deletespecialprocess/DeleteSpecialProcessInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String DELETE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la suppression du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                           ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/deletespecialprocess/DeleteSpecialProcessInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String DELETE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la suppression du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                            ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/deletespecialprocess/DeleteSpecialProcessInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String DELETE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la suppression du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                                ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/deletespecialprocess/DeleteSpecialProcessInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String DELETE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la suppression du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                                 ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocess/GetSpecialProcessInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                   ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocess/GetSpecialProcessInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                    ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocess/GetSpecialProcessInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                        ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocess/GetSpecialProcessInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                         ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocess/GetSpecialProcessInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                        ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocess/GetSpecialProcessInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                         ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocess/GetSpecialProcessInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                           ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocess/GetSpecialProcessInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                            ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocess/GetSpecialProcessInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                                ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/getspecialprocess/GetSpecialProcessInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                                 ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/editspecialprocess/EditSpecialProcessInteractor.java:18: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String EDIT_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de l'??dition du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                  ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/editspecialprocess/EditSpecialProcessInteractor.java:18: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String EDIT_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de l'??dition du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                   ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/editspecialprocess/EditSpecialProcessInteractor.java:18: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String EDIT_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de l'??dition du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                  ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/editspecialprocess/EditSpecialProcessInteractor.java:18: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String EDIT_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de l'??dition du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                   ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/editspecialprocess/EditSpecialProcessInteractor.java:18: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String EDIT_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de l'??dition du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                     ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/editspecialprocess/EditSpecialProcessInteractor.java:18: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String EDIT_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de l'??dition du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                      ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/editspecialprocess/EditSpecialProcessInteractor.java:18: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String EDIT_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de l'??dition du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                          ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/editspecialprocess/EditSpecialProcessInteractor.java:18: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String EDIT_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de l'??dition du proc??d?? sp??cial '%d' dans l'application";
+                                                                                                                                           ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/addspecialprocess/AddSpecialProcessInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String CREATE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la cr??ation du proc??d?? sp??cial '%s' dans l'application";
+                                                                                                                       ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/addspecialprocess/AddSpecialProcessInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String CREATE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la cr??ation du proc??d?? sp??cial '%s' dans l'application";
+                                                                                                                        ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/addspecialprocess/AddSpecialProcessInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String CREATE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la cr??ation du proc??d?? sp??cial '%s' dans l'application";
+                                                                                                                                      ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/addspecialprocess/AddSpecialProcessInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String CREATE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la cr??ation du proc??d?? sp??cial '%s' dans l'application";
+                                                                                                                                       ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/addspecialprocess/AddSpecialProcessInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String CREATE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la cr??ation du proc??d?? sp??cial '%s' dans l'application";
+                                                                                                                                         ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/addspecialprocess/AddSpecialProcessInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String CREATE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la cr??ation du proc??d?? sp??cial '%s' dans l'application";
+                                                                                                                                          ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/addspecialprocess/AddSpecialProcessInteractor.java:17: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String CREATE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la cr??ation du proc??d?? sp??cial '%s' dans l'application";
+                                                                                                                                              ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/specialprocess/addspecialprocess/AddSpecialProcessInteractor.java:17: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String CREATE_SPECIAL_PROCESS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la cr??ation du proc??d?? sp??cial '%s' dans l'application";
+                                                                                                                                               ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/gettimeunits/GetTimeUnitsInteractor.java:16: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_TIME_UNITS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les unit??s de temps de l'application";
+                                                                                                              ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/gettimeunits/GetTimeUnitsInteractor.java:16: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_TIME_UNITS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les unit??s de temps de l'application";
+                                                                                                               ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/gettimeunits/GetTimeUnitsInteractor.java:16: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_TIME_UNITS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les unit??s de temps de l'application";
+                                                                                                                   ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/gettimeunits/GetTimeUnitsInteractor.java:16: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_TIME_UNITS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les unit??s de temps de l'application";
+                                                                                                                    ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/gettimeunits/GetTimeUnitsInteractor.java:16: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_TIME_UNITS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les unit??s de temps de l'application";
+                                                                                                                                              ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/gettimeunits/GetTimeUnitsInteractor.java:16: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_TIME_UNITS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les unit??s de temps de l'application";
+                                                                                                                                               ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getroles/GetRolesInteractor.java:16: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_ROLES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les roles de l'application";
+                                                                                                         ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getroles/GetRolesInteractor.java:16: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_ROLES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les roles de l'application";
+                                                                                                          ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getroles/GetRolesInteractor.java:16: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_ROLES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les roles de l'application";
+                                                                                                              ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getroles/GetRolesInteractor.java:16: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_ROLES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les roles de l'application";
+                                                                                                               ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getteams/GetTeamsInteractor.java:16: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_TEAMS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les ??quipes de l'application";
+                                                                                                         ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getteams/GetTeamsInteractor.java:16: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_TEAMS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les ??quipes de l'application";
+                                                                                                          ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getteams/GetTeamsInteractor.java:16: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_TEAMS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les ??quipes de l'application";
+                                                                                                              ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getteams/GetTeamsInteractor.java:16: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_TEAMS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les ??quipes de l'application";
+                                                                                                               ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getteams/GetTeamsInteractor.java:16: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_TEAMS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les ??quipes de l'application";
+                                                                                                                                     ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getteams/GetTeamsInteractor.java:16: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_TEAMS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les ??quipes de l'application";
+                                                                                                                                      ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getitemstatus/GetItemStatusInteractor.java:16: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_ITEM_STATUS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les status d'items de l'application";
+                                                                                                               ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getitemstatus/GetItemStatusInteractor.java:16: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_ITEM_STATUS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les status d'items de l'application";
+                                                                                                                ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getitemstatus/GetItemStatusInteractor.java:16: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_ITEM_STATUS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les status d'items de l'application";
+                                                                                                                    ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getitemstatus/GetItemStatusInteractor.java:16: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_ITEM_STATUS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les status d'items de l'application";
+                                                                                                                     ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getitemtypes/GetItemTypesInteractor.java:16: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_ITEM_TYPES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les types d'items de l'application";
+                                                                                                              ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getitemtypes/GetItemTypesInteractor.java:16: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_ITEM_TYPES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les types d'items de l'application";
+                                                                                                               ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getitemtypes/GetItemTypesInteractor.java:16: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_ITEM_TYPES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les types d'items de l'application";
+                                                                                                                   ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getitemtypes/GetItemTypesInteractor.java:16: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_ITEM_TYPES_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de tous les types d'items de l'application";
+                                                                                                                    ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getsimpledatas/GetSimpleDatasInteractor.java:20: error: unmappable character (0xC3) for encoding US-ASCII
+           public final static String GET_SIMPLE_DATAS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les donn??es simples de l'application";
+                                                                                                                ^
+       /tmp/build/siae-ps-backend-core/src/main/java/fr/siae/ps/core/usecases/data/getsimpledatas/GetSimpleDatasInteractor.java:20: error: unmappable character (0xA9) for encoding US-ASCII
+           public final static String GET_SIMPLE_DATAS_EXCEPTION_MESSAGE = "Une erreur est survenue lors de la r??cup??ration de toutes les donn??es simples de l'application";
+                                                                                                                 ^
+       
+       > Task :siae-ps-backend-core:processResources NO-SOURCE
+       > Task :siae-ps-backend-core:classes
+       > Task :siae-ps-backend-core:jar
+       
+       > Task :siae-ps-backend-infrastructure:compileJava
+       Note: Some input files use unchecked or unsafe operations.
+       Note: Recompile with -Xlint:unchecked for details.
+       
+       > Task :siae-ps-backend-infrastructure:processResources NO-SOURCE
+       > Task :siae-ps-backend-infrastructure:classes
+       > Task :siae-ps-backend-infrastructure:jar
+       > Task :siae-ps-backend-application:compileJava
+       
+       > Task :siae-ps-backend-application:processResources
+       Execution optimizations have been disabled for task ':siae-ps-backend-application:processResources' to ensure correctness due to the following reasons:
+         - Gradle detected a problem with the following location: '/tmp/build/siae-ps-backend-application/src/main/resources'. Reason: Task ':siae-ps-backend-application:processResources' uses this output of task ':siae-ps-backend-application:openApiGenerate' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.4.1/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+         - Gradle detected a problem with the following location: '/tmp/build/siae-ps-backend-application/src/main/resources/specs/openapi.yaml'. Reason: Task ':siae-ps-backend-application:processResources' uses this output of task ':siae-ps-backend-application:openApiGenerate' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.4.1/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+       
+       > Task :siae-ps-backend-application:classes
+       > Task :siae-ps-backend-application:compileTestJava NO-SOURCE
+       > Task :siae-ps-backend-application:processTestResources NO-SOURCE
+       > Task :siae-ps-backend-application:testClasses UP-TO-DATE
+       
+       > Task :siae-ps-backend-core:compileTestJava
+       /tmp/build/siae-ps-backend-core/src/test/java/fr/siae/ps/core/usecases/specialprocess/addspecialprocess/AddSpecialProcessTestCase.java:75: error: unmappable character (0xC3) for encoding US-ASCII
+                       "Proc??d?? Spacial 1"
+                            ^
+       /tmp/build/siae-ps-backend-core/src/test/java/fr/siae/ps/core/usecases/specialprocess/addspecialprocess/AddSpecialProcessTestCase.java:75: error: unmappable character (0xA9) for encoding US-ASCII
+                       "Proc??d?? Spacial 1"
+                             ^
+       /tmp/build/siae-ps-backend-core/src/test/java/fr/siae/ps/core/usecases/specialprocess/addspecialprocess/AddSpecialProcessTestCase.java:75: error: unmappable character (0xC3) for encoding US-ASCII
+                       "Proc??d?? Spacial 1"
+                               ^
+       /tmp/build/siae-ps-backend-core/src/test/java/fr/siae/ps/core/usecases/specialprocess/addspecialprocess/AddSpecialProcessTestCase.java:75: error: unmappable character (0xA9) for encoding US-ASCII
+                       "Proc??d?? Spacial 1"
+                                ^
+       /tmp/build/siae-ps-backend-core/src/test/java/fr/siae/ps/core/services/TimeUnitServiceTestCase.java:123: error: unmappable character (0xC3) for encoding US-ASCII
+                   Assertions.assertEquals(String.format("L'unit?? de temps '%s' n'existe pas dans l'application", TimeUnitEnum.DAY.name()), e.getMessage());
+                                                                ^
+       /tmp/build/siae-ps-backend-core/src/test/java/fr/siae/ps/core/services/TimeUnitServiceTestCase.java:123: error: unmappable character (0xA9) for encoding US-ASCII
+                   Assertions.assertEquals(String.format("L'unit?? de temps '%s' n'existe pas dans l'application", TimeUnitEnum.DAY.name()), e.getMessage());
+                                                                 ^
+       
+       > Task :siae-ps-backend-core:processTestResources NO-SOURCE
+       > Task :siae-ps-backend-core:testClasses
+       > Task :siae-ps-backend-infrastructure:compileTestJava NO-SOURCE
+       > Task :siae-ps-backend-infrastructure:processTestResources NO-SOURCE
+       > Task :siae-ps-backend-infrastructure:testClasses UP-TO-DATE
+       
+       Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+       
+       You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+       
+       See https://docs.gradle.org/7.4.1/userguide/command_line_interface.html#sec:command_line_warnings
+       
+       Execution optimizations have been disabled for 1 invalid unit(s) of work during this build to ensure correctness.
+       Please consult deprecation warnings for more details.
+       
+       BUILD SUCCESSFUL in 2m 6s
+       8 actionable tasks: 8 executed
+-----> Resolving testRuntime dependencies...
+       
+       ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+       
+       Please set the JAVA_HOME variable in your environment to match the
+       location of your Java installation.
+       
+Picked up JAVA_TOOL_OPTIONS: -XX:+UseContainerSupport -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 
+
+Welcome to Gradle 7.4.1!
+
+Here are the highlights of this release:
+ - Aggregated test and JaCoCo reports
+ - Marking additional test source directories as tests in IntelliJ
+ - Support for Adoptium JDKs in Java toolchains
+
+For more details see https://docs.gradle.org/7.4.1/release-notes.html
+
+
+> Task :siae-ps-backend-application:openApiGenerate
+Empty operationId found for path: GET /heartbeat. Renamed to auto-generated operationId: heartbeatGET
+Empty operationId found for path: POST /login. Renamed to auto-generated operationId: loginPOST
+Empty operationId found for path: POST /user/complete. Renamed to auto-generated operationId: userCompletePOST
+Empty operationId found for path: GET /user/me. Renamed to auto-generated operationId: userMeGET
+Empty operationId found for path: GET /user. Renamed to auto-generated operationId: userGET
+Empty operationId found for path: GET /user/{id}. Renamed to auto-generated operationId: userIdGET
+Empty operationId found for path: DELETE /user/{id}. Renamed to auto-generated operationId: userIdDELETE
+Empty operationId found for path: PATCH /user/{id}. Renamed to auto-generated operationId: userIdPATCH
+Empty operationId found for path: GET /role. Renamed to auto-generated operationId: roleGET
+Empty operationId found for path: GET /department. Renamed to auto-generated operationId: departmentGET
+Empty operationId found for path: GET /team. Renamed to auto-generated operationId: teamGET
+Empty operationId found for path: GET /time_unit. Renamed to auto-generated operationId: time_unitGET
+Empty operationId found for path: GET /item_status. Renamed to auto-generated operationId: item_statusGET
+Empty operationId found for path: GET /item_type. Renamed to auto-generated operationId: item_typeGET
+Empty operationId found for path: GET /simple_datas. Renamed to auto-generated operationId: simple_datasGET
+Empty operationId found for path: GET /domain. Renamed to auto-generated operationId: domainGET
+Empty operationId found for path: POST /domain. Renamed to auto-generated operationId: domainPOST
+Empty operationId found for path: GET /domain/{id}. Renamed to auto-generated operationId: domainIdGET
+Empty operationId found for path: DELETE /domain/{id}. Renamed to auto-generated operationId: domainIdDELETE
+Empty operationId found for path: PATCH /domain/{id}. Renamed to auto-generated operationId: domainIdPATCH
+Empty operationId found for path: GET /special_process. Renamed to auto-generated operationId: special_processGET
+Empty operationId found for path: POST /special_process. Renamed to auto-generated operationId: special_processPOST
+Empty operationId found for path: GET /special_process/{id}. Renamed to auto-generated operationId: special_processIdGET
+Empty operationId found for path: DELETE /special_process/{id}. Renamed to auto-generated operationId: special_processIdDELETE
+Empty operationId found for path: PATCH /special_process/{id}. Renamed to auto-generated operationId: special_processIdPATCH
+Empty operationId found for path: GET /item. Renamed to auto-generated operationId: itemGET
+Empty operationId found for path: POST /item. Renamed to auto-generated operationId: itemPOST
+Empty operationId found for path: GET /item/{id}. Renamed to auto-generated operationId: itemIdGET
+Empty operationId found for path: PUT /item/{id}. Renamed to auto-generated operationId: itemIdPUT
+Empty operationId found for path: DELETE /item/{id}. Renamed to auto-generated operationId: itemIdDELETE
+Empty operationId found for path: PATCH /item/{id}. Renamed to auto-generated operationId: itemIdPATCH
+Empty operationId found for path: GET /item/{id}/item_details. Renamed to auto-generated operationId: itemIdItemDetailsGET
+Empty operationId found for path: POST /item_details/{id}/exemption. Renamed to auto-generated operationId: item_detailsIdExemptionPOST
+Empty operationId found for path: PATCH /item_details/exemption/{id}. Renamed to auto-generated operationId: item_detailsExemptionIdPATCH
+Empty operationId found for path: GET /item_details/exemption. Renamed to auto-generated operationId: item_detailsExemptionGET
+Empty operationId found for path: GET /file/{id}. Renamed to auto-generated operationId: fileIdGET
+Empty operationId found for path: GET /follow_up. Renamed to auto-generated operationId: follow_upGET
+Empty operationId found for path: POST /follow_up. Renamed to auto-generated operationId: follow_upPOST
+Empty operationId found for path: GET /follow_up/{id}. Renamed to auto-generated operationId: follow_upIdGET
+Empty operationId found for path: PUT /follow_up/{id}. Renamed to auto-generated operationId: follow_upIdPUT
+Empty operationId found for path: PATCH /follow_up/{id}. Renamed to auto-generated operationId: follow_upIdPATCH
+Empty operationId found for path: POST /follow_up/{id}/authorization. Renamed to auto-generated operationId: follow_upIdAuthorizationPOST
+Empty operationId found for path: PATCH /follow_up_authorization/{id}. Renamed to auto-generated operationId: follow_up_authorizationIdPATCH
+Empty operationId found for path: POST /follow_up/{id}/details. Renamed to auto-generated operationId: follow_upIdDetailsPOST
+Empty operationId found for path: GET /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdGET
+Empty operationId found for path: PUT /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdPUT
+Empty operationId found for path: DELETE /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdDELETE
+Empty operationId found for path: PATCH /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdPATCH
+Empty operationId found for path: GET /follow_up_details. Renamed to auto-generated operationId: follow_up_detailsGET
+Empty operationId found for path: GET /follow_up_details/{id}/item_details. Renamed to auto-generated operationId: follow_up_detailsIdItemDetailsGET
+Empty operationId found for path: POST /follow_up_details/{id}/item_details. Renamed to auto-generated operationId: follow_up_detailsIdItemDetailsPOST
+Empty operationId found for path: PATCH /item_details. Renamed to auto-generated operationId: item_detailsPATCH
+Empty operationId found for path: DELETE /item_details/{id}. Renamed to auto-generated operationId: item_detailsIdDELETE
+allOf with multiple schemas defined. Using only the first one: PageViewModel
+allOf with multiple schemas defined. Using only the first one: PageViewModel
+allOf with multiple schemas defined. Using only the first one: ItemDetailsViewModel
+allOf with multiple schemas defined. Using only the first one: PageViewModel
+allOf with multiple schemas defined. Using only the first one: PageViewModel
+allOf with multiple schemas defined. Using only the first one: PageViewModel
+allOf with multiple schemas defined. Using only the first one: PageViewModel
+Empty operationId found for path: get /heartbeat. Renamed to auto-generated operationId: heartbeatGet
+Empty operationId found for path: post /login. Renamed to auto-generated operationId: loginPost
+Empty operationId found for path: post /user/complete. Renamed to auto-generated operationId: userCompletePost
+Empty operationId found for path: get /user/me. Renamed to auto-generated operationId: userMeGet
+Empty operationId found for path: get /user. Renamed to auto-generated operationId: userGet
+Empty operationId found for path: get /user/{id}. Renamed to auto-generated operationId: userIdGet
+Empty operationId found for path: delete /user/{id}. Renamed to auto-generated operationId: userIdDelete
+Empty operationId found for path: patch /user/{id}. Renamed to auto-generated operationId: userIdPatch
+Empty operationId found for path: get /role. Renamed to auto-generated operationId: roleGet
+Empty operationId found for path: get /department. Renamed to auto-generated operationId: departmentGet
+Empty operationId found for path: get /team. Renamed to auto-generated operationId: teamGet
+Empty operationId found for path: get /time_unit. Renamed to auto-generated operationId: time_unitGet
+Empty operationId found for path: get /item_status. Renamed to auto-generated operationId: item_statusGet
+Empty operationId found for path: get /item_type. Renamed to auto-generated operationId: item_typeGet
+Empty operationId found for path: get /simple_datas. Renamed to auto-generated operationId: simple_datasGet
+Empty operationId found for path: get /domain. Renamed to auto-generated operationId: domainGet
+Empty operationId found for path: post /domain. Renamed to auto-generated operationId: domainPost
+Empty operationId found for path: get /domain/{id}. Renamed to auto-generated operationId: domainIdGet
+Empty operationId found for path: delete /domain/{id}. Renamed to auto-generated operationId: domainIdDelete
+Empty operationId found for path: patch /domain/{id}. Renamed to auto-generated operationId: domainIdPatch
+Empty operationId found for path: get /special_process. Renamed to auto-generated operationId: special_processGet
+Empty operationId found for path: post /special_process. Renamed to auto-generated operationId: special_processPost
+Empty operationId found for path: get /special_process/{id}. Renamed to auto-generated operationId: special_processIdGet
+Empty operationId found for path: delete /special_process/{id}. Renamed to auto-generated operationId: special_processIdDelete
+Empty operationId found for path: patch /special_process/{id}. Renamed to auto-generated operationId: special_processIdPatch
+Empty operationId found for path: get /item. Renamed to auto-generated operationId: itemGet
+Empty operationId found for path: post /item. Renamed to auto-generated operationId: itemPost
+Could not compute datatypeWithEnum from org.springframework.core.io.Resource, null
+Empty operationId found for path: get /item/{id}. Renamed to auto-generated operationId: itemIdGet
+Empty operationId found for path: put /item/{id}. Renamed to auto-generated operationId: itemIdPut
+Could not compute datatypeWithEnum from org.springframework.core.io.Resource, null
+Empty operationId found for path: delete /item/{id}. Renamed to auto-generated operationId: itemIdDelete
+Empty operationId found for path: patch /item/{id}. Renamed to auto-generated operationId: itemIdPatch
+Empty operationId found for path: get /item/{id}/item_details. Renamed to auto-generated operationId: itemIdItemDetailsGet
+Empty operationId found for path: post /item_details/{id}/exemption. Renamed to auto-generated operationId: item_detailsIdExemptionPost
+Empty operationId found for path: patch /item_details/exemption/{id}. Renamed to auto-generated operationId: item_detailsExemptionIdPatch
+Empty operationId found for path: get /item_details/exemption. Renamed to auto-generated operationId: item_detailsExemptionGet
+Empty operationId found for path: get /file/{id}. Renamed to auto-generated operationId: fileIdGet
+Empty operationId found for path: get /follow_up. Renamed to auto-generated operationId: follow_upGet
+Empty operationId found for path: post /follow_up. Renamed to auto-generated operationId: follow_upPost
+Could not compute datatypeWithEnum from org.springframework.core.io.Resource, null
+Empty operationId found for path: get /follow_up/{id}. Renamed to auto-generated operationId: follow_upIdGet
+Empty operationId found for path: put /follow_up/{id}. Renamed to auto-generated operationId: follow_upIdPut
+Could not compute datatypeWithEnum from org.springframework.core.io.Resource, null
+Empty operationId found for path: patch /follow_up/{id}. Renamed to auto-generated operationId: follow_upIdPatch
+Empty operationId found for path: post /follow_up/{id}/authorization. Renamed to auto-generated operationId: follow_upIdAuthorizationPost
+Empty operationId found for path: patch /follow_up_authorization/{id}. Renamed to auto-generated operationId: follow_up_authorizationIdPatch
+Empty operationId found for path: post /follow_up/{id}/details. Renamed to auto-generated operationId: follow_upIdDetailsPost
+Empty operationId found for path: get /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdGet
+Empty operationId found for path: put /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdPut
+Empty operationId found for path: delete /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdDelete
+Empty operationId found for path: patch /follow_up_details/{id}. Renamed to auto-generated operationId: follow_up_detailsIdPatch
+Empty operationId found for path: get /follow_up_details. Renamed to auto-generated operationId: follow_up_detailsGet
+Empty operationId found for path: get /follow_up_details/{id}/item_details. Renamed to auto-generated operationId: follow_up_detailsIdItemDetailsGet
+Empty operationId found for path: post /follow_up_details/{id}/item_details. Renamed to auto-generated operationId: follow_up_detailsIdItemDetailsPost
+Empty operationId found for path: patch /item_details. Renamed to auto-generated operationId: item_detailsPatch
+Empty operationId found for path: delete /item_details/{id}. Renamed to auto-generated operationId: item_detailsIdDelete
+################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project 🙏                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
+Successfully generated code to /app/siae-ps-backend-application
+
+> Task :siae-ps-backend-core:compileJava
+> Task :siae-ps-backend-core:processResources NO-SOURCE
+> Task :siae-ps-backend-core:classes
+> Task :siae-ps-backend-core:jar
+
+> Task :siae-ps-backend-infrastructure:compileJava
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :siae-ps-backend-infrastructure:processResources NO-SOURCE
+> Task :siae-ps-backend-infrastructure:classes
+> Task :siae-ps-backend-infrastructure:jar
+> Task :siae-ps-backend-application:compileJava
+
+> Task :siae-ps-backend-application:processResources
+Execution optimizations have been disabled for task ':siae-ps-backend-application:processResources' to ensure correctness due to the following reasons:
+  - Gradle detected a problem with the following location: '/app/siae-ps-backend-application/src/main/resources'. Reason: Task ':siae-ps-backend-application:processResources' uses this output of task ':siae-ps-backend-application:openApiGenerate' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.4.1/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+  - Gradle detected a problem with the following location: '/app/siae-ps-backend-application/src/main/resources/specs/openapi.yaml'. Reason: Task ':siae-ps-backend-application:processResources' uses this output of task ':siae-ps-backend-application:openApiGenerate' without declaring an explicit or implicit dependency. This can lead to incorrect results being produced, depending on what order the tasks are executed. Please refer to https://docs.gradle.org/7.4.1/userguide/validation_problems.html#implicit_dependency for more details about this problem.
+
+> Task :siae-ps-backend-application:classes
+> Task :siae-ps-backend-application:compileTestJava NO-SOURCE
+> Task :siae-ps-backend-application:processTestResources NO-SOURCE
+> Task :siae-ps-backend-application:testClasses UP-TO-DATE
+> Task :siae-ps-backend-application:test NO-SOURCE
+> Task :siae-ps-backend-application:check UP-TO-DATE
+> Task :siae-ps-backend-core:compileTestJava
+> Task :siae-ps-backend-core:processTestResources NO-SOURCE
+> Task :siae-ps-backend-core:testClasses
+
+> Task :siae-ps-backend-core:test
+Picked up JAVA_TOOL_OPTIONS: -XX:+UseContainerSupport -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 
+14:07:34.102 [SpringContextShutdownHook] DEBUG org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@2262f0d8, started on Thu Mar 16 14:07:22 UTC 2023
+
+> Task :siae-ps-backend-core:check
+> Task :siae-ps-backend-infrastructure:compileTestJava NO-SOURCE
+> Task :siae-ps-backend-infrastructure:processTestResources NO-SOURCE
+> Task :siae-ps-backend-infrastructure:testClasses UP-TO-DATE
+> Task :siae-ps-backend-infrastructure:test NO-SOURCE
+> Task :siae-ps-backend-infrastructure:check UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.4.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+Execution optimizations have been disabled for 1 invalid unit(s) of work during this build to ensure correctness.
+Please consult deprecation warnings for more details.
+
+BUILD SUCCESSFUL in 1m 16s
+9 actionable tasks: 9 executed
+section_end:1678975656:step_script
+[0Ksection_start:1678975656:cleanup_file_variables
+[0K[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+section_end:1678975657:cleanup_file_variables
+[0K[32;1mJob succeeded[0;m

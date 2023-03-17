@@ -11,11 +11,11 @@ const Index = () => {
 
   return (
     <>
-      <Preloader />
+      <Preloader/>
       <div className="about">
         <div className="section-bg container">
-          <SectionToolbox />
-          <SectionTestimonials />
+          <SectionToolbox/>
+          <SectionTestimonials/>
         </div>
       </div>
     </>

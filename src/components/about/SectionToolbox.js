@@ -136,7 +136,8 @@ const SectionToolbox = () => {
         </ul>
       </div>
       <p className="mt-4">
-        En parallèle de mes études, je me forme à de nouveaux languages et technologies
+        En parallèle de mes études, je me forme à de nouveaux languages et
+        technologies
         afin de rester à jours et de devenir toujours plus autonome.
       </p>
     </div>

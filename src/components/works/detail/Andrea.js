@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
-import andrea1 from "../../../assets/works/andrea/andrea1.jpg"
-import andrea_cart from "../../../assets/works/andrea/andrea_cart.jpg"
-import andrea_program from "../../../assets/works/andrea/andrea_program.jpg"
-import andrea_fiverr from "../../../assets/works/andrea/andrea_fiverr.jpg"
+import andrea1 from '../../../assets/works/andrea/andrea1.jpg'
+import andrea_cart from '../../../assets/works/andrea/andrea_cart.jpg'
+import andrea_program from '../../../assets/works/andrea/andrea_program.jpg'
+import andrea_fiverr from '../../../assets/works/andrea/andrea_fiverr.jpg'
 import { BiLinkExternal } from 'react-icons/bi'
 import { Carousel } from 'react-responsive-carousel'
 
@@ -14,7 +14,7 @@ const Andrea = () => {
 
   return (
     <>
-      <Preloader />
+      <Preloader/>
       <div className="works">
         <div className="section-bg container">
           <div className="row section-works">
@@ -22,18 +22,19 @@ const Andrea = () => {
 
             <div className="row work-container mx-auto">
               <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
-                <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true} interval={2500}>
+                <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true}
+                          interval={2500}>
                   <div>
-                    <img src={andrea1} />
+                    <img src={andrea1}/>
                   </div>
                   <div>
-                    <img src={andrea_cart} />
+                    <img src={andrea_cart}/>
                   </div>
                   <div>
-                    <img src={andrea_program} />
+                    <img src={andrea_program}/>
                   </div>
                   <div>
-                    <img src={andrea_fiverr} />
+                    <img src={andrea_fiverr}/>
                   </div>
                 </Carousel>
               </div>
@@ -42,10 +43,14 @@ const Andrea = () => {
             <div className="row mt-5">
               <h3> Introduction </h3>
               <p>
-                Afin d'accroitre son activité de naturopathe sur Marseille, Andrea a fait appel à
-                moi afin de développer sa présence sur internet et lui permettre de vendre
-                ses programmes via une boutique en ligne. J'ai donc développé pour elle une
-                application web où elle peut vendre ses programmes, publier ses e-books ou encore
+                Afin d'accroitre son activité de naturopathe sur Marseille,
+                Andrea a fait appel à
+                moi afin de développer sa présence sur internet et lui permettre
+                de vendre
+                ses programmes via une boutique en ligne. J'ai donc développé
+                pour elle une
+                application web où elle peut vendre ses programmes, publier ses
+                e-books ou encore
                 prendre des rendez-vous.
               </p>
             </div>
@@ -54,9 +59,9 @@ const Andrea = () => {
               <h3> Environnement technique </h3>
               <p>
                 → Interfaces sous React.js
-                <br />
+                <br/>
                 → API Rest sous Node.js
-                <br />
+                <br/>
                 → Realtime database sous Firebase pour les programmes.
                 <br/>
                 → Stripe pour les paiements.
@@ -64,29 +69,58 @@ const Andrea = () => {
                 → Préprocesseur CSS Sass.
                 <br/>
                 → Framework CSS Bootstrap.
-                <br />
+                <br/>
                 → Redux pour la centralisation de l'état.
+              </p>
+            </div>
+
+            <div className="row mt-5">
+              <h3> Compétences du référentiel BTS validées </h3>
+              <p>
+                → Recenser et identifier les ressources numériques.
+                <br/>
+                → Vérifier les conditions de la continuité d’un service
+                informatique.
+                <br/>
+                → Participer à la valorisation de l’image de l’organisation sur
+                les médias numériques en tenant compte du cadre juridique et des
+                enjeux économiques.
+                <br/>
+                → Participer à l’évolution d’un site Web exploitant les données
+                de l’organisation.
+                <br/>
+                → Mettre en place son environnement d’apprentissage personnel.
+                <br/>
+                → Gérer son identité professionnelle.
+                <br/>
+                → Développer son projet professionnel.
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Compétences acquises </h3>
               <p>
-                Premier projet développé en tant que freelance, cette mission m'a permis
-                de faire face pour la première aux différents problèmes que l'on peut rencontrer
-                lors de la livraison (mise en place du compte client, mise en production, ect...)
-                <br /><br />
-                J'ai également, pour la première fois, mis en place un système de paiement et une
+                Premier projet développé en tant que freelance, cette mission
+                m'a permis
+                de faire face pour la première aux différents problèmes que l'on
+                peut rencontrer
+                lors de la livraison (mise en place du compte client, mise en
+                production, ect...)
+                <br/><br/>
+                J'ai également, pour la première fois, mis en place un système
+                de paiement et une
                 base de données en temps réel (firebase).
-                <br /><br />
-                Enfin, ce projet m'a permis de progresser avec React.js et Node.js et de mettre en pratique
+                <br/><br/>
+                Enfin, ce projet m'a permis de progresser avec React.js et
+                Node.js et de mettre en pratique
                 ce que j'ai pu apprendre en formation.
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Ressources associées </h3>
-              <a href="https://github.com/Feliiks/andrea-naturo-website" target="_blank" rel="noreferrer"><BiLinkExternal /> Code source.</a>
+              <a href="https://github.com/Feliiks/andrea-naturo-website"
+                 target="_blank" rel="noreferrer"><BiLinkExternal/> Code source.</a>
             </div>
           </div>
         </div>

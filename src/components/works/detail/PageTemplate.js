@@ -8,10 +8,10 @@ const PageTemplate = ({ children }) => {
 
   return (
     <>
-      <Preloader />
+      <Preloader/>
       <div className="works">
         <div className="section-bg container">
-          { children }
+          {children}
         </div>
       </div>
     </>

@@ -23,18 +23,19 @@ const Lsvibes = () => {
 
             <div className="row work-container mx-auto">
               <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
-                <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true} interval={2500}>
-                    <div>
-                    <img src={lsvibes_home} />
+                <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true}
+                          interval={2500}>
+                  <div>
+                    <img src={lsvibes_home}/>
                   </div>
                   <div>
-                    <img src={lsvibes_profile} />
+                    <img src={lsvibes_profile}/>
                   </div>
                   <div>
-                    <img src={lsvibes_trello} />
+                    <img src={lsvibes_trello}/>
                   </div>
                   <div>
-                    <img src={lsvibes_figma} />
+                    <img src={lsvibes_figma}/>
                   </div>
                 </Carousel>
               </div>
@@ -75,16 +76,23 @@ const Lsvibes = () => {
             <div className="row mt-5">
               <h3> Compétences acquises </h3>
               <p>
-                LS Vibes m'a permis pour la toute première fois de travailler en mode projet.
-                Seul sur la partie web, j'ai du coordonner mon travail avec les développeurs
-                du jeu, notamment sur la partie gestion des données. Cela m'a permis également
-                d'agrandir mes connaissances sur les technologies et languages utilisés.
-                <br /><br />
-                Le développement des fonctionnalités web étant rythmées par celles du jeu,
-                la mise en place de Trello et la gestion de versions du code sur GitLab nous
+                LS Vibes m'a permis pour la toute première fois de travailler en
+                mode projet.
+                Seul sur la partie web, j'ai du coordonner mon travail avec les
+                développeurs
+                du jeu, notamment sur la partie gestion des données. Cela m'a
+                permis également
+                d'agrandir mes connaissances sur les technologies et languages
+                utilisés.
+                <br/><br/>
+                Le développement des fonctionnalités web étant rythmées par
+                celles du jeu,
+                la mise en place de Trello et la gestion de versions du code sur
+                GitLab nous
                 ont permis d'avancer plus rapidement.
-                <br /><br />
-                Plusieurs réunions en cours de projet et la liaison du web avec le jeu m'ont
+                <br/><br/>
+                Plusieurs réunions en cours de projet et la liaison du web avec
+                le jeu m'ont
                 permis de développer mes compétences de travail en mode projet.
               </p>
             </div>

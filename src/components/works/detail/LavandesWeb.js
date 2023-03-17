@@ -2,8 +2,10 @@ import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
 import lavandes_home from '../../../assets/works/lavandes-web/lavandes1.jpg'
 import lavandes_login from '../../../assets/works/lavandes-web/lavandes2.jpg'
-import lavandes_locations from '../../../assets/works/lavandes-web/lavandes3.jpg'
-import lavandes_reservations from '../../../assets/works/lavandes-web/lavandes4.jpg'
+import lavandes_locations
+  from '../../../assets/works/lavandes-web/lavandes3.jpg'
+import lavandes_reservations
+  from '../../../assets/works/lavandes-web/lavandes4.jpg'
 import lavandes_cdc from '../../../assets/works/lavandes-web/cdc.docx'
 import lavandes_class from '../../../assets/works/lavandes-web/lavandes5.jpg'
 import lavandes_usecase from '../../../assets/works/lavandes-web/lavandes6.jpg'
@@ -27,24 +29,25 @@ const LavandesWeb = () => {
 
             <div className="row work-container mx-auto">
               <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
-                <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true} interval={2500}>
+                <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true}
+                          interval={2500}>
                   <div>
-                    <img src={lavandes_home} />
+                    <img src={lavandes_home}/>
                   </div>
                   <div>
-                    <img src={lavandes_login} />
+                    <img src={lavandes_login}/>
                   </div>
                   <div>
-                    <img src={lavandes_locations} />
+                    <img src={lavandes_locations}/>
                   </div>
                   <div>
-                    <img src={lavandes_reservations} />
+                    <img src={lavandes_reservations}/>
                   </div>
                   <div>
-                    <img src={lavandes_usecase} />
+                    <img src={lavandes_usecase}/>
                   </div>
                   <div>
-                    <img src={lavandes_class} />
+                    <img src={lavandes_class}/>
                   </div>
                 </Carousel>
               </div>
@@ -130,16 +133,71 @@ const LavandesWeb = () => {
             </div>
 
             <div className="row mt-5">
+              <h3> Compétences du référentiel BTS validées </h3>
+              <p>
+                → Recenser et identifier les ressources numériques.
+                <br/>
+                → Mettre en place et vérifier les niveaux d’habilitation
+                associés à un service.
+                <br/>
+                → Vérifier les conditions de la continuité d’un service
+                informatique.
+                <br/>
+                → Collecter, suivre et orienter des demandes.
+                <br/>
+                → Traiter des demandes concernant les applications.
+                <br/>
+                → Participer à la valorisation de l’image de l’organisation sur
+                les médias numériques en tenant compte du cadre juridique et des
+                enjeux économiques.
+                <br/>
+                → Référencer les services en ligne de l’organisation et mesurer
+                leur visibilité..
+                <br/>
+                → Participer à l’évolution d’un site Web exploitant les données
+                de l’organisation.
+                <br/>
+                → Réaliser les tests d’intégration et d’acceptation d’un
+                service.
+                <br/>
+                → Déployer un service.
+                <br/>
+                → Mettre en place son environnement d’apprentissage personnel.
+                <br/>
+                → Gérer son identité professionnelle.
+                <br/>
+                → Développer son projet professionnel.
+              </p>
+            </div>
+
+            <div className="row mt-5">
               <h3> Ressources associées </h3>
-              <a href={lavandes_cdc} target="_blank" rel="noreferrer"><BiLinkExternal/> Cahier des charges. </a>
-              <a href="https://github.com/ludovic-sbr/lavandes-web-app" target="_blank" rel="noreferrer"><BiLinkExternal/> Lien vers le code source du front. </a>
-              <a href="https://github.com/ludovic-sbr/lavandes-api" target="_blank" rel="noreferrer"><BiLinkExternal/> Lien vers le code source de l'API. </a>
-              <a href="https://camping-lavandes.com/LavandesWeb.js" target="_blank" rel="noreferrer"><BiLinkExternal/> Lien de l'application. </a>
-              <a href="https://api.camping-lavandes.com/api/swagger-ui/index.html#/" target="_blank" rel="noreferrer"><BiLinkExternal/> Lien de l'API. </a>
-              <a href={lavandes_class} target="_blank" rel="noreferrer"><BiLinkExternal/> Diagramme de classe. </a>
-              <a href={lavandes_usecase} target="_blank" rel="noreferrer"><BiLinkExternal/> Diagramme de cas d'utilisation </a>
-              <a href={lavandes_sitemap} target="_blank" rel="noreferrer"><BiLinkExternal/> Arborescence de l'application. </a>
-              <a href={lavandes_test} target="_blank" rel="noreferrer"><BiLinkExternal/> Résultats des tests unitaires de l'API. </a>
+              <a href={lavandes_cdc} target="_blank"
+                 rel="noreferrer"><BiLinkExternal/> Cahier des charges. </a>
+              <a href="https://github.com/ludovic-sbr/lavandes-web-app"
+                 target="_blank" rel="noreferrer"><BiLinkExternal/> Lien vers le
+                code source du front. </a>
+              <a href="https://github.com/ludovic-sbr/lavandes-api"
+                 target="_blank" rel="noreferrer"><BiLinkExternal/> Lien vers le
+                code source de l'API. </a>
+              <a href="https://camping-lavandes.com/LavandesWeb.js"
+                 target="_blank" rel="noreferrer"><BiLinkExternal/> Lien de
+                l'application. </a>
+              <a
+                href="https://api.camping-lavandes.com/api/swagger-ui/index.html#/"
+                target="_blank" rel="noreferrer"><BiLinkExternal/> Lien de
+                l'API. </a>
+              <a href={lavandes_class} target="_blank"
+                 rel="noreferrer"><BiLinkExternal/> Diagramme de classe. </a>
+              <a href={lavandes_usecase} target="_blank"
+                 rel="noreferrer"><BiLinkExternal/> Diagramme de cas
+                d'utilisation </a>
+              <a href={lavandes_sitemap} target="_blank"
+                 rel="noreferrer"><BiLinkExternal/> Arborescence de
+                l'application. </a>
+              <a href={lavandes_test} target="_blank"
+                 rel="noreferrer"><BiLinkExternal/> Résultats des tests
+                unitaires de l'API. </a>
             </div>
           </div>
         </div>

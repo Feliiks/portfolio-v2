@@ -8,7 +8,7 @@ const SectionWelcome = () => {
         <h1> LUDOVIC SOBRERO </h1>
         <span> Etudiant en informatique. </span>
         <HashLink smooth to="/#section-contact">
-          <button className="btn"> Me contacter </button>
+          <button className="btn"> Me contacter</button>
         </HashLink>
       </div>
     </div>

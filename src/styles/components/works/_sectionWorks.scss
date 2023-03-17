@@ -1,6 +1,7 @@
 .section-works {
   h2 {
     text-align: center;
+    margin-bottom: 25px;
   }
 
   .work-container {
@@ -117,7 +118,8 @@
     }
 
     .work-carousel {
-      height: 300px; width: 525px;
+      height: 300px;
+      width: 525px;
 
       display: flex;
       align-items: center;

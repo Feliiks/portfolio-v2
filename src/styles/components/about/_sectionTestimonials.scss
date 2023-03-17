@@ -9,10 +9,12 @@
   .testimonials {
     max-width: 85%;
 
-    margin: 0 auto; padding: 0;
+    margin: 0 auto;
+    padding: 0;
 
     .testimonials-item {
-      height: 280px; width: 250px;
+      height: 280px;
+      width: 250px;
 
       display: flex;
       align-items: center;
@@ -29,7 +31,8 @@
       }
 
       .bg {
-        height: 100%; width: 100%;
+        height: 100%;
+        width: 100%;
 
         position: absolute;
 

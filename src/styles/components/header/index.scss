@@ -1,7 +1,9 @@
 .header {
-  height: 100px; width: 100%;
+  height: 100px;
+  width: 100%;
 
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
   position: absolute;
 
   z-index: 999;
@@ -58,7 +60,8 @@
   height: 35px;
   width: 45px;
   z-index: 9999;
-  top: 20px; right: 20px;
+  top: 20px;
+  right: 20px;
 
   @media screen and (max-width: 768px) {
     display: block;
@@ -74,7 +77,8 @@
   }
 
   .line-2 {
-    top: 0; bottom: 0;
+    top: 0;
+    bottom: 0;
     margin: auto;
   }
 

@@ -1,16 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/index.scss'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import App from './App'
+import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>,
-  document.getElementById('root')
-);
+  document.getElementById('root'),
+)
 
-reportWebVitals();
+reportWebVitals()

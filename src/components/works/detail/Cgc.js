@@ -22,18 +22,19 @@ const Cgc = () => {
 
             <div className="row work-container mx-auto">
               <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
-                <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true} interval={2500}>
+                <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true}
+                          interval={2500}>
                   <div>
-                    <img src={solana} />
+                    <img src={solana}/>
                   </div>
                   <div>
-                    <img src={solana_about} />
+                    <img src={solana_about}/>
                   </div>
                   <div>
-                    <img src={solana_team} />
+                    <img src={solana_team}/>
                   </div>
                   <div>
-                    <img src={solana_fiverr} />
+                    <img src={solana_fiverr}/>
                   </div>
                 </Carousel>
               </div>
@@ -42,12 +43,23 @@ const Cgc = () => {
             <div className="row mt-5">
               <h3> Compétences acquises </h3>
               <p>
-                Lors de ce projet et pour la première fois, j'ai du créer, à la demande
-                du client, différentes maquettes des interfaces. J'ai donc appris à
-                utiliser Canva Pro mais aussi à adapter mes créations à la demande du client.
-                <br /><br />
-                Ce projet a impliqué beaucoup de communication et notamment avec des
+                Lors de ce projet et pour la première fois, j'ai du créer, à la
+                demande
+                du client, différentes maquettes des interfaces. J'ai donc
+                appris à
+                utiliser Canva Pro mais aussi à adapter mes créations à la
+                demande du client.
+                <br/><br/>
+                Ce projet a impliqué beaucoup de communication et notamment avec
+                des
                 personnes anglophones.
+              </p>
+            </div>
+
+            <div className="row mt-5">
+              <h3> Compétences du référentiel BTS validées </h3>
+              <p>
+                ?
               </p>
             </div>
 

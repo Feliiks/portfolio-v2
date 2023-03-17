@@ -2,20 +2,19 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 
-import Logo from "../../assets/logo_allongé.png"
-
+import Logo from '../../assets/logo_allongé.png'
 
 const Index = () => {
-  const [navStatut, setNavStatut] = useState(false);
+  const [navStatut, setNavStatut] = useState(false)
   const navbarRef = useRef()
 
   useEffect(() => {
     if (navStatut) {
-      navbarRef.current.style.visibility = "visible";
-      navbarRef.current.style.opacity = "1";
+      navbarRef.current.style.visibility = 'visible'
+      navbarRef.current.style.opacity = '1'
     } else {
-      navbarRef.current.style.visibility = "hidden";
-      navbarRef.current.style.opacity = "0";
+      navbarRef.current.style.visibility = 'hidden'
+      navbarRef.current.style.opacity = '0'
     }
   })
 
@@ -39,7 +38,7 @@ const Index = () => {
         <div className="container">
           <div className="logo">
             <Link to="/">
-              <img src={Logo} alt="ls_logo" />
+              <img src={Logo} alt="ls_logo"/>
             </Link>
           </div>
           <ul className="navbar-nav d-flex flex-md-row flex-column">
@@ -64,9 +63,9 @@ const Index = () => {
         </div>
       </div>
       <div className="burger" onClick={() => setNavStatut(!navStatut)}>
-        <div className="line-1" />
-        <div className="line-2" />
-        <div className="line-3" />
+        <div className="line-1"/>
+        <div className="line-2"/>
+        <div className="line-3"/>
       </div>
     </>
   )

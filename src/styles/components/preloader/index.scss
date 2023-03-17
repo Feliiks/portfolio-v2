@@ -7,7 +7,10 @@
   justify-content: center;
   flex-direction: column;
   position: fixed;
-  top: 0; left: 0; bottom: 0; right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
   overflow: hidden;
   background: #0B0023;
@@ -35,7 +38,7 @@
     background: #fff;
 
     .inner {
-      width: 0%;
+      width: 0;
       height: 100%;
       background: #40E0D0;
       transition: width 1s 0.5s ease-in-out

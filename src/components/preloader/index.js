@@ -22,7 +22,7 @@ const Index = () => {
 
   return (
     <div className="preloader" id="preloader">
-      <img src={Logo} alt="img" />
+      <img src={Logo} alt="img"/>
       <div className="pbar">
         <div className="inner" id="inner"/>
       </div>

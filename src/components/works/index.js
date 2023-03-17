@@ -10,10 +10,10 @@ const Index = () => {
 
   return (
     <>
-      <Preloader />
+      <Preloader/>
       <div className="works">
         <div className="section-bg container">
-          <SectionWorks />
+          <SectionWorks/>
         </div>
       </div>
     </>

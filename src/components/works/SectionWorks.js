@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { RightCornerRibbon } from 'react-ribbons'
 
 import flutter from '../../assets/skills/flutter.png'
 import dart from '../../assets/skills/dart.png'
@@ -29,9 +30,9 @@ import lsvibes_home from '../../assets/works/lsvibes/lsvibes_home.jpg'
 import scgc1 from '../../assets/works/solana/solana1.jpg'
 import hts1 from '../../assets/works/hts/hts1.jpg'
 import ffcc_home from '../../assets/works/ffcc/ffcc_home.jpg'
-import crawind_orders from '../../assets/works/crawind/orders.jpg'
 import lavandes_home from '../../assets/works/lavandes-web/lavandes1.jpg'
-import mobilapp_portfolio from '../../assets/works/lavandes-mobile/mobilapp_portfolio.png'
+import mobilapp_portfolio
+  from '../../assets/works/lavandes-mobile/mobilapp_portfolio.png'
 
 import { BiLinkExternal } from 'react-icons/bi'
 
@@ -46,8 +47,10 @@ const SectionWorks = () => {
           <div className="work-content mx-auto mb-4 mb-xl-0">
             <h3> LAVANDES MOBILE APP </h3>
             <p>
-              Avec de permettre aux salariés de gérer de manière digitale le Camping,
-              le Camping des Lavandes***** a décidé de déplacer la gestion des locations,
+              Afin de permettre aux salariés de gérer de manière digitale le
+              Camping,
+              le Camping des Lavandes***** a décidé de déplacer la gestion des
+              locations,
               réservations et vacanciers sur une nouvelle application mobile.
             </p>
             <ul className="skills-list col-12 mt-2 mb-4">
@@ -77,7 +80,8 @@ const SectionWorks = () => {
               </li>
             </ul>
             <div className="buttons">
-              <a href="https://github.com/ludovic-sbr/lavandes-mobil-app" target="_blank"
+              <a href="https://github.com/ludovic-sbr/lavandes-mobil-app"
+                 target="_blank"
                  rel="noreferrer">
                 <button id="github">
                   GitHub repository <BiLinkExternal/>
@@ -90,7 +94,12 @@ const SectionWorks = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-6 p-0 d-flex align-items-center">
+        <div
+          className="col-xl-6 p-0 d-flex align-items-center position-relative">
+          <RightCornerRibbon backgroundColor="#FF5733" color="#f0f0f0"
+                             fontFamily="Arial">
+            Formation
+          </RightCornerRibbon>
           <div className="work-carousel mx-auto">
             <img
               src={mobilapp_portfolio}
@@ -139,7 +148,8 @@ const SectionWorks = () => {
               </li>
             </ul>
             <div className="buttons">
-              <a href="https://github.com/ludovic-sbr/lavandes-web-app" target="_blank"
+              <a href="https://github.com/ludovic-sbr/lavandes-web-app"
+                 target="_blank"
                  rel="noreferrer">
                 <button id="github">
                   GitHub repository <BiLinkExternal/>
@@ -152,7 +162,12 @@ const SectionWorks = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-6 p-0 d-flex align-items-center">
+        <div
+          className="col-xl-6 p-0 d-flex align-items-center position-relative">
+          <RightCornerRibbon backgroundColor="#FF5733" color="#f0f0f0"
+                             fontFamily="Arial">
+            Formation
+          </RightCornerRibbon>
           <div className="work-carousel mx-auto">
             <img
               src={lavandes_home}
@@ -212,10 +227,150 @@ const SectionWorks = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-6 p-0 d-flex align-items-center">
+        <div
+          className="col-xl-6 p-0 d-flex align-items-center position-relative">
+          <RightCornerRibbon backgroundColor="#3371FF" color="#f0f0f0"
+                             fontFamily="Arial">
+            Alternance
+          </RightCornerRibbon>
           <div className="work-carousel mx-auto">
             <img
               src={ps_login}
+              alt="First slide"
+            />
+          </div>
+        </div>
+      </div>
+
+
+      <div
+        className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
+        <div className="col-xl-6 d-flex align-items-center">
+          <div className="work-content mx-auto mb-4 mb-xl-0">
+            <h3> FF COURSE CAMARGUAISE </h3>
+            <p>
+              Dans le cadre de mon stage de première année de BTS, j'ai pu
+              travailler
+              sur la nouvelle fonctionnalité du site web de la Fédération
+              française de
+              Course Camargaise. Cette web app permet la demande et la gestion
+              de sa carte jeune.
+            </p>
+            <ul className="skills-list col-12 mt-2 mb-4">
+              <li>
+                <img src={angular} alt="angular"/>
+                <span> Angular </span>
+              </li>
+              <li>
+                <img src={sass} alt="sass"/>
+                <span> Sass </span>
+              </li>
+              <li>
+                <img src={nodejs} alt="nodejs"/>
+                <span> Node.js </span>
+              </li>
+              <li>
+                <img src={prisma} alt="prisma"/>
+                <span> Prisma </span>
+              </li>
+              <li>
+                <img src={mysql} alt="mysql"/>
+                <span> MySQL </span>
+              </li>
+              <li>
+                <img src={git} alt="git"/>
+                <span> Git </span>
+              </li>
+            </ul>
+            <div className="buttons">
+              <a href="https://github.com/Feliiks/carte-jeune-ffcc"
+                 target="_blank" rel="noreferrer">
+                <button id="github">
+                  GitHub repository <BiLinkExternal/>
+                </button>
+              </a>
+              <Link to="/works/detail/ffcc" style={{ width: '40%' }}>
+                <button id="mission-detail"> Plus de détails</button>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-xl-6 p-0 d-flex align-items-center position-relative">
+          <RightCornerRibbon backgroundColor="#3371FF" color="#f0f0f0"
+                             fontFamily="Arial">
+            Stage
+          </RightCornerRibbon>
+          <div className="work-carousel mx-auto">
+            <img
+              src={ffcc_home}
+              alt="First slide"
+            />
+          </div>
+        </div>
+      </div>
+
+
+      <div
+        className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
+        <div className="col-xl-6 d-flex align-items-center">
+          <div className="work-content mx-auto mb-4 mb-xl-0">
+            <h3> ANDREA NATUROPATHIE </h3>
+            <p>
+              Afin d'accroitre son activité de naturopathe sur Marseille, Andrea
+              a fait appel à
+              moi afin de développer sa présence sur internet et lui permettre
+              de vendre
+              ses programmes via une boutique en ligne.
+            </p>
+            <ul className="skills-list col-12 mt-2 mb-4">
+              <li>
+                <img src={reactjs} alt="reactjs"/>
+                <span> React.js </span>
+              </li>
+              <li>
+                <img src={bootstrap} alt="bootstrap"/>
+                <span> Bootstrap </span>
+              </li>
+              <li>
+                <img src={redux} alt="redux"/>
+                <span> Redux </span>
+              </li>
+              <li>
+                <img src={nodejs} alt="nodejs"/>
+                <span> Node.js </span>
+              </li>
+              <li>
+                <img src={firebase} alt="firebase"/>
+                <span> Firebase </span>
+              </li>
+              <li>
+                <img src={stripe} alt="stripe"/>
+                <span> Stripe </span>
+              </li>
+            </ul>
+            <div className="buttons">
+              <a href="https://github.com/Feliiks/andrea-naturo-website"
+                 target="_blank" rel="noreferrer">
+                <button id="github">
+                  GitHub repository <BiLinkExternal/>
+                </button>
+              </a>
+              <Link to="/works/detail/andrea-naturo" style={{ width: '40%' }}>
+                <button id="mission-detail"> Plus de détails</button>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-xl-6 p-0 d-flex align-items-center position-relative">
+          <RightCornerRibbon backgroundColor="#D69F00" color="#f0f0f0"
+                             fontFamily="Arial">
+            Freelance
+          </RightCornerRibbon>
+          <div className="work-carousel mx-auto">
+            <img
+              src={andrea1}
               alt="First slide"
             />
           </div>
@@ -275,7 +430,12 @@ const SectionWorks = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-6 p-0 d-flex align-items-center">
+        <div
+          className="col-xl-6 p-0 d-flex align-items-center position-relative">
+          <RightCornerRibbon backgroundColor="#D69F00" color="#f0f0f0"
+                             fontFamily="Arial">
+            Freelance
+          </RightCornerRibbon>
           <div className="work-carousel mx-auto">
             <img
               src={stefanos1}
@@ -337,7 +497,12 @@ const SectionWorks = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-6 p-0 d-flex align-items-center">
+        <div
+          className="col-xl-6 p-0 d-flex align-items-center position-relative">
+          <RightCornerRibbon backgroundColor="#D69F00" color="#f0f0f0"
+                             fontFamily="Arial">
+            Freelance
+          </RightCornerRibbon>
           <div className="work-carousel mx-auto">
             <img
               src={hts1}
@@ -399,135 +564,15 @@ const SectionWorks = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-6 p-0 d-flex align-items-center">
+        <div
+          className="col-xl-6 p-0 d-flex align-items-center position-relative">
+          <RightCornerRibbon backgroundColor="#D69F00" color="#f0f0f0"
+                             fontFamily="Arial">
+            Freelance
+          </RightCornerRibbon>
           <div className="work-carousel mx-auto">
             <img
               src={scgc1}
-              alt="First slide"
-            />
-          </div>
-        </div>
-      </div>
-
-
-      <div
-        className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
-        <div className="col-xl-6 d-flex align-items-center">
-          <div className="work-content mx-auto mb-4 mb-xl-0">
-            <h3> ANDREA NATUROPATHIE </h3>
-            <p>
-              Afin d'accroitre son activité de naturopathe sur Marseille, Andrea
-              a fait appel à
-              moi afin de développer sa présence sur internet et lui permettre
-              de vendre
-              ses programmes via une boutique en ligne.
-            </p>
-            <ul className="skills-list col-12 mt-2 mb-4">
-              <li>
-                <img src={reactjs} alt="reactjs"/>
-                <span> React.js </span>
-              </li>
-              <li>
-                <img src={bootstrap} alt="bootstrap"/>
-                <span> Bootstrap </span>
-              </li>
-              <li>
-                <img src={redux} alt="redux"/>
-                <span> Redux </span>
-              </li>
-              <li>
-                <img src={nodejs} alt="nodejs"/>
-                <span> Node.js </span>
-              </li>
-              <li>
-                <img src={firebase} alt="firebase"/>
-                <span> Firebase </span>
-              </li>
-              <li>
-                <img src={stripe} alt="stripe"/>
-                <span> Stripe </span>
-              </li>
-            </ul>
-            <div className="buttons">
-              <a href="https://github.com/Feliiks/andrea-naturo-website"
-                 target="_blank" rel="noreferrer">
-                <button id="github">
-                  GitHub repository <BiLinkExternal/>
-                </button>
-              </a>
-              <Link to="/works/detail/andrea-naturo" style={{ width: '40%' }}>
-                <button id="mission-detail"> Plus de détails</button>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="col-xl-6 p-0 d-flex align-items-center">
-          <div className="work-carousel mx-auto">
-            <img
-              src={andrea1}
-              alt="First slide"
-            />
-          </div>
-        </div>
-      </div>
-
-
-      <div
-        className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
-        <div className="col-xl-6 d-flex align-items-center">
-          <div className="work-content mx-auto mb-4 mb-xl-0">
-            <h3> FF COURSE CAMARGUAISE </h3>
-            <p>
-              Dans le cadre de mon stage de première année de BTS, j'ai pu
-              travailler
-              sur la nouvelle fonctionnalité du site web de la Fédération
-              française de
-              Course Camargaise. Cette web app permet la demande et la gestion
-              de sa carte jeune.
-            </p>
-            <ul className="skills-list col-12 mt-2 mb-4">
-              <li>
-                <img src={angular} alt="angular"/>
-                <span> Angular </span>
-              </li>
-              <li>
-                <img src={sass} alt="sass"/>
-                <span> Sass </span>
-              </li>
-              <li>
-                <img src={nodejs} alt="nodejs"/>
-                <span> Node.js </span>
-              </li>
-              <li>
-                <img src={prisma} alt="prisma"/>
-                <span> Prisma </span>
-              </li>
-              <li>
-                <img src={mysql} alt="mysql"/>
-                <span> MySQL </span>
-              </li>
-              <li>
-                <img src={git} alt="git"/>
-                <span> Git </span>
-              </li>
-            </ul>
-            <div className="buttons">
-              <a href="https://github.com/Feliiks/carte-jeune-ffcc"
-                 target="_blank" rel="noreferrer">
-                <button id="github">
-                  GitHub repository <BiLinkExternal/>
-                </button>
-              </a>
-              <Link to="/works/detail/ffcc" style={{ width: '40%' }}>
-                <button id="mission-detail"> Plus de détails</button>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="col-xl-6 p-0 d-flex align-items-center">
-          <div className="work-carousel mx-auto">
-            <img
-              src={ffcc_home}
               alt="First slide"
             />
           </div>
@@ -587,7 +632,12 @@ const SectionWorks = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-6 p-0 d-flex align-items-center">
+        <div
+          className="col-xl-6 p-0 d-flex align-items-center position-relative">
+          <RightCornerRibbon backgroundColor="#979797" color="#f0f0f0"
+                             fontFamily="Arial">
+            Personnel
+          </RightCornerRibbon>
           <div className="work-carousel mx-auto">
             <img
               src={lsvibes_home}
