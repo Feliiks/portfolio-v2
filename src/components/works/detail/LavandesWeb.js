@@ -9,6 +9,7 @@ import lavandes_reservations
 import lavandes_cdc from '../../../assets/works/lavandes-web/cdc.docx'
 import lavandes_class from '../../../assets/works/lavandes-web/lavandes5.jpg'
 import lavandes_usecase from '../../../assets/works/lavandes-web/lavandes6.jpg'
+import lavandes_ga from '../../../assets/works/lavandes-web/lavandes7.png'
 import lavandes_sitemap from '../../../assets/works/lavandes-web/sitemap.png'
 import lavandes_test from '../../../assets/works/lavandes-web/test.txt'
 import { BiLinkExternal } from 'react-icons/bi'
@@ -48,6 +49,9 @@ const LavandesWeb = () => {
                   </div>
                   <div>
                     <img src={lavandes_class}/>
+                  </div>
+                  <div>
+                    <img src={lavandes_ga}/>
                   </div>
                 </Carousel>
               </div>
