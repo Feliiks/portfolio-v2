@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
-import lavandes_home from '../../../assets/works/lavandes-web/lavandes1.jpg'
-import lavandes_login from '../../../assets/works/lavandes-web/lavandes2.jpg'
-import lavandes_locations
-  from '../../../assets/works/lavandes-web/lavandes3.jpg'
-import lavandes_reservations
-  from '../../../assets/works/lavandes-web/lavandes4.jpg'
-import lavandes_cdc from '../../../assets/works/lavandes-web/cdc.docx'
-import lavandes_class from '../../../assets/works/lavandes-web/lavandes5.jpg'
-import lavandes_usecase from '../../../assets/works/lavandes-web/lavandes6.jpg'
-import lavandes_ga from '../../../assets/works/lavandes-web/lavandes7.png'
-import lavandes_sitemap from '../../../assets/works/lavandes-web/sitemap.png'
+import lavandes1 from '../../../assets/works/lavandes-web/lavandes1.jpg'
+import lavandes2 from '../../../assets/works/lavandes-web/lavandes2.jpg'
+import lavandes3 from '../../../assets/works/lavandes-web/lavandes3.jpg'
+import lavandes4 from '../../../assets/works/lavandes-web/lavandes4.jpg'
+import cdc from '../../../assets/works/lavandes-web/cdc.docx'
+import lavandes5 from '../../../assets/works/lavandes-web/lavandes5.jpg'
+import lavandes6 from '../../../assets/works/lavandes-web/lavandes6.jpg'
+import lavandes7 from '../../../assets/works/lavandes-web/lavandes7.png'
+import lavandes8 from '../../../assets/works/lavandes-web/lavandes8.jpg'
+import lavandes9 from '../../../assets/works/lavandes-web/lavandes9.png'
+import lavandes10 from '../../../assets/works/lavandes-web/lavandes10.png'
 import lavandes_test from '../../../assets/works/lavandes-web/test.txt'
 import { BiLinkExternal } from 'react-icons/bi'
 import { Carousel } from 'react-responsive-carousel'
@@ -33,25 +33,34 @@ const LavandesWeb = () => {
                 <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true}
                           interval={2500}>
                   <div>
-                    <img src={lavandes_home}/>
+                    <img src={lavandes1}/>
                   </div>
                   <div>
-                    <img src={lavandes_login}/>
+                    <img src={lavandes2}/>
                   </div>
                   <div>
-                    <img src={lavandes_locations}/>
+                    <img src={lavandes3}/>
                   </div>
                   <div>
-                    <img src={lavandes_reservations}/>
+                    <img src={lavandes4}/>
                   </div>
                   <div>
-                    <img src={lavandes_usecase}/>
+                    <img src={lavandes5}/>
                   </div>
                   <div>
-                    <img src={lavandes_class}/>
+                    <img src={lavandes6}/>
                   </div>
                   <div>
-                    <img src={lavandes_ga}/>
+                    <img src={lavandes7}/>
+                  </div>
+                  <div>
+                    <img src={lavandes8}/>
+                  </div>
+                  <div>
+                    <img src={lavandes9}/>
+                  </div>
+                  <div>
+                    <img src={lavandes10}/>
                   </div>
                 </Carousel>
               </div>
@@ -176,7 +185,7 @@ const LavandesWeb = () => {
 
             <div className="row mt-5">
               <h3> Ressources associées </h3>
-              <a href={lavandes_cdc} target="_blank"
+              <a href={cdc} target="_blank"
                  rel="noreferrer"><BiLinkExternal/> Cahier des charges. </a>
               <a href="https://github.com/ludovic-sbr/lavandes-web-app"
                  target="_blank" rel="noreferrer"><BiLinkExternal/> Lien vers le
@@ -191,12 +200,12 @@ const LavandesWeb = () => {
                 href="https://api.camping-lavandes.com/api/swagger-ui/index.html#/"
                 target="_blank" rel="noreferrer"><BiLinkExternal/> Lien de
                 l'API. </a>
-              <a href={lavandes_class} target="_blank"
+              <a href={lavandes5} target="_blank"
                  rel="noreferrer"><BiLinkExternal/> Diagramme de classe. </a>
-              <a href={lavandes_usecase} target="_blank"
+              <a href={lavandes6} target="_blank"
                  rel="noreferrer"><BiLinkExternal/> Diagramme de cas
                 d'utilisation </a>
-              <a href={lavandes_sitemap} target="_blank"
+              <a href={lavandes10} target="_blank"
                  rel="noreferrer"><BiLinkExternal/> Arborescence de
                 l'application. </a>
               <a href={lavandes_test} target="_blank"

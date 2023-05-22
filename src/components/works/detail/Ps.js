@@ -1,12 +1,17 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
-import ps_login from '../../../assets/works/ps/ps_login.jpg'
-import ps_bdd from '../../../assets/works/ps/ps_bdd.jpg'
-import ps_figma from '../../../assets/works/ps/ps_figma.jpg'
-import ps_jira from '../../../assets/works/ps/ps_jira.jpg'
+import ps1 from '../../../assets/works/ps/ps1.png'
+import ps2 from '../../../assets/works/ps/ps2.png'
+import ps3 from '../../../assets/works/ps/ps3.png'
+import ps4 from '../../../assets/works/ps/ps4.png'
+import ps5 from '../../../assets/works/ps/ps5.jpg'
+import ps6 from '../../../assets/works/ps/ps6.jpg'
+import ps7 from '../../../assets/works/ps/ps7.jpg'
+import ps8 from '../../../assets/works/ps/ps8.png'
 import { BiLinkExternal } from 'react-icons/bi'
 import { Carousel } from 'react-responsive-carousel'
 import ps_test from '../../../assets/works/ps/test.txt'
+import attestation_alternance from '../../../assets/works/ps/attestation_alternance.pdf'
 
 const Ps = () => {
   useEffect(() => {
@@ -26,16 +31,28 @@ const Ps = () => {
                 <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true}
                           interval={2500}>
                   <div>
-                    <img src={ps_login}/>
+                    <img src={ps1}/>
                   </div>
                   <div>
-                    <img src={ps_bdd}/>
+                    <img src={ps2}/>
                   </div>
                   <div>
-                    <img src={ps_figma}/>
+                    <img src={ps3}/>
                   </div>
                   <div>
-                    <img src={ps_jira}/>
+                    <img src={ps4}/>
+                  </div>
+                  <div>
+                    <img src={ps5}/>
+                  </div>
+                  <div>
+                    <img src={ps6}/>
+                  </div>
+                  <div>
+                    <img src={ps7}/>
+                  </div>
+                  <div>
+                    <img src={ps8}/>
                   </div>
                 </Carousel>
               </div>
@@ -149,14 +166,14 @@ const Ps = () => {
 
             <div className="row mt-5">
               <h3> Ressources associées </h3>
-              <a href="/"><BiLinkExternal/> Attestation d'apprentissage. </a>
+              <a href={attestation_alternance} target="_blank" rel="noreferrer"><BiLinkExternal/> Attestation d'apprentissage. </a>
               <a href="https://siae-ps-frontend-staging.34.78.209.95.nip.io/"
                  target="_blank" rel="noreferrer"><BiLinkExternal/> Lien de
                 l'application. </a>
               <a href="https://siae-ps-backend-staging.34.78.209.95.nip.io/"
                  target="_blank" rel="noreferrer"><BiLinkExternal/> Lien de
                 l'API. </a>
-              <a href={ps_bdd} target="_blank"
+              <a href={ps5} target="_blank"
                  rel="noreferrer"><BiLinkExternal/> Diagramme de classe. </a>
               <a
                 href="https://www.figma.com/file/Tfcc3aNb7FCPCfm4lzmqa1/%5BPS%5DWireframe%2BHD?node-id=0-1"
