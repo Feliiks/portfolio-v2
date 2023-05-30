@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 
 import Preloader from '../preloader'
+import veille_techno from '../../assets/veille_technologique.pdf'
 
 const Veille = () => {
   useEffect(() => {
@@ -14,10 +15,9 @@ const Veille = () => {
         <div className="section-bg container">
           <div className="row section-pricing">
             <h2 className="mb-3"> VEILLE TECHNOLOGIQUE </h2>
-            <h3 className="mx-auto text-center"> Les applications
-              décentralisées </h3>
-
-            <p> ... </p>
+            <h3 className="mx-auto mb-4 text-center"> Le web décentralisé </h3>
+            <embed src={veille_techno} width="800" height="600"
+                   type="application/pdf"/>
           </div>
         </div>
       </div>
