@@ -247,7 +247,7 @@ const SectionWorks = () => {
         className="row work-container mx-auto mt-5 mb-5 p-0 d-flex justify-content-between">
         <div className="col-xl-6 d-flex align-items-center">
           <div className="work-content mx-auto mb-4 mb-xl-0">
-            <h3> FFCC </h3>
+            <h3> FFC CAMARGUAISE </h3>
             <p>
               Dans le cadre de mon stage de première année de BTS, j'ai pu
               travailler
