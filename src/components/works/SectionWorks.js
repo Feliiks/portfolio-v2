@@ -30,7 +30,7 @@ import lsvibes_home from '../../assets/works/lsvibes/lsvibes_home.jpg'
 import scgc1 from '../../assets/works/solana/solana1.jpg'
 import hts1 from '../../assets/works/hts/hts1.jpg'
 import ffcc_home from '../../assets/works/ffcc/ffcc_home.jpg'
-import lavandes_home from '../../assets/works/lavandes-web/lavandes1.jpg'
+import lavandes_locations from '../../assets/works/lavandes-web/lavandes3.jpg'
 import mobilapp_portfolio
   from '../../assets/works/lavandes-mobile/mobilapp_portfolio.png'
 
@@ -170,7 +170,7 @@ const SectionWorks = () => {
           </RightCornerRibbon>
           <div className="work-carousel mx-auto">
             <img
-              src={lavandes_home}
+              src={lavandes_locations}
               alt="First slide"
             />
           </div>

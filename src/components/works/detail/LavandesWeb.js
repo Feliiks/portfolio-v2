@@ -1,13 +1,11 @@
 import React, { useEffect } from 'react'
 import Preloader from '../../preloader'
-import lavandes1 from '../../../assets/works/lavandes-web/lavandes1.jpg'
 import lavandes2 from '../../../assets/works/lavandes-web/lavandes2.jpg'
 import lavandes3 from '../../../assets/works/lavandes-web/lavandes3.jpg'
 import lavandes4 from '../../../assets/works/lavandes-web/lavandes4.jpg'
 import cdc from '../../../assets/works/lavandes-web/cdc.docx'
 import lavandes5 from '../../../assets/works/lavandes-web/lavandes5.jpg'
 import lavandes6 from '../../../assets/works/lavandes-web/lavandes6.jpg'
-import lavandes7 from '../../../assets/works/lavandes-web/lavandes7.png'
 import lavandes8 from '../../../assets/works/lavandes-web/lavandes8.jpg'
 import lavandes9 from '../../../assets/works/lavandes-web/lavandes9.png'
 import lavandes10 from '../../../assets/works/lavandes-web/lavandes10.png'
@@ -33,9 +31,6 @@ const LavandesWeb = () => {
                 <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true}
                           interval={2500}>
                   <div>
-                    <img src={lavandes1}/>
-                  </div>
-                  <div>
                     <img src={lavandes2}/>
                   </div>
                   <div>
@@ -49,9 +44,6 @@ const LavandesWeb = () => {
                   </div>
                   <div>
                     <img src={lavandes6}/>
-                  </div>
-                  <div>
-                    <img src={lavandes7}/>
                   </div>
                   <div>
                     <img src={lavandes8}/>

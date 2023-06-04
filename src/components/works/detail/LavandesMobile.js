@@ -21,6 +21,8 @@ import mobilapp_sitemap
   from '../../../assets/works/lavandes-mobile/mobilapp_sitemap.jpg'
 import mobilapp_bottom_modal
   from '../../../assets/works/lavandes-mobile/mobilapp_bottom_modal.png'
+import mobilapp_architecture
+  from '../../../assets/works/lavandes-mobile/mobilapp_architecture.png'
 import { BiLinkExternal } from 'react-icons/bi'
 
 const LavandesMobile = () => {
@@ -39,7 +41,7 @@ const LavandesMobile = () => {
             <div className="row work-container mx-auto">
               <div className="col-xl-6 p-0 d-flex align-items-center mx-auto">
                 <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true}
-                          interval={2500}>
+                          interval={2500} thumbWidth={50} dynamicHeight>
                   <div>
                     <img src={mobilapp_login_form}/>
                   </div>
@@ -176,6 +178,9 @@ const LavandesMobile = () => {
                 d'utilisation </a>
               <a href={mobilapp_sitemap} target="_blank"
                  rel="noreferrer"><BiLinkExternal/> Arborescence de
+                l'application. </a>
+              <a href={mobilapp_architecture} target="_blank"
+                 rel="noreferrer"><BiLinkExternal/> Architecture de
                 l'application. </a>
             </div>
           </div>
