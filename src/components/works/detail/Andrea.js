@@ -89,6 +89,8 @@ const Andrea = () => {
                 → Participer à l’évolution d’un site Web exploitant les données
                 de l’organisation.
                 <br/>
+                → Déployer un service.
+                <br/>
                 → Mettre en place son environnement d’apprentissage personnel.
                 <br/>
                 → Gérer son identité professionnelle.
