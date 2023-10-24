@@ -1,15 +1,13 @@
 import React, { useEffect } from "react";
 import Preloader from "../../preloader";
-import stefanos1 from "../../../assets/works/stefanos/stefanos1.jpg";
-import stefanos_bdd from "../../../assets/works/stefanos/stefanos_bdd.jpg";
-import stefanos_admin from "../../../assets/works/stefanos/stefanos_admin.jpg";
-import stefanos_pronostics from "../../../assets/works/stefanos/stefanos_pronostics.jpg";
-import stefanos_fiverr from "../../../assets/works/stefanos/stefanos_fiverr.jpg";
-import stefanos_figma from "../../../assets/works/stefanos/stefanos_figma.jpg";
+import southland_login from "../../../assets/works/southland/sll1.png";
+import southland_email_confirmation from "../../../assets/works/southland/sll2.png";
+import southland_home from "../../../assets/works/southland/sll3.png";
+import southland_user from "../../../assets/works/southland/sll4.png";
 import { BiLinkExternal } from "react-icons/bi";
 import { Carousel } from "react-responsive-carousel";
 
-const Stefanos = () => {
+const SouthLand = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -20,7 +18,7 @@ const Stefanos = () => {
       <div className="works">
         <div className="section-bg container">
           <div className="row section-works">
-            <h2> PROJET : STEFANOS PRONOSTICS </h2>
+            <h2> PROJET : SOUTHLAND LAUNCHER </h2>
 
             <div className="row work-container mx-auto">
               <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
@@ -31,22 +29,16 @@ const Stefanos = () => {
                   interval={2500}
                 >
                   <div>
-                    <img src={stefanos1} />
+                    <img src={southland_login} />
                   </div>
                   <div>
-                    <img src={stefanos_bdd} />
+                    <img src={southland_email_confirmation} />
                   </div>
                   <div>
-                    <img src={stefanos_admin} />
+                    <img src={southland_home} />
                   </div>
                   <div>
-                    <img src={stefanos_pronostics} />
-                  </div>
-                  <div>
-                    <img src={stefanos_fiverr} />
-                  </div>
-                  <div>
-                    <img src={stefanos_figma} />
+                    <img src={southland_user} />
                   </div>
                 </Carousel>
               </div>
@@ -55,21 +47,19 @@ const Stefanos = () => {
             <div className="row mt-5">
               <h3> Contexte </h3>
               <p>
-                Suivis par plus de 15 000 abonnés sur Twitter, Stefanos a voulu
-                se lancer dans la publication de pronostics par abonnement. Afin
-                de répondre à ce besoin, j'ai développé pour eux une application
-                web entièrement fonctionnelle.
-                <br />
-                <br />
-                Grâce à celle-ci, Stefanos Pronostics a réalisé plus de 1000
-                euros de vente la première journée ainsi qu'enregistré plus de
-                100 inscriptions.
+                Acceuillant plus de 200 joueurs simultanés chaque jours, il
+                était temps pour le launcher SouthLand Roleplay de faire peau
+                neuve. C'est la raison pour laquelle l'équipe administrative du
+                serveur a fait appel à moi afin de développeur leur tout nouveau
+                launcher. Plus fluide, plus puissant et plus ergonomique.
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Environnement technique </h3>
               <p>
+                → Portabilité desktop via Electron.
+                <br />
                 → Interfaces sous React.js.
                 <br />
                 → API Rest sous Node.js.
@@ -80,9 +70,7 @@ const Stefanos = () => {
                 <br />
                 → Gitlab, Gitlab CI & Docker.
                 <br />
-                → Base de données MongoDB, ODM Mongoose.
-                <br />
-                → Notion en tant que CMS (pronostics).
+                → Base de données MySQL.
                 <br />
                 → Analyse du code avec ESLint.
                 <br />
@@ -108,4 +96,4 @@ const Stefanos = () => {
   );
 };
 
-export default Stefanos;
+export default SouthLand;

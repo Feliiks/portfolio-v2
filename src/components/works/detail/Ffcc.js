@@ -1,22 +1,21 @@
-import React, { useEffect } from 'react'
-import Preloader from '../../preloader'
-import ffcc_home from '../../../assets/works/ffcc/ffcc_home.jpg'
-import ffcc_profile from '../../../assets/works/ffcc/ffcc_profile.jpg'
-import ffcc_login from '../../../assets/works/ffcc/ffcc_login.jpg'
-import ffcc_figma from '../../../assets/works/ffcc/ffcc_figma.jpg'
-import attestation_stage
-  from '../../../assets/works/ffcc/attestation_stage_ffcc.pdf'
-import { BiLinkExternal } from 'react-icons/bi'
-import { Carousel } from 'react-responsive-carousel'
+import React, { useEffect } from "react";
+import Preloader from "../../preloader";
+import ffcc_home from "../../../assets/works/ffcc/ffcc_home.jpg";
+import ffcc_profile from "../../../assets/works/ffcc/ffcc_profile.jpg";
+import ffcc_login from "../../../assets/works/ffcc/ffcc_login.jpg";
+import ffcc_figma from "../../../assets/works/ffcc/ffcc_figma.jpg";
+import attestation_stage from "../../../assets/works/ffcc/attestation_stage_ffcc.pdf";
+import { BiLinkExternal } from "react-icons/bi";
+import { Carousel } from "react-responsive-carousel";
 
 const Ffcc = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
-      <Preloader/>
+      <Preloader />
       <div className="works">
         <div className="section-bg container">
           <div className="row section-works">
@@ -24,35 +23,36 @@ const Ffcc = () => {
 
             <div className="row work-container mx-auto">
               <div className="col-xl-10 p-0 d-flex align-items-center mx-auto">
-                <Carousel autoPlay={true} stopOnHover={true} infiniteLoop={true}
-                          interval={2500}>
+                <Carousel
+                  autoPlay={true}
+                  stopOnHover={true}
+                  infiniteLoop={true}
+                  interval={2500}
+                >
                   <div>
-                    <img src={ffcc_home}/>
+                    <img src={ffcc_home} />
                   </div>
                   <div>
-                    <img src={ffcc_profile}/>
+                    <img src={ffcc_profile} />
                   </div>
                   <div>
-                    <img src={ffcc_login}/>
+                    <img src={ffcc_login} />
                   </div>
                   <div>
-                    <img src={ffcc_figma}/>
+                    <img src={ffcc_figma} />
                   </div>
                 </Carousel>
               </div>
             </div>
 
             <div className="row mt-5">
-              <h3> Introduction </h3>
+              <h3> Contexte </h3>
               <p>
                 Dans le cadre de mon stage de première année de BTS, j'ai pu
-                travailler
-                sur la nouvelle fonctionnalité du site web de la Fédération
-                française de
-                Course Camargaise. Cette web app permet la demande et la gestion
-                de sa carte jeune.
-                Cette carte jeune est ensuite scannée à l'entrée des arênes afin
-                de pouvoir
+                travailler sur la nouvelle fonctionnalité du site web de la
+                Fédération française de Course Camargaise. Cette web app permet
+                la demande et la gestion de sa carte jeune. Cette carte jeune
+                est ensuite scannée à l'entrée des arênes afin de pouvoir
                 bénéficier d'un tarif préférentiel.
               </p>
             </div>
@@ -61,87 +61,35 @@ const Ffcc = () => {
               <h3> Environnement technique </h3>
               <p>
                 → Interfaces réalisées sous Angular.
-                <br/>
+                <br />
                 → API Rest développée Node.js.
-                <br/>
+                <br />
                 → Base de données MySQL & Prisma ORM.
-                <br/>
+                <br />
                 → Gestion de versions avec Gitlab.
-                <br/>
-                → Gestion de projet avec Slack.
-              </p>
-            </div>
-
-            <div className="row mt-5">
-              <h3> Compétences acquises </h3>
-              <p>
-                Ce projet m'a permis de développer mes compétences de travail en
-                mode projet.
-                3 développeurs sur cette application, nous avons dû mettre en
-                place des outils
-                afin de coordonner notre travail.
-                <br/><br/>
-                En charge du développement de la partie "carte jeune" de manière
-                totalement
-                autonome (accompagné en cas de besoin), j'ai appris à présenter
-                mon travail
-                devant une équipe mais aussi à effectuer des recherches par
-                moi-même en cas
-                de difficultés.
-                <br/><br/>
-                Ce projet m'a également permis d'utiliser pour la première fois
-                Angular.
-              </p>
-            </div>
-
-            <div className="row mt-5">
-              <h3> Compétences du référentiel BTS validées </h3>
-              <p>
-                → Recenser et identifier les ressources numériques.
-                <br/>
-                → Exploiter des référentiels, normes et standards adoptés par le
-                prestataire informatique.
-                <br/>
-                → Mettre en place et vérifier les niveaux d’habilitation
-                associés à un service.
-                <br/>
-                → Vérifier les conditions de la continuité d’un service
-                informatique.
-                <br/>
-                → Participer à la valorisation de l’image de l’organisation sur
-                les médias numériques en tenant compte du cadre juridique et des
-                enjeux économiques.
-                <br/>
-                → Participer à l’évolution d’un site Web exploitant les données
-                de l’organisation.
-                <br/>
-                → Analyser les objectifs et les modalités d’organisation d’un
-                projet.
-                <br/>
-                → Planifier les activités.
-                <br/>
-                → Mettre en place son environnement d’apprentissage personnel.
-                <br/>
-                → Gérer son identité professionnelle.
-                <br/>
-                → Développer son projet professionnel.
+                <br />→ Gestion de projet avec Slack.
               </p>
             </div>
 
             <div className="row mt-5">
               <h3> Ressources associées </h3>
-              <a href="https://github.com/Feliiks/carte-jeune-ffcc"
-                 target="_blank" rel="noreferrer"><BiLinkExternal/> Code source.
+              <a
+                href="https://github.com/Feliiks/carte-jeune-ffcc"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BiLinkExternal /> Code source.
               </a>
-              <br/>
-              <a href={attestation_stage} target="_blank"
-                 rel="noreferrer"><BiLinkExternal/> Attestation de stage. </a>
+              <br />
+              <a href={attestation_stage} target="_blank" rel="noreferrer">
+                <BiLinkExternal /> Attestation de stage.{" "}
+              </a>
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Ffcc
+export default Ffcc;
