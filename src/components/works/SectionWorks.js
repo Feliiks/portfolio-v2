@@ -99,11 +99,11 @@ const SectionWorks = () => {
         </div>
         <div className="col-xl-6 p-0 d-flex align-items-center position-relative">
           <RightCornerRibbon
-            backgroundColor="#FF5733"
+            backgroundColor="#D69F00"
             color="#f0f0f0"
             fontFamily="Arial"
           >
-            Formation
+            Freelance
           </RightCornerRibbon>
           <div className="work-carousel mx-auto">
             <img src={sl_home} alt="First slide" />
